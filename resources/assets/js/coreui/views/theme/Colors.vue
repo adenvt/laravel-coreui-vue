@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <div class="card">
       <div class="card-header">
-        <i class="icon-drop"></i> Theme colors
+        <i class="icon-drop"/> Theme colors
       </div>
       <div class="card-body">
         <div class="row">
@@ -35,7 +35,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <i class="icon-drop"></i> Grays
+        <i class="icon-drop"/> Grays
       </div>
       <div class="card-body">
         <div class="row mb-3">
@@ -55,7 +55,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <i class="icon-drop"></i> Additional colors
+        <i class="icon-drop"/> Additional colors
       </div>
       <div class="card-body">
         <div class="row">
@@ -97,6 +97,6 @@
 
 <script>
 export default {
-  name: 'colors'
+  name: 'Colors',
 }
 </script>

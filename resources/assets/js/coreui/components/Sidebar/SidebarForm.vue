@@ -1,10 +1,10 @@
 <template>
-  <div></div>
+  <div/>
   <!-- <div class="sidebar-form"></div> -->
 </template>
 <script>
 
 export default {
-  name: 'sidebar-form'
+  name: 'SidebarForm',
 }
 </script>

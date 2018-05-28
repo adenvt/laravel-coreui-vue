@@ -1,6 +1,8 @@
 <template>
   <div class="animated fadeIn">
-    <b-card-group columns class="card-columns cols-2">
+    <b-card-group
+      columns
+      class="card-columns cols-2">
       <b-card header="Line Chart">
         <div class="chart-wrapper">
           <line-example/>
@@ -43,14 +45,14 @@ import PieExample from './charts/PieExample'
 import PolarAreaExample from './charts/PolarAreaExample'
 
 export default {
-  name: 'charts',
+  name      : 'Charts',
   components: {
     BarExample,
     LineExample,
     DoughnutExample,
     RadarExample,
     PieExample,
-    PolarAreaExample
-  }
+    PolarAreaExample,
+  },
 }
 </script>

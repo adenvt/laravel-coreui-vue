@@ -8,31 +8,81 @@
           </div>
           <h6>Size Small <small>Add this <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" variant="facebook"><span>Facebook</span></b-button>
-            <b-button size="sm" variant="twitter"><span>Twitter</span></b-button>
-            <b-button size="sm" variant="linkedin"><span>LinkedIn</span></b-button>
-            <b-button size="sm" variant="flickr"><span>Flickr</span></b-button>
-            <b-button size="sm" variant="tumblr"><span>Tumblr</span></b-button>
-            <b-button size="sm" variant="xing"><span>Xing</span></b-button>
-            <b-button size="sm" variant="github"><span>Github</span></b-button>
-            <b-button size="sm" variant="html5"><span>HTML5</span></b-button>
-            <b-button size="sm" variant="openid"><span>OpenID</span></b-button>
-            <b-button size="sm" variant="stack-overflow"><span>StackOverflow</span></b-button>
-            <b-button size="sm" variant="css3"><span>CSS3</span></b-button>
-            <b-button size="sm" variant="youtube"><span>YouTube</span></b-button>
-            <b-button size="sm" variant="dribbble"><span>Dribbble</span></b-button>
-            <b-button size="sm" variant="google-plus"><span>Google+</span></b-button>
-            <b-button size="sm" variant="instagram"><span>Instagram</span></b-button>
-            <b-button size="sm" variant="pinterest"><span>Pinterest</span></b-button>
-            <b-button size="sm" variant="vk"><span>VK</span></b-button>
-            <b-button size="sm" variant="yahoo"><span>Yahoo</span></b-button>
-            <b-button size="sm" variant="behance"><span>Behance</span></b-button>
-            <b-button size="sm" variant="dropbox"><span>Dropbox</span></b-button>
-            <b-button size="sm" variant="reddit"><span>Reddit</span></b-button>
-            <b-button size="sm" variant="spotify"><span>Spotify</span></b-button>
-            <b-button size="sm" variant="vine"><span>Vine</span></b-button>
-            <b-button size="sm" variant="foursquare"><span>Forsquare</span></b-button>
-            <b-button size="sm" variant="vimeo"><span>Vimeo</span></b-button>
+            <b-button
+              size="sm"
+              variant="facebook"><span>Facebook</span></b-button>
+            <b-button
+              size="sm"
+              variant="twitter"><span>Twitter</span></b-button>
+            <b-button
+              size="sm"
+              variant="linkedin"><span>LinkedIn</span></b-button>
+            <b-button
+              size="sm"
+              variant="flickr"><span>Flickr</span></b-button>
+            <b-button
+              size="sm"
+              variant="tumblr"><span>Tumblr</span></b-button>
+            <b-button
+              size="sm"
+              variant="xing"><span>Xing</span></b-button>
+            <b-button
+              size="sm"
+              variant="github"><span>Github</span></b-button>
+            <b-button
+              size="sm"
+              variant="html5"><span>HTML5</span></b-button>
+            <b-button
+              size="sm"
+              variant="openid"><span>OpenID</span></b-button>
+            <b-button
+              size="sm"
+              variant="stack-overflow"><span>StackOverflow</span></b-button>
+            <b-button
+              size="sm"
+              variant="css3"><span>CSS3</span></b-button>
+            <b-button
+              size="sm"
+              variant="youtube"><span>YouTube</span></b-button>
+            <b-button
+              size="sm"
+              variant="dribbble"><span>Dribbble</span></b-button>
+            <b-button
+              size="sm"
+              variant="google-plus"><span>Google+</span></b-button>
+            <b-button
+              size="sm"
+              variant="instagram"><span>Instagram</span></b-button>
+            <b-button
+              size="sm"
+              variant="pinterest"><span>Pinterest</span></b-button>
+            <b-button
+              size="sm"
+              variant="vk"><span>VK</span></b-button>
+            <b-button
+              size="sm"
+              variant="yahoo"><span>Yahoo</span></b-button>
+            <b-button
+              size="sm"
+              variant="behance"><span>Behance</span></b-button>
+            <b-button
+              size="sm"
+              variant="dropbox"><span>Dropbox</span></b-button>
+            <b-button
+              size="sm"
+              variant="reddit"><span>Reddit</span></b-button>
+            <b-button
+              size="sm"
+              variant="spotify"><span>Spotify</span></b-button>
+            <b-button
+              size="sm"
+              variant="vine"><span>Vine</span></b-button>
+            <b-button
+              size="sm"
+              variant="foursquare"><span>Forsquare</span></b-button>
+            <b-button
+              size="sm"
+              variant="vimeo"><span>Vimeo</span></b-button>
           </p>
           <h6>Size Normal</h6>
           <p>
@@ -64,31 +114,81 @@
           </p>
           <h6>Size Large <small>Add this <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook"><span>Facebook</span></b-button>
-            <b-button size="lg" variant="twitter"><span>Twitter</span></b-button>
-            <b-button size="lg" variant="linkedin"><span>LinkedIn</span></b-button>
-            <b-button size="lg" variant="flickr"><span>Flickr</span></b-button>
-            <b-button size="lg" variant="tumblr"><span>Tumblr</span></b-button>
-            <b-button size="lg" variant="xing"><span>Xing</span></b-button>
-            <b-button size="lg" variant="github"><span>Github</span></b-button>
-            <b-button size="lg" variant="html5"><span>HTML5</span></b-button>
-            <b-button size="lg" variant="openid"><span>OpenID</span></b-button>
-            <b-button size="lg" variant="stack-overflow"><span>StackOverflow</span></b-button>
-            <b-button size="lg" variant="css3"><span>CSS3</span></b-button>
-            <b-button size="lg" variant="youtube"><span>YouTube</span></b-button>
-            <b-button size="lg" variant="dribbble"><span>Dribbble</span></b-button>
-            <b-button size="lg" variant="google-plus"><span>Google+</span></b-button>
-            <b-button size="lg" variant="instagram"><span>Instagram</span></b-button>
-            <b-button size="lg" variant="pinterest"><span>Pinterest</span></b-button>
-            <b-button size="lg" variant="vk"><span>VK</span></b-button>
-            <b-button size="lg" variant="yahoo"><span>Yahoo</span></b-button>
-            <b-button size="lg" variant="behance"><span>Behance</span></b-button>
-            <b-button size="lg" variant="dropbox"><span>Dropbox</span></b-button>
-            <b-button size="lg" variant="reddit"><span>Reddit</span></b-button>
-            <b-button size="lg" variant="spotify"><span>Spotify</span></b-button>
-            <b-button size="lg" variant="vine"><span>Vine</span></b-button>
-            <b-button size="lg" variant="foursquare"><span>Forsquare</span></b-button>
-            <b-button size="lg" variant="vimeo"><span>Vimeo</span></b-button>
+            <b-button
+              size="lg"
+              variant="facebook"><span>Facebook</span></b-button>
+            <b-button
+              size="lg"
+              variant="twitter"><span>Twitter</span></b-button>
+            <b-button
+              size="lg"
+              variant="linkedin"><span>LinkedIn</span></b-button>
+            <b-button
+              size="lg"
+              variant="flickr"><span>Flickr</span></b-button>
+            <b-button
+              size="lg"
+              variant="tumblr"><span>Tumblr</span></b-button>
+            <b-button
+              size="lg"
+              variant="xing"><span>Xing</span></b-button>
+            <b-button
+              size="lg"
+              variant="github"><span>Github</span></b-button>
+            <b-button
+              size="lg"
+              variant="html5"><span>HTML5</span></b-button>
+            <b-button
+              size="lg"
+              variant="openid"><span>OpenID</span></b-button>
+            <b-button
+              size="lg"
+              variant="stack-overflow"><span>StackOverflow</span></b-button>
+            <b-button
+              size="lg"
+              variant="css3"><span>CSS3</span></b-button>
+            <b-button
+              size="lg"
+              variant="youtube"><span>YouTube</span></b-button>
+            <b-button
+              size="lg"
+              variant="dribbble"><span>Dribbble</span></b-button>
+            <b-button
+              size="lg"
+              variant="google-plus"><span>Google+</span></b-button>
+            <b-button
+              size="lg"
+              variant="instagram"><span>Instagram</span></b-button>
+            <b-button
+              size="lg"
+              variant="pinterest"><span>Pinterest</span></b-button>
+            <b-button
+              size="lg"
+              variant="vk"><span>VK</span></b-button>
+            <b-button
+              size="lg"
+              variant="yahoo"><span>Yahoo</span></b-button>
+            <b-button
+              size="lg"
+              variant="behance"><span>Behance</span></b-button>
+            <b-button
+              size="lg"
+              variant="dropbox"><span>Dropbox</span></b-button>
+            <b-button
+              size="lg"
+              variant="reddit"><span>Reddit</span></b-button>
+            <b-button
+              size="lg"
+              variant="spotify"><span>Spotify</span></b-button>
+            <b-button
+              size="lg"
+              variant="vine"><span>Vine</span></b-button>
+            <b-button
+              size="lg"
+              variant="foursquare"><span>Forsquare</span></b-button>
+            <b-button
+              size="lg"
+              variant="vimeo"><span>Vimeo</span></b-button>
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -99,87 +199,187 @@
           </div>
           <h6>Size Small <small>Add this <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" variant="facebook icon"></b-button>
-            <b-button size="sm" variant="twitter icon"></b-button>
-            <b-button size="sm" variant="linkedin icon"></b-button>
-            <b-button size="sm" variant="flickr icon"></b-button>
-            <b-button size="sm" variant="tumblr icon"></b-button>
-            <b-button size="sm" variant="xing icon"></b-button>
-            <b-button size="sm" variant="github icon"></b-button>
-            <b-button size="sm" variant="html5 icon"></b-button>
-            <b-button size="sm" variant="openid icon"></b-button>
-            <b-button size="sm" variant="stack-overflow icon"></b-button>
-            <b-button size="sm" variant="css3 icon"></b-button>
-            <b-button size="sm" variant="youtube icon"></b-button>
-            <b-button size="sm" variant="dribbble icon"></b-button>
-            <b-button size="sm" variant="google-plus icon"></b-button>
-            <b-button size="sm" variant="instagram icon"></b-button>
-            <b-button size="sm" variant="pinterest icon"></b-button>
-            <b-button size="sm" variant="vk icon"></b-button>
-            <b-button size="sm" variant="yahoo icon"></b-button>
-            <b-button size="sm" variant="behance icon"></b-button>
-            <b-button size="sm" variant="dropbox icon"></b-button>
-            <b-button size="sm" variant="reddit icon"></b-button>
-            <b-button size="sm" variant="spotify icon"></b-button>
-            <b-button size="sm" variant="vine icon"></b-button>
-            <b-button size="sm" variant="foursquare icon"></b-button>
-            <b-button size="sm" variant="vimeo icon"></b-button>
+            <b-button
+              size="sm"
+              variant="facebook icon"/>
+            <b-button
+              size="sm"
+              variant="twitter icon"/>
+            <b-button
+              size="sm"
+              variant="linkedin icon"/>
+            <b-button
+              size="sm"
+              variant="flickr icon"/>
+            <b-button
+              size="sm"
+              variant="tumblr icon"/>
+            <b-button
+              size="sm"
+              variant="xing icon"/>
+            <b-button
+              size="sm"
+              variant="github icon"/>
+            <b-button
+              size="sm"
+              variant="html5 icon"/>
+            <b-button
+              size="sm"
+              variant="openid icon"/>
+            <b-button
+              size="sm"
+              variant="stack-overflow icon"/>
+            <b-button
+              size="sm"
+              variant="css3 icon"/>
+            <b-button
+              size="sm"
+              variant="youtube icon"/>
+            <b-button
+              size="sm"
+              variant="dribbble icon"/>
+            <b-button
+              size="sm"
+              variant="google-plus icon"/>
+            <b-button
+              size="sm"
+              variant="instagram icon"/>
+            <b-button
+              size="sm"
+              variant="pinterest icon"/>
+            <b-button
+              size="sm"
+              variant="vk icon"/>
+            <b-button
+              size="sm"
+              variant="yahoo icon"/>
+            <b-button
+              size="sm"
+              variant="behance icon"/>
+            <b-button
+              size="sm"
+              variant="dropbox icon"/>
+            <b-button
+              size="sm"
+              variant="reddit icon"/>
+            <b-button
+              size="sm"
+              variant="spotify icon"/>
+            <b-button
+              size="sm"
+              variant="vine icon"/>
+            <b-button
+              size="sm"
+              variant="foursquare icon"/>
+            <b-button
+              size="sm"
+              variant="vimeo icon"/>
           </p>
           <h6>Size Normal</h6>
           <p>
-            <b-button variant="facebook icon"></b-button>
-            <b-button variant="twitter icon"></b-button>
-            <b-button variant="linkedin icon"></b-button>
-            <b-button variant="flickr icon"></b-button>
-            <b-button variant="tumblr icon"></b-button>
-            <b-button variant="xing icon"></b-button>
-            <b-button variant="github icon"></b-button>
-            <b-button variant="html5 icon"></b-button>
-            <b-button variant="openid icon"></b-button>
-            <b-button variant="stack-overflow icon"></b-button>
-            <b-button variant="css3 icon"></b-button>
-            <b-button variant="youtube icon"></b-button>
-            <b-button variant="dribbble icon"></b-button>
-            <b-button variant="google-plus icon"></b-button>
-            <b-button variant="instagram icon"></b-button>
-            <b-button variant="pinterest icon"></b-button>
-            <b-button variant="vk icon"></b-button>
-            <b-button variant="yahoo icon"></b-button>
-            <b-button variant="behance icon"></b-button>
-            <b-button variant="dropbox icon"></b-button>
-            <b-button variant="reddit icon"></b-button>
-            <b-button variant="spotify icon"></b-button>
-            <b-button variant="vine icon"></b-button>
-            <b-button variant="foursquare icon"></b-button>
-            <b-button variant="vimeo icon"></b-button>
+            <b-button variant="facebook icon"/>
+            <b-button variant="twitter icon"/>
+            <b-button variant="linkedin icon"/>
+            <b-button variant="flickr icon"/>
+            <b-button variant="tumblr icon"/>
+            <b-button variant="xing icon"/>
+            <b-button variant="github icon"/>
+            <b-button variant="html5 icon"/>
+            <b-button variant="openid icon"/>
+            <b-button variant="stack-overflow icon"/>
+            <b-button variant="css3 icon"/>
+            <b-button variant="youtube icon"/>
+            <b-button variant="dribbble icon"/>
+            <b-button variant="google-plus icon"/>
+            <b-button variant="instagram icon"/>
+            <b-button variant="pinterest icon"/>
+            <b-button variant="vk icon"/>
+            <b-button variant="yahoo icon"/>
+            <b-button variant="behance icon"/>
+            <b-button variant="dropbox icon"/>
+            <b-button variant="reddit icon"/>
+            <b-button variant="spotify icon"/>
+            <b-button variant="vine icon"/>
+            <b-button variant="foursquare icon"/>
+            <b-button variant="vimeo icon"/>
           </p>
           <h6>Size Large <small>Add this <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook icon"><span>Facebook</span></b-button>
-            <b-button size="lg" variant="twitter icon"><span>Twitter</span></b-button>
-            <b-button size="lg" variant="linkedin icon"><span>LinkedIn</span></b-button>
-            <b-button size="lg" variant="flickr icon"><span>Flickr</span></b-button>
-            <b-button size="lg" variant="tumblr icon"><span>Tumblr</span></b-button>
-            <b-button size="lg" variant="xing icon"><span>Xing</span></b-button>
-            <b-button size="lg" variant="github icon"><span>Github</span></b-button>
-            <b-button size="lg" variant="html5 icon"><span>HTML5</span></b-button>
-            <b-button size="lg" variant="openid icon"><span>OpenID</span></b-button>
-            <b-button size="lg" variant="stack-overflow icon"><span>StackOverflow</span></b-button>
-            <b-button size="lg" variant="css3 icon"><span>CSS3</span></b-button>
-            <b-button size="lg" variant="youtube icon"><span>YouTube</span></b-button>
-            <b-button size="lg" variant="dribbble icon"><span>Dribbble</span></b-button>
-            <b-button size="lg" variant="google-plus icon"><span>Google+</span></b-button>
-            <b-button size="lg" variant="instagram icon"><span>Instagram</span></b-button>
-            <b-button size="lg" variant="pinterest icon"><span>Pinterest</span></b-button>
-            <b-button size="lg" variant="vk icon"><span>VK</span></b-button>
-            <b-button size="lg" variant="yahoo icon"><span>Yahoo</span></b-button>
-            <b-button size="lg" variant="behance icon"><span>Behance</span></b-button>
-            <b-button size="lg" variant="dropbox icon"><span>Dropbox</span></b-button>
-            <b-button size="lg" variant="reddit icon"><span>Reddit</span></b-button>
-            <b-button size="lg" variant="spotify icon"><span>Spotify</span></b-button>
-            <b-button size="lg" variant="vine icon"><span>Vine</span></b-button>
-            <b-button size="lg" variant="foursquare icon"><span>Forsquare</span></b-button>
-            <b-button size="lg" variant="vimeo icon"><span>Vimeo</span></b-button>
+            <b-button
+              size="lg"
+              variant="facebook icon"><span>Facebook</span></b-button>
+            <b-button
+              size="lg"
+              variant="twitter icon"><span>Twitter</span></b-button>
+            <b-button
+              size="lg"
+              variant="linkedin icon"><span>LinkedIn</span></b-button>
+            <b-button
+              size="lg"
+              variant="flickr icon"><span>Flickr</span></b-button>
+            <b-button
+              size="lg"
+              variant="tumblr icon"><span>Tumblr</span></b-button>
+            <b-button
+              size="lg"
+              variant="xing icon"><span>Xing</span></b-button>
+            <b-button
+              size="lg"
+              variant="github icon"><span>Github</span></b-button>
+            <b-button
+              size="lg"
+              variant="html5 icon"><span>HTML5</span></b-button>
+            <b-button
+              size="lg"
+              variant="openid icon"><span>OpenID</span></b-button>
+            <b-button
+              size="lg"
+              variant="stack-overflow icon"><span>StackOverflow</span></b-button>
+            <b-button
+              size="lg"
+              variant="css3 icon"><span>CSS3</span></b-button>
+            <b-button
+              size="lg"
+              variant="youtube icon"><span>YouTube</span></b-button>
+            <b-button
+              size="lg"
+              variant="dribbble icon"><span>Dribbble</span></b-button>
+            <b-button
+              size="lg"
+              variant="google-plus icon"><span>Google+</span></b-button>
+            <b-button
+              size="lg"
+              variant="instagram icon"><span>Instagram</span></b-button>
+            <b-button
+              size="lg"
+              variant="pinterest icon"><span>Pinterest</span></b-button>
+            <b-button
+              size="lg"
+              variant="vk icon"><span>VK</span></b-button>
+            <b-button
+              size="lg"
+              variant="yahoo icon"><span>Yahoo</span></b-button>
+            <b-button
+              size="lg"
+              variant="behance icon"><span>Behance</span></b-button>
+            <b-button
+              size="lg"
+              variant="dropbox icon"><span>Dropbox</span></b-button>
+            <b-button
+              size="lg"
+              variant="reddit icon"><span>Reddit</span></b-button>
+            <b-button
+              size="lg"
+              variant="spotify icon"><span>Spotify</span></b-button>
+            <b-button
+              size="lg"
+              variant="vine icon"><span>Vine</span></b-button>
+            <b-button
+              size="lg"
+              variant="foursquare icon"><span>Forsquare</span></b-button>
+            <b-button
+              size="lg"
+              variant="vimeo icon"><span>Vimeo</span></b-button>
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -191,31 +391,81 @@
           </div>
           <h6>Size Small <small>Add this <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" variant="facebook text"><span>Facebook</span></b-button>
-            <b-button size="sm" variant="twitter text"><span>Twitter</span></b-button>
-            <b-button size="sm" variant="linkedin text"><span>LinkedIn</span></b-button>
-            <b-button size="sm" variant="flickr text"><span>Flickr</span></b-button>
-            <b-button size="sm" variant="tumblr text"><span>Tumblr</span></b-button>
-            <b-button size="sm" variant="xing text"><span>Xing</span></b-button>
-            <b-button size="sm" variant="github text"><span>Github</span></b-button>
-            <b-button size="sm" variant="html5 text"><span>HTML5</span></b-button>
-            <b-button size="sm" variant="openid text"><span>OpenID</span></b-button>
-            <b-button size="sm" variant="stack-overflow text"><span>StackOverflow</span></b-button>
-            <b-button size="sm" variant="css3 text"><span>CSS3</span></b-button>
-            <b-button size="sm" variant="youtube text"><span>YouTube</span></b-button>
-            <b-button size="sm" variant="dribbble text"><span>Dribbble</span></b-button>
-            <b-button size="sm" variant="google-plus text"><span>Google+</span></b-button>
-            <b-button size="sm" variant="instagram text"><span>Instagram</span></b-button>
-            <b-button size="sm" variant="pinterest text"><span>Pinterest</span></b-button>
-            <b-button size="sm" variant="vk text"><span>VK</span></b-button>
-            <b-button size="sm" variant="yahoo text"><span>Yahoo</span></b-button>
-            <b-button size="sm" variant="behance text"><span>Behance</span></b-button>
-            <b-button size="sm" variant="dropbox text"><span>Dropbox</span></b-button>
-            <b-button size="sm" variant="reddit text"><span>Reddit</span></b-button>
-            <b-button size="sm" variant="spotify text"><span>Spotify</span></b-button>
-            <b-button size="sm" variant="vine text"><span>Vine</span></b-button>
-            <b-button size="sm" variant="foursquare text"><span>Forsquare</span></b-button>
-            <b-button size="sm" variant="vimeo text"><span>Vimeo</span></b-button>
+            <b-button
+              size="sm"
+              variant="facebook text"><span>Facebook</span></b-button>
+            <b-button
+              size="sm"
+              variant="twitter text"><span>Twitter</span></b-button>
+            <b-button
+              size="sm"
+              variant="linkedin text"><span>LinkedIn</span></b-button>
+            <b-button
+              size="sm"
+              variant="flickr text"><span>Flickr</span></b-button>
+            <b-button
+              size="sm"
+              variant="tumblr text"><span>Tumblr</span></b-button>
+            <b-button
+              size="sm"
+              variant="xing text"><span>Xing</span></b-button>
+            <b-button
+              size="sm"
+              variant="github text"><span>Github</span></b-button>
+            <b-button
+              size="sm"
+              variant="html5 text"><span>HTML5</span></b-button>
+            <b-button
+              size="sm"
+              variant="openid text"><span>OpenID</span></b-button>
+            <b-button
+              size="sm"
+              variant="stack-overflow text"><span>StackOverflow</span></b-button>
+            <b-button
+              size="sm"
+              variant="css3 text"><span>CSS3</span></b-button>
+            <b-button
+              size="sm"
+              variant="youtube text"><span>YouTube</span></b-button>
+            <b-button
+              size="sm"
+              variant="dribbble text"><span>Dribbble</span></b-button>
+            <b-button
+              size="sm"
+              variant="google-plus text"><span>Google+</span></b-button>
+            <b-button
+              size="sm"
+              variant="instagram text"><span>Instagram</span></b-button>
+            <b-button
+              size="sm"
+              variant="pinterest text"><span>Pinterest</span></b-button>
+            <b-button
+              size="sm"
+              variant="vk text"><span>VK</span></b-button>
+            <b-button
+              size="sm"
+              variant="yahoo text"><span>Yahoo</span></b-button>
+            <b-button
+              size="sm"
+              variant="behance text"><span>Behance</span></b-button>
+            <b-button
+              size="sm"
+              variant="dropbox text"><span>Dropbox</span></b-button>
+            <b-button
+              size="sm"
+              variant="reddit text"><span>Reddit</span></b-button>
+            <b-button
+              size="sm"
+              variant="spotify text"><span>Spotify</span></b-button>
+            <b-button
+              size="sm"
+              variant="vine text"><span>Vine</span></b-button>
+            <b-button
+              size="sm"
+              variant="foursquare text"><span>Forsquare</span></b-button>
+            <b-button
+              size="sm"
+              variant="vimeo text"><span>Vimeo</span></b-button>
           </p>
           <h6>Size Normal</h6>
           <p>
@@ -247,31 +497,81 @@
           </p>
           <h6>Size Large <small>Add this <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook text"><span>Facebook</span></b-button>
-            <b-button size="lg" variant="twitter text"><span>Twitter</span></b-button>
-            <b-button size="lg" variant="linkedin text"><span>LinkedIn</span></b-button>
-            <b-button size="lg" variant="flickr text"><span>Flickr</span></b-button>
-            <b-button size="lg" variant="tumblr text"><span>Tumblr</span></b-button>
-            <b-button size="lg" variant="xing text"><span>Xing</span></b-button>
-            <b-button size="lg" variant="github text"><span>Github</span></b-button>
-            <b-button size="lg" variant="html5 text"><span>HTML5</span></b-button>
-            <b-button size="lg" variant="openid text"><span>OpenID</span></b-button>
-            <b-button size="lg" variant="stack-overflow text"><span>StackOverflow</span></b-button>
-            <b-button size="lg" variant="css3 text"><span>CSS3</span></b-button>
-            <b-button size="lg" variant="youtube text"><span>YouTube</span></b-button>
-            <b-button size="lg" variant="dribbble text"><span>Dribbble</span></b-button>
-            <b-button size="lg" variant="google-plus text"><span>Google+</span></b-button>
-            <b-button size="lg" variant="instagram text"><span>Instagram</span></b-button>
-            <b-button size="lg" variant="pinterest text"><span>Pinterest</span></b-button>
-            <b-button size="lg" variant="vk text"><span>VK</span></b-button>
-            <b-button size="lg" variant="yahoo text"><span>Yahoo</span></b-button>
-            <b-button size="lg" variant="behance text"><span>Behance</span></b-button>
-            <b-button size="lg" variant="dropbox text"><span>Dropbox</span></b-button>
-            <b-button size="lg" variant="reddit text"><span>Reddit</span></b-button>
-            <b-button size="lg" variant="spotify text"><span>Spotify</span></b-button>
-            <b-button size="lg" variant="vine text"><span>Vine</span></b-button>
-            <b-button size="lg" variant="foursquare text"><span>Forsquare</span></b-button>
-            <b-button size="lg" variant="vimeo text"><span>Vimeo</span></b-button>
+            <b-button
+              size="lg"
+              variant="facebook text"><span>Facebook</span></b-button>
+            <b-button
+              size="lg"
+              variant="twitter text"><span>Twitter</span></b-button>
+            <b-button
+              size="lg"
+              variant="linkedin text"><span>LinkedIn</span></b-button>
+            <b-button
+              size="lg"
+              variant="flickr text"><span>Flickr</span></b-button>
+            <b-button
+              size="lg"
+              variant="tumblr text"><span>Tumblr</span></b-button>
+            <b-button
+              size="lg"
+              variant="xing text"><span>Xing</span></b-button>
+            <b-button
+              size="lg"
+              variant="github text"><span>Github</span></b-button>
+            <b-button
+              size="lg"
+              variant="html5 text"><span>HTML5</span></b-button>
+            <b-button
+              size="lg"
+              variant="openid text"><span>OpenID</span></b-button>
+            <b-button
+              size="lg"
+              variant="stack-overflow text"><span>StackOverflow</span></b-button>
+            <b-button
+              size="lg"
+              variant="css3 text"><span>CSS3</span></b-button>
+            <b-button
+              size="lg"
+              variant="youtube text"><span>YouTube</span></b-button>
+            <b-button
+              size="lg"
+              variant="dribbble text"><span>Dribbble</span></b-button>
+            <b-button
+              size="lg"
+              variant="google-plus text"><span>Google+</span></b-button>
+            <b-button
+              size="lg"
+              variant="instagram text"><span>Instagram</span></b-button>
+            <b-button
+              size="lg"
+              variant="pinterest text"><span>Pinterest</span></b-button>
+            <b-button
+              size="lg"
+              variant="vk text"><span>VK</span></b-button>
+            <b-button
+              size="lg"
+              variant="yahoo text"><span>Yahoo</span></b-button>
+            <b-button
+              size="lg"
+              variant="behance text"><span>Behance</span></b-button>
+            <b-button
+              size="lg"
+              variant="dropbox text"><span>Dropbox</span></b-button>
+            <b-button
+              size="lg"
+              variant="reddit text"><span>Reddit</span></b-button>
+            <b-button
+              size="lg"
+              variant="spotify text"><span>Spotify</span></b-button>
+            <b-button
+              size="lg"
+              variant="vine text"><span>Vine</span></b-button>
+            <b-button
+              size="lg"
+              variant="foursquare text"><span>Forsquare</span></b-button>
+            <b-button
+              size="lg"
+              variant="vimeo text"><span>Vimeo</span></b-button>
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -281,7 +581,7 @@
 
 <script>
 export default {
-  name: 'social-buttons'
+  name: 'SocialButtons',
 }
 </script>
 

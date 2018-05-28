@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "standard",
+    "plugin:vue/strongly-recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "globals": {
+    "$": true,
+    "_": true,
+    "jQuery": true,
+    "moment": true,
+    "axios": true,
+    "Vue": true,
+    "CONFIG": true
+  },
+  "rules": {
+    "curly": ["error", "multi-or-nest"],
+    "camelcase": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+    "no-var": "error",
+    "no-console": ["error", {
+      "allow": ["warn", "error"]
+    }],
+    "prefer-const": ["error", {
+      "destructuring": "all"
+    }],
+    "quote-props": ["error", "consistent-as-needed"],
+    "prefer-template": "error",
+    "object-curly-spacing": ["error", "always"],
+    "linebreak-style": "off",
+    "key-spacing": ["error", {
+      "align": {
+        "beforeColon": false,
+        "afterColon": true,
+        "on": "colon"
+      }
+    }],
+    "vue/require-default-prop": "off",
+    "vue/require-prop-types": "off"
+  }
+}
