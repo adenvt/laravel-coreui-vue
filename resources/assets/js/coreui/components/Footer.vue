@@ -6,6 +6,6 @@
 </template>
 <script>
 export default {
-  name: 'c-footer'
+  name: 'CFooter',
 }
 </script>

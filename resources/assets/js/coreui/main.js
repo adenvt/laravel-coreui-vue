@@ -8,10 +8,10 @@ import router from './router'
 Vue.use(BootstrapVue)
 
 window.Vue = new Vue({
-  el: '#app',
+  el        : '#app',
   router,
-  template: '<App/>',
+  template  : '<App/>',
   components: {
-    App
-  }
+    App,
+  },
 })

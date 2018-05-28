@@ -153,6 +153,6 @@
 
 <script>
 export default {
-  name: 'typography'
+  name: 'Typography',
 }
 </script>

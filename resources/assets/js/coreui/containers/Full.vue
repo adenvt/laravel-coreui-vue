@@ -2,11 +2,11 @@
   <div class="app">
     <AppHeader/>
     <div class="app-body">
-      <Sidebar :navItems="nav"/>
+      <Sidebar :nav-items="nav"/>
       <main class="main">
         <breadcrumb :list="list"/>
         <div class="container-fluid">
-          <router-view></router-view>
+          <router-view/>
         </div>
       </main>
       <AppAside/>
@@ -20,17 +20,17 @@ import nav from '../_nav'
 import { Header as AppHeader, Sidebar, Aside as AppAside, Footer as AppFooter, Breadcrumb } from '../components/'
 
 export default {
-  name: 'full',
+  name      : 'Full',
   components: {
     AppHeader,
     Sidebar,
     AppAside,
     AppFooter,
-    Breadcrumb
+    Breadcrumb,
   },
   data () {
     return {
-      nav: nav.items
+      nav: nav.items,
     }
   },
   computed: {
@@ -39,7 +39,7 @@ export default {
     },
     list () {
       return this.$route.matched
-    }
-  }
+    },
+  },
 }
 </script>

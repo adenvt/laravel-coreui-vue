@@ -1,6 +1,6 @@
 <template>
   <div :class="classList">
-    <slot></slot>
+    <slot/>
   </div>
 </template>
 
@@ -8,19 +8,19 @@
 export default {
   props: {
     variant: {
-      type: String
-    }
+      type: String,
+    },
   },
   computed: {
     classList () {
       return [
         'callout',
-        this.calloutVariant
+        this.calloutVariant,
       ]
     },
     calloutVariant () {
       return this.variant ? `callout-${this.variant}` : ''
-    }
-  }
+    },
+  },
 }
 </script>

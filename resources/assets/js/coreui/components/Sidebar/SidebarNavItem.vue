@@ -1,35 +1,36 @@
 <template>
-  <li :class="classList" @click="hideMobile">
-    <slot></slot>
+  <li
+    :class="classList"
+    @click="hideMobile">
+    <slot/>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'sidebar-nav-item',
+  name : 'SidebarNavItem',
   props: {
     classes: {
-      type: String,
-      default: ''
-    }
+      type   : String,
+      default: '',
+    },
   },
   computed: {
     classList () {
       return [
         'nav-item',
-        ...this.itemClasses
+        ...this.itemClasses,
       ]
     },
     itemClasses () {
       return this.classes ? this.classes.split(' ') : ''
-    }
+    },
   },
   methods: {
     hideMobile () {
-      if (document.body.classList.contains('sidebar-mobile-show')) {
+      if (document.body.classList.contains('sidebar-mobile-show'))
         document.body.classList.toggle('sidebar-mobile-show')
-      }
-    }
-  }
+    },
+  },
 }
 </script>

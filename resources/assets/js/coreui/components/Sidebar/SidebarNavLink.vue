@@ -1,53 +1,61 @@
 <template>
   <div v-if="isExternalLink">
-    <a :href="url" :class="classList">
-      <i :class="icon"></i> {{name}}
-      <b-badge v-if="badge && badge.text" :variant="badge.variant">{{badge.text}}</b-badge>
+    <a
+      :href="url"
+      :class="classList">
+      <i :class="icon"/> {{ name }}
+      <b-badge
+        v-if="badge && badge.text"
+        :variant="badge.variant">{{ badge.text }}</b-badge>
     </a>
   </div>
   <div v-else>
-    <router-link :to="url" :class="classList">
-      <i :class="icon"></i> {{name}}
-      <b-badge v-if="badge && badge.text" :variant="badge.variant">{{badge.text}}</b-badge>
+    <router-link
+      :to="url"
+      :class="classList">
+      <i :class="icon"/> {{ name }}
+      <b-badge
+        v-if="badge && badge.text"
+        :variant="badge.variant">{{ badge.text }}</b-badge>
     </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'sidebar-nav-link',
+  name : 'SidebarNavLink',
   props: {
     name: {
-      type: String,
-      default: ''
+      type   : String,
+      default: '',
     },
     url: {
-      type: String,
-      default: ''
+      type   : String,
+      default: '',
     },
     icon: {
-      type: String,
-      default: ''
+      type   : String,
+      default: '',
     },
     badge: {
-      type: Object,
-      default: () => {}
+      type   : Object,
+      default: () => {},
     },
     variant: {
-      type: String,
-      default: ''
+      type   : String,
+      default: '',
     },
     classes: {
-      type: String,
-      default: ''
-    }
+      type   : String,
+      default: '',
+    },
   },
   computed: {
     classList () {
       return [
         'nav-link',
         this.linkVariant,
-        ...this.itemClasses
+        ...this.itemClasses,
       ]
     },
     linkVariant () {
@@ -57,12 +65,11 @@ export default {
       return this.classes ? this.classes.split(' ') : []
     },
     isExternalLink () {
-      if (this.url.substring(0, 4) === 'http') {
+      if (this.url.substring(0, 4) === 'http')
         return true
-      } else {
+      else
         return false
-      }
-    }
-  }
+    },
+  },
 }
 </script>

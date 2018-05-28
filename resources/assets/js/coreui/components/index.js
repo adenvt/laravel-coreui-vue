@@ -13,5 +13,5 @@ export {
   Footer,
   Header,
   Sidebar,
-  Switch
+  Switch,
 }

@@ -1,60 +1,64 @@
 <template>
   <label :class="classList">
-    <input type="checkbox"
-           class="switch-input"
-           :value="value"
-           :checked="isChecked"
-           @change="handleChange">
+    <input
+      type="checkbox"
+      class="switch-input"
+      :value="value"
+      :checked="isChecked"
+      @change="handleChange">
     <template v-if="isOn">
-      <span class="switch-label" :data-on="on" :data-off="off"></span>
+      <span
+        class="switch-label"
+        :data-on="on"
+        :data-off="off"/>
     </template>
     <template v-else>
-      <span class="switch-label"></span>
+      <span class="switch-label"/>
     </template>
-    <span class="switch-handle"></span>
+    <span class="switch-handle"/>
   </label>
 </template>
 
 <script>
 export default {
   model: {
-    prop: 'checked',
-    event: 'change'
+    prop : 'checked',
+    event: 'change',
   },
   props: {
     value: {
-      default: true
+      default: true,
     },
     uncheckedValue: {
-      default: false
+      default: false,
     },
     checked: {
-      default: false
+      default: false,
     },
     type: {
-      type: String,
-      default: 'default'
+      type   : String,
+      default: 'default',
     },
     variant: {
-      type: String,
-      default: ''
+      type   : String,
+      default: '',
     },
     pill: {
-      type: Boolean,
-      default: false
+      type   : Boolean,
+      default: false,
     },
     on: {
-      type: String,
-      default: null
+      type   : String,
+      default: null,
     },
     off: {
-      type: String,
-      default: null
+      type   : String,
+      default: null,
     },
     size: {
-      type: String,
-      default: null
-    }
+      type   : String,
+      default: null,
+    },
   },
   computed: {
     classList () {
@@ -63,7 +67,7 @@ export default {
         this.switchType,
         this.switchVariant,
         this.switchPill,
-        this.switchSize
+        this.switchSize,
       ]
     },
     switchType () {
@@ -83,12 +87,12 @@ export default {
     },
     isOn () {
       return !this.on ? null : true
-    }
+    },
   },
   methods: {
     handleChange ({ target: { checked } }) {
       this.$emit('change', checked ? this.value : this.uncheckedValue)
-    }
-  }
+    },
+  },
 }
 </script>

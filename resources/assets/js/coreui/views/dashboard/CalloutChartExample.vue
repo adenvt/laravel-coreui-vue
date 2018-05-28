@@ -9,43 +9,43 @@ import { Line } from 'vue-chartjs'
 
 export default {
   extends: Line,
-  props: ['data', 'height', 'width', 'variant'],
+  props  : ['data', 'height', 'width', 'variant'],
   mounted () {
     this.renderChart({
-      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      labels  : ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
       datasets: [
         {
           backgroundColor: 'transparent',
-          borderColor: this.variant ? this.variant : '#c2cfd6',
-          data: this.data
-        }
-      ]
+          borderColor    : this.variant ? this.variant : '#c2cfd6',
+          data           : this.data,
+        },
+      ],
     }, {
-      responsive: true,
+      responsive         : true,
       maintainAspectRatio: true,
-      scales: {
+      scales             : {
         xAxes: [{
-          display: false
+          display: false,
         }],
         yAxes: [{
-          display: false
-        }]
+          display: false,
+        }],
       },
       elements: {
         line: {
-          borderWidth: 2
+          borderWidth: 2,
         },
         point: {
-          radius: 0,
-          hitRadius: 10,
-          hoverRadius: 4,
-          hoverBorderWidth: 3
-        }
+          radius          : 0,
+          hitRadius       : 10,
+          hoverRadius     : 4,
+          hoverBorderWidth: 3,
+        },
       },
       legend: {
-        display: false
-      }
+        display: false,
+      },
     })
-  }
+  },
 }
 </script>

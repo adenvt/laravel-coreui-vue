@@ -11,10 +11,15 @@
           <b-input-group>
             <b-input-group-prepend>
               <b-input-group-text>
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search"/>
               </b-input-group-text>
             </b-input-group-prepend>
-            <input id="prependedInput" class="form-control" size="16" type="text" placeholder="What are you looking for?">
+            <input
+              id="prependedInput"
+              class="form-control"
+              size="16"
+              type="text"
+              placeholder="What are you looking for?">
             <b-input-group-append>
               <b-button variant="info">Search</b-button>
             </b-input-group-append>
@@ -27,6 +32,6 @@
 
 <script>
 export default {
-  name: 'Page500'
+  name: 'Page500',
 }
 </script>
