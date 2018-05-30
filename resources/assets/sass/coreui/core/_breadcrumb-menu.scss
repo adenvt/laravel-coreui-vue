@@ -10,26 +10,27 @@
   }
 
   .btn {
-    padding: 0 $input-btn-padding-x;
-    color: $text-muted;
-    vertical-align: top;
     border: 0;
+    color: $text-muted;
+    padding: 0 $input-btn-padding-x;
+    vertical-align: top;
 
-    &:hover, &.active {
-      color: $body-color;
+    &:hover,
+    &.active {
       background: transparent;
+      color: $body-color;
     }
   }
 
   .open {
     .btn {
-      color: $body-color;
       background: transparent;
+      color: $body-color;
     }
   }
 
   .dropdown-menu {
-    min-width: 180px;
     line-height: $line-height-base;
+    min-width: 180px;
   }
 }
