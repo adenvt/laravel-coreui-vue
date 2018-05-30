@@ -3,13 +3,14 @@ button {
 }
 
 .btn-transparent {
-  color: #fff;
   background-color: transparent;
   border-color: transparent;
+  color: #fff;
 }
 
 .btn {
-  [class^="icon-"], [class*=" icon-"] {
+  [class^='icon-'],
+  [class*=' icon-'] {
     display: inline-block;
     margin-top: -2px;
     vertical-align: middle;
@@ -41,21 +42,24 @@ button {
 .btn-vine,
 .btn-foursquare,
 .btn-vimeo {
-  position: relative;
-  overflow: hidden;
+
+  @include button-social-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
   color: #fff !important;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 
+  /* stylelint-disable font-family-no-missing-generic-family-keyword */
   &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
-    font-family: "FontAwesome";
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'FontAwesome';
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 
   &:hover {
@@ -63,7 +67,6 @@ button {
   }
 
   &.icon {
-
     span {
       display: none;
     }
@@ -78,7 +81,6 @@ button {
       margin-left: 0 !important;
     }
   }
-  @include button-social-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
 
   &.btn-lg {
     @include button-social-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
@@ -94,9 +96,10 @@ button {
   $color: $facebook;
 
   background: $color;
+
   &::before {
-    content: "\f09a";
     background: darken($color, 5%);
+    content: '\f09a';
 
   }
 
@@ -113,9 +116,10 @@ button {
   $color: $twitter;
 
   background: $color;
+
   &::before {
-    content: "\f099";
     background: darken($color, 5%);
+    content: '\f099';
 
   }
 
@@ -132,9 +136,10 @@ button {
   $color: $linkedin;
 
   background: $color;
+
   &::before {
-    content: "\f0e1";
     background: darken($color, 5%);
+    content: '\f0e1';
 
   }
 
@@ -151,9 +156,10 @@ button {
   $color: $flickr;
 
   background: $color;
+
   &::before {
-    content: "\f16e";
     background: darken($color, 5%);
+    content: '\f16e';
 
   }
 
@@ -170,9 +176,10 @@ button {
   $color: $tumblr;
 
   background: $color;
+
   &::before {
-    content: "\f173";
     background: darken($color, 5%);
+    content: '\f173';
 
   }
 
@@ -189,9 +196,10 @@ button {
   $color: $xing;
 
   background: $color;
+
   &::before {
-    content: "\f168";
     background: darken($color, 5%);
+    content: '\f168';
 
   }
 
@@ -208,9 +216,10 @@ button {
   $color: $github;
 
   background: $color;
+
   &::before {
-    content: "\f09b";
     background: darken($color, 5%);
+    content: '\f09b';
 
   }
 
@@ -227,9 +236,10 @@ button {
   $color: $html5;
 
   background: $color;
+
   &::before {
-    content: "\f13b";
     background: darken($color, 5%);
+    content: '\f13b';
 
   }
 
@@ -246,9 +256,10 @@ button {
   $color: $openid;
 
   background: $color;
+
   &::before {
-    content: "\f19b";
     background: darken($color, 5%);
+    content: '\f19b';
 
   }
 
@@ -265,9 +276,10 @@ button {
   $color: $stack-overflow;
 
   background: $color;
+
   &::before {
-    content: "\f16c";
     background: darken($color, 5%);
+    content: '\f16c';
 
   }
 
@@ -284,9 +296,10 @@ button {
   $color: $css3;
 
   background: $color;
+
   &::before {
-    content: "\f13c";
     background: darken($color, 5%);
+    content: '\f13c';
 
   }
 
@@ -303,9 +316,10 @@ button {
   $color: $youtube;
 
   background: $color;
+
   &::before {
-    content: "\f167";
     background: darken($color, 5%);
+    content: '\f167';
 
   }
 
@@ -322,9 +336,10 @@ button {
   $color: $dribbble;
 
   background: $color;
+
   &::before {
-    content: "\f17d";
     background: darken($color, 5%);
+    content: '\f17d';
 
   }
 
@@ -341,9 +356,10 @@ button {
   $color: $google-plus;
 
   background: $color;
+
   &::before {
-    content: "\f0d5";
     background: darken($color, 5%);
+    content: '\f0d5';
 
   }
 
@@ -360,9 +376,10 @@ button {
   $color: $instagram;
 
   background: $color;
+
   &::before {
-    content: "\f16d";
     background: darken($color, 5%);
+    content: '\f16d';
 
   }
 
@@ -379,9 +396,10 @@ button {
   $color: $pinterest;
 
   background: $color;
+
   &::before {
-    content: "\f0d2";
     background: darken($color, 5%);
+    content: '\f0d2';
 
   }
 
@@ -398,9 +416,10 @@ button {
   $color: $vk;
 
   background: $color;
+
   &::before {
-    content: "\f189";
     background: darken($color, 5%);
+    content: '\f189';
 
   }
 
@@ -417,9 +436,10 @@ button {
   $color: $yahoo;
 
   background: $color;
+
   &::before {
-    content: "\f19e";
     background: darken($color, 5%);
+    content: '\f19e';
 
   }
 
@@ -436,9 +456,10 @@ button {
   $color: $behance;
 
   background: $color;
+
   &::before {
-    content: "\f1b4";
     background: darken($color, 5%);
+    content: '\f1b4';
 
   }
 
@@ -455,9 +476,10 @@ button {
   $color: $dropbox;
 
   background: $color;
+
   &::before {
-    content: "\f16b";
     background: darken($color, 5%);
+    content: '\f16b';
 
   }
 
@@ -474,9 +496,10 @@ button {
   $color: $reddit;
 
   background: $color;
+
   &::before {
-    content: "\f1a1";
     background: darken($color, 5%);
+    content: '\f1a1';
 
   }
 
@@ -493,9 +516,10 @@ button {
   $color: $spotify;
 
   background: $color;
+
   &::before {
-    content: "\f1bc";
     background: darken($color, 5%);
+    content: '\f1bc';
 
   }
 
@@ -512,9 +536,10 @@ button {
   $color: $vine;
 
   background: $color;
+
   &::before {
-    content: "\f1ca";
     background: darken($color, 5%);
+    content: '\f1ca';
 
   }
 
@@ -531,9 +556,10 @@ button {
   $color: $foursquare;
 
   background: $color;
+
   &::before {
-    content: "\f180";
     background: darken($color, 5%);
+    content: '\f180';
 
   }
 
@@ -550,9 +576,10 @@ button {
   $color: $vimeo;
 
   background: $color;
+
   &::before {
-    content: "\f194";
     background: darken($color, 5%);
+    content: '\f194';
 
   }
 

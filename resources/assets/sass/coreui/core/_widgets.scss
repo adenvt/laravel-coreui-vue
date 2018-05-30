@@ -1,20 +1,19 @@
 // .social-box
 .social-box {
-  min-height: 160px;
-  margin-bottom: 2 * $card-spacer-y;
-  text-align: center;
+  @include border-radius($card-border-radius);
   background: #fff;
   border: $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
+  margin-bottom: 2 * $card-spacer-y;
+  min-height: 160px;
+  text-align: center;
 
   i {
+    @include border-radius($card-border-radius $card-border-radius 0 0);
+    background: $gray-200;
     display: block;
-    margin: -1px -1px 0;
     font-size: 40px;
     line-height: 90px;
-    background: $gray-200;
-
-    @include border-radius($card-border-radius $card-border-radius 0 0);
+    margin: -1px -1px 0;
   }
 
   .chart-wrapper {
@@ -22,15 +21,14 @@
     margin: -90px 0 0;
 
     canvas {
-      width: 100% !important;
       height: 90px !important;
+      width: 100% !important;
     }
   }
 
   ul {
-    padding: 10px 0;
     list-style: none;
-
+    padding: 10px 0;
 
     li {
       display: block;
@@ -47,9 +45,9 @@
       }
 
       span {
+        color: $border-color;
         font-size: 10px;
         font-weight: 500;
-        color: $border-color;
         text-transform: uppercase;
       }
     }
@@ -57,57 +55,57 @@
 
   &.facebook {
     i {
-      color: #fff;
       background: $facebook;
+      color: #fff;
     }
   }
 
   &.twitter {
     i {
-      color: #fff;
       background: $twitter;
+      color: #fff;
     }
   }
 
   &.linkedin {
     i {
-      color: #fff;
       background: $linkedin;
+      color: #fff;
     }
   }
 
   &.google-plus {
-    i {
-      color: #fff;
+    s i {
       background: $google-plus;
+      color: #fff;
     }
   }
 }
 
 .horizontal-bars {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   li {
-    position: relative;
     height: 40px;
     line-height: 40px;
+    position: relative;
     vertical-align: middle;
 
     .title {
-      width: 100px;
+      color: $text-muted;
       font-size: 12px;
       font-weight: 600;
-      color: $text-muted;
       vertical-align: middle;
+      width: 100px;
     }
 
     .bars {
+      padding-left: 100px;
       position: absolute;
       top: 15px;
       width: 100%;
-      padding-left: 100px;
 
       .progress:first-child {
         margin-bottom: 2px;
@@ -119,9 +117,9 @@
 
       .badge {
         display: inline-block;
-        width: 8px;
         height: 8px;
         padding: 0;
+        width: 8px;
       }
     }
 
@@ -135,26 +133,25 @@
   }
 
   &.type-2 {
-
     li {
       overflow: hidden;
 
       i {
         display: inline-block;
-        margin-right: $spacer;
-        margin-left: 5px;
         font-size: 18px;
         line-height: 40px;
+        margin-left: 5px;
+        margin-right: $spacer;
       }
 
       .title {
+        color: $body-color;
         display: inline-block;
-        width: auto;
-        margin-top: -9px;
         font-size: $font-size-base;
         font-weight: normal;
         line-height: 40px;
-        color: $body-color;
+        margin-top: -9px;
+        width: auto;
       }
 
       .value {
@@ -163,56 +160,57 @@
       }
 
       .bars {
-        position: absolute;
-        top: auto;
         bottom: 0;
         padding: 0;
+        position: absolute;
+        top: auto;
       }
     }
   }
 }
 
 .icons-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   li {
-    position: relative;
     height: 40px;
+    position: relative;
     vertical-align: middle;
 
     i {
       display: block;
       float: left;
-      width: 35px !important;
       height: 35px !important;
-      margin: 2px;
       line-height: 35px !important;
+      margin: 2px;
       text-align: center;
+      width: 35px !important;
     }
 
     .desc {
+      border-bottom: 1px solid $border-color;
       height: 40px;
       margin-left: 50px;
-      border-bottom: 1px solid $border-color;
 
       .title {
-        padding: 2px 0 0;
         margin: 0;
+        padding: 2px 0 0;
       }
+
       small {
+        color: $text-muted;
         display: block;
         margin-top: -4px;
-        color: $text-muted;
       }
     }
 
     .value {
       position: absolute;
-      top: 2px;
       right: 45px;
       text-align: right;
+      top: 2px;
 
       strong {
         display: block;
@@ -221,21 +219,21 @@
     }
 
     .actions {
-      position: absolute;
-      top: -4px;
-      right: 10px;
-      width: 40px;
       height: 40px;
       line-height: 40px;
+      position: absolute;
+      right: 10px;
       text-align: center;
+      top: -4px;
+      width: 40px;
 
       i {
         float: none;
-        width: auto;
         height: auto;
-        padding: 0;
-        margin: 0;
         line-height: normal;
+        margin: 0;
+        padding: 0;
+        width: auto;
       }
     }
 
@@ -243,10 +241,10 @@
       height: 40px;
 
       i {
-        width: auto;
+        font-size: 18px;
         height: auto;
         margin: 2px 0 0;
-        font-size: 18px;
+        width: auto;
       }
     }
   }

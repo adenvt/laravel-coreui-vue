@@ -1,44 +1,41 @@
 // scss-lint:disable NestingDepth, SelectorDepth
 .sidebar {
+  @include borders($sidebar-borders);
+  background: $sidebar-bg;
+  color: $sidebar-color;
   display: flex;
   flex-direction: column;
   padding: $sidebar-padding;
-  color: $sidebar-color;
-  background: $sidebar-bg;
-  @include borders($sidebar-borders);
 
   .sidebar-close {
-    position: absolute;
-    right: 0;
+    background: 0;
+    border: 0;
+    color: $sidebar-color;
     display: none;
-    padding: 0 $spacer;
     font-size: 24px;
     font-weight: 800;
     line-height: $navbar-height;
-    color: $sidebar-color;
-    background: 0;
-    border: 0;
-    opacity: .8;
+    opacity: 0.8;
+    padding: 0 $spacer;
+    position: absolute;
+    right: 0;
 
     &:hover {
       opacity: 1;
     }
-  }
-
-  // Will be added soon
+  } // Will be added soon
   // .sidebar-brand { }
-
   .sidebar-header {
+    background: $sidebar-header-bg;
     flex: 0 0 $sidebar-header-height;
     padding: $sidebar-header-padding-y $sidebar-header-padding-x;
     text-align: center;
-    background: $sidebar-header-bg;
   }
 
   .sidebar-form .form-control {
-    color: $sidebar-form-color;
     background: $sidebar-form-bg;
     border: $sidebar-form-border;
+    color: $sidebar-form-color;
 
     &::placeholder {
       color: $sidebar-form-placeholder-color;
@@ -46,33 +43,33 @@
   }
 
   .sidebar-nav {
-    position: relative;
+    @include sidebar-width($sidebar-borders, $sidebar-width);
     flex: 1;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     overflow-x: hidden;
     overflow-y: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    @include sidebar-width($sidebar-borders, $sidebar-width);
+    position: relative;
 
     &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      margin-left: -10px;
       position: absolute;
       width: 10px;
-      margin-left: -10px;
-      -webkit-appearance: none;
     }
 
     &::-webkit-scrollbar-track {
       background-color: lighten($sidebar-bg, 5%);
-      border-right: 1px solid darken($sidebar-bg, 5%);
       border-left: 1px solid darken($sidebar-bg, 5%);
+      border-right: 1px solid darken($sidebar-bg, 5%);
     }
 
     &::-webkit-scrollbar-thumb {
-      height: 50px;
-      background-color: darken($sidebar-bg, 10%);
       background-clip: content-box;
+      background-color: darken($sidebar-bg, 10%);
       border-color: transparent;
       border-style: solid;
       border-width: 1px 2px;
+      height: 50px;
     }
   }
 
@@ -83,54 +80,52 @@
   }
 
   .nav-title {
-    padding: $sidebar-nav-title-padding-y $sidebar-nav-title-padding-x;
+    color: $sidebar-nav-title-color;
     font-size: 11px;
     font-weight: 600;
-    color: $sidebar-nav-title-color;
+    padding: $sidebar-nav-title-padding-y $sidebar-nav-title-padding-x;
     text-transform: uppercase;
   }
 
-  .nav-divider, .divider {
+  .nav-divider,
+  .divider {
     height: 10px;
   }
 
   .nav-item {
-    position: relative;
     margin: 0;
-    transition: background .3s ease-in-out;
+    position: relative;
+    transition: background 0.3s ease-in-out;
   }
 
   .nav-dropdown-items {
-    max-height: 0;
-    padding: 0;
     margin: 0;
+    max-height: 0;
     overflow-y: hidden;
-    transition: max-height .3s ease-in-out;
+    padding: 0;
+    transition: max-height 0.3s ease-in-out;
 
     .nav-item {
-      padding: 0;
       list-style: none;
+      padding: 0;
     }
   }
 
   .nav-link {
+    @include borders($sidebar-nav-link-borders);
+    background: $sidebar-nav-link-bg;
+    color: $sidebar-nav-link-color;
     display: block;
     padding: $sidebar-nav-link-padding-y $sidebar-nav-link-padding-x;
-    color: $sidebar-nav-link-color;
     text-decoration: none;
-    background: $sidebar-nav-link-bg;
-    @include borders($sidebar-nav-link-borders);
-    @if $enable-sidebar-nav-rounded {
-      border-radius: $border-radius;
-    }
 
     i {
-      display: inline-block;
-      width: 20px;
-      margin: 0 ($sidebar-nav-link-padding-x / 2) 0 0;
-      font-size: 14px;
       color: $sidebar-nav-link-icon-color;
+      display: inline-block;
+      font-size: 14px;
+      margin: 0 ($sidebar-nav-link-padding-x / 2) 0 0;
       text-align: center;
+      width: 20px;
     }
 
     .badge {
@@ -139,9 +134,9 @@
     }
 
     &.active {
-      color: $sidebar-nav-link-active-color;
-      background: $sidebar-nav-link-active-bg;
       @include borders($sidebar-nav-link-active-borders);
+      background: $sidebar-nav-link-active-bg;
+      color: $sidebar-nav-link-active-color;
 
       i {
         color: $sidebar-nav-link-active-icon-color;
@@ -149,9 +144,9 @@
     }
 
     &:hover {
-      color: $sidebar-nav-link-hover-color;
-      background: $sidebar-nav-link-hover-bg;
       @include borders($sidebar-nav-link-hover-borders);
+      background: $sidebar-nav-link-hover-bg;
+      color: $sidebar-nav-link-hover-color;
 
       i {
         color: $sidebar-nav-link-hover-icon-color;
@@ -161,73 +156,76 @@
         background-image: $sidebar-nav-dropdown-indicator-hover;
       }
     }
-
-    @each $color, $value in $theme-colors {
+    @if $enable-sidebar-nav-rounded {
+      border-radius: $border-radius;
+    }
+    @each $color,
+      $value in $theme-colors {
       &.nav-link-#{$color} {
         background: $value;
+
         i {
-          color: rgba(255,255,255,.7);
+          color: rgba(255, 255, 255, 0.7);
         }
+
         &:hover {
-          background: darken($value,5%) !important;
+          background: darken($value, 5%) !important;
+
           i {
             color: #fff;
           }
         }
       }
     }
-  }
-
-  //  ex. <a class="nav-link nav-dropdown-toggle" href="#">Components</a>
+  } //  ex. <a class="nav-link nav-dropdown-toggle" href="#">Components</a>
   .nav-dropdown-toggle {
     position: relative;
 
     &::before {
-      position: absolute;
-      top: 50%;
-      right: $sidebar-nav-link-padding-x;
-      display: block;
-      width: 8px;
-      height: 8px;
-      padding: 0;
-      margin-top: -4px;
-      content: "";
       background-image: $sidebar-nav-dropdown-indicator;
-      background-repeat: no-repeat;
       background-position: center;
-      transition: transform .3s;
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 8px;
+      margin-top: -4px;
+      padding: 0;
+      position: absolute;
+      right: $sidebar-nav-link-padding-x;
+      top: 50%;
+      transition: transform 0.3s;
+      width: 8px;
     }
-  }
-
-  // ex.  <li class="nav-item nav-dropdown">
+  } // ex.  <li class="nav-item nav-dropdown">
   .nav-dropdown.open {
-    background: $sidebar-nav-dropdown-bg;
     @include borders($sidebar-nav-dropdown-borders);
-    @if $enable-sidebar-nav-rounded {
-      border-radius: $border-radius;
-    }
-    > .nav-dropdown-items {
+    background: $sidebar-nav-dropdown-bg;
+
+    >.nav-dropdown-items {
       max-height: 1500px;
     }
 
     .nav-link {
-      color: $sidebar-nav-dropdown-color;
       border-left: 0 !important;
+      color: $sidebar-nav-dropdown-color;
     }
 
-    > .nav-link.nav-dropdown-toggle::before {
+    >.nav-link.nav-dropdown-toggle::before {
       transform: rotate(-90deg);
     }
 
     .nav-dropdown.open {
       border-left: 0;
     }
+    @if $enable-sidebar-nav-rounded {
+      border-radius: $border-radius;
+    }
   }
 
   .nav-label {
+    color: $sidebar-nav-title-color;
     display: block;
     padding: ($sidebar-nav-link-padding-y / 8) $sidebar-nav-link-padding-x;
-    color: $sidebar-nav-title-color;
 
     &:hover {
       color: $sidebar-color;
@@ -235,47 +233,41 @@
     }
 
     i {
-      width: 20px;
-      margin: -3px ($sidebar-nav-link-padding-x / 2) 0 0;
-      font-size: 10px;
       color: $sidebar-nav-link-icon-color;
+      font-size: 10px;
+      margin: -3px ($sidebar-nav-link-padding-x / 2) 0 0;
       text-align: center;
       vertical-align: middle;
-    }
-  }
-
-  @if (lightness( $sidebar-bg ) < 40) {
-    .progress {
-      background-color: lighten($sidebar-bg, 15%) !important;
+      width: 20px;
     }
   }
 
   .sidebar-footer {
+    @include borders($sidebar-footer-borders);
+    background: $sidebar-footer-bg;
     flex: 0 0 $sidebar-footer-height;
     padding: $sidebar-footer-padding-y $sidebar-footer-padding-x;
-    background: $sidebar-footer-bg;
-    @include borders($sidebar-footer-borders);
   }
 
   .sidebar-minimizer {
-    position: relative;
-    flex: 0 0 $sidebar-minimizer-height;
+    @include borders($sidebar-minimizer-borders);
     background-color: $sidebar-minimizer-bg;
     border: 0;
-    @include borders($sidebar-minimizer-borders);
+    flex: 0 0 $sidebar-minimizer-height;
+    position: relative;
 
     &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: $sidebar-minimizer-height;
-      height: $sidebar-minimizer-height;
-      content: "";
       background-image: $sidebar-minimizer-indicator;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
       background-size: $sidebar-minimizer-height / 4;
-      transition: .3s;
+      content: '';
+      height: $sidebar-minimizer-height;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.3s;
+      width: $sidebar-minimizer-height;
     }
 
     &:focus,
@@ -285,9 +277,15 @@
 
     &:hover {
       background-color: $sidebar-minimizer-hover-bg;
+
       &::before {
         background-image: $sidebar-minimizer-hover-indicator;
       }
+    }
+  }
+  @if (lightness( $sidebar-bg) < 40) {
+    .progress {
+      background-color: lighten($sidebar-bg, 15%) !important;
     }
   }
 }
@@ -307,27 +305,26 @@
         }
 
         .nav-item {
-          width: $sidebar-compact-width;
           border-left: 0 !important;
+          width: $sidebar-compact-width;
 
           .nav-link {
             text-align: center;
 
             i {
               display: block;
-              width: 100%;
-              margin: $spacer / 4 0;
               font-size: 24px;
+              margin: $spacer / 4 0;
+              width: 100%;
             }
 
             .badge {
               position: absolute;
-              top: 18px;
               right: 10px;
+              top: 18px;
             }
 
             &.nav-dropdown-toggle {
-
               &::before {
                 top: 30px;
               }
@@ -336,26 +333,26 @@
         }
       }
     }
-  }
-
-  // Minimized Sidebar
+  } // Minimized Sidebar
   .sidebar-minimized {
     .hidden-cn {
       display: none;
     }
+
     .sidebar {
       z-index: $zindex-sticky - 1;
 
       .sidebar-nav {
-        overflow: visible;
         @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
+        overflow: visible;
       }
 
       .nav {
         @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
       }
 
-      .nav-divider, .divider,
+      .nav-divider,
+      .divider,
       .nav-title,
       .sidebar-footer,
       .sidebar-form,
@@ -364,20 +361,20 @@
       }
 
       .sidebar-minimizer::before {
-        width: 100%;
         transform: rotate(-180deg);
+        width: 100%;
       }
 
       .nav-item {
-        width: $sidebar-minimized-width;
-        overflow: hidden;
         border-left: 0 !important;
+        overflow: hidden;
+        width: $sidebar-minimized-width;
 
         &:hover {
-          width: $sidebar-width + $sidebar-minimized-width;
           overflow: visible;
+          width: $sidebar-width + $sidebar-minimized-width;
 
-          > .nav-link {
+          >.nav-link {
             background: $sidebar-nav-link-hover-bg;
 
             i {
@@ -388,30 +385,29 @@
       }
 
       .nav-link {
-        position: relative;
-        padding-left: 0;
-        margin: 0;
-        white-space: nowrap;
         border-left: 0 !important;
+        margin: 0;
+        padding-left: 0;
+        position: relative;
+        white-space: nowrap;
 
         i {
           display: block;
-          float: left;
-          width: $sidebar-minimized-height;
-          // padding: 0;
+          float: left; // padding: 0;
           // margin: 0 !important;
           font-size: 18px;
+          width: $sidebar-minimized-height;
         }
 
         .badge {
+          display: none;
           position: absolute;
           right: 15px;
-          display: none;
         }
 
         &:hover {
-          width: $sidebar-width + $sidebar-minimized-width;
           background: $sidebar-nav-link-hover-bg;
+          width: $sidebar-width + $sidebar-minimized-width;
 
           .badge {
             display: inline;
@@ -433,19 +429,20 @@
         }
       }
 
-      .nav > .nav-dropdown {
-        > .nav-dropdown-items {
+      .nav>.nav-dropdown {
+        >.nav-dropdown-items {
+          background: $sidebar-bg;
           display: none;
           max-height: 1000px;
-          background: $sidebar-bg;
         }
 
         &:hover {
           background: $sidebar-nav-link-hover-bg;
-          > .nav-dropdown-items {
-            position: absolute;
-            left: $sidebar-minimized-width;
+
+          >.nav-dropdown-items {
             display: inline;
+            left: $sidebar-minimized-width;
+            position: absolute;
           }
         }
       }

@@ -1,17 +1,19 @@
 @mixin button-social-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
-  padding: $padding-y $padding-x;
+
+  @include border-radius($border-radius);
+  border: 0;
   font-size: $font-size;
   line-height: $line-height;
-  border: 0;
-  @include border-radius($border-radius);
+  padding: $padding-y $padding-x;
 
   &::before {
-    width: ($padding-y * 2) + ($font-size * $line-height);
-    height: ($padding-y * 2) + ($font-size * $line-height);
-    padding: $padding-y 0;
-    font-size: $font-size;
-    line-height: $line-height;
+
     @include border-radius($border-radius);
+    font-size: $font-size;
+    height: ($padding-y * 2) + ($font-size * $line-height);
+    line-height: $line-height;
+    padding: $padding-y 0;
+    width: ($padding-y * 2) + ($font-size * $line-height);
   }
 
   span {
@@ -19,60 +21,74 @@
   }
 
   &.icon {
-    width: ($padding-y * 2) + ($font-size * $line-height);
     height: ($padding-y * 2) + ($font-size * $line-height);
+    width: ($padding-y * 2) + ($font-size * $line-height);
   }
 }
 
 @mixin avatar($width, $status-width) {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: $width;
 
   .img-avatar {
-    width: $width;
     height: $width;
+    width: $width;
   }
 
   .avatar-status {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: $status-width;
-    height: $status-width;
     border: 1px solid #fff;
     border-radius: 50em;
+    bottom: 0;
+    display: block;
+    height: $status-width;
+    position: absolute;
+    right: 0;
+    width: $status-width;
   }
 }
 
 @mixin borders($borders) {
   @each $border in $borders {
     $direction: nth($border, 1);
-    @if $direction == "all" {
+
+    @if $direction == 'all' {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
+
       border: $size $style $color;
-    } @else if $direction == "top" {
+    }
+
+    @else if $direction == 'top' {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
+
       border-top: $size $style $color;
-    } @else if $direction == "right" {
+    }
+
+    @else if $direction == 'right' {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
+
       border-right: $size $style $color;
-    } @else if $direction == "bottom" {
+    }
+
+    @else if $direction == 'bottom' {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
+
       border-bottom: $size $style $color;
-    } @else if $direction == "left" {
+    }
+
+    @else if $direction == 'left' {
       $size: map-get(map-get($borders, $direction), size);
       $style: map-get(map-get($borders, $direction), style);
       $color: map-get(map-get($borders, $direction), color);
+
       border-left: $size $style $color;
     }
   }
@@ -83,26 +99,34 @@
 
   @each $border in $borders {
     $direction: nth($border, 1);
-    @if $direction == "all" {
+
+    width: $sidebar-width;
+
+    @if $direction == 'all' {
       $size: map-get(map-get($borders, $direction), size);
       $sidebar-width: ($sidebar-width - (2 * $size));
-    } @else if $direction == "right" {
-      $size: map-get(map-get($borders, $direction), size);
-      $sidebar-width: $sidebar-width - $size;
-    } @else if $direction == "left" {
+    }
+
+    @else if $direction == 'right' {
       $size: map-get(map-get($borders, $direction), size);
       $sidebar-width: $sidebar-width - $size;
     }
-    width: $sidebar-width;
+
+    @else if $direction == 'left' {
+      $size: map-get(map-get($borders, $direction), size);
+      $sidebar-width: $sidebar-width - $size;
+    }
   }
 }
 
 @mixin bg-variant($parent, $color) {
   #{$parent} {
     @include border-radius($card-border-radius-inner $card-border-radius-inner $card-border-radius-inner $card-border-radius-inner);
-    color: #fff !important;
     background-color: $color !important;
+
+    color: #fff !important;
   }
+
   a#{$parent} {
     @include hover-focus {
       background-color: darken($color, 10%);
@@ -111,6 +135,6 @@
 }
 
 @mixin card-accent-variant($color) {
-  border-top-width: 2px;
   border-top-color: $color;
+  border-top-width: 2px;
 }

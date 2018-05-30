@@ -7,7 +7,7 @@
  */
 
 // Override Boostrap variables
-@import "bootstrap-variables";
+@import 'bootstrap-variables';
 
 // Override Vendor variable
 $fa-font-path: '~font-awesome/fonts/';
@@ -16,17 +16,17 @@ $simple-line-font-path: '~simple-line-icons/fonts/';
 // Import Bootstrap source files
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
-
 @import '~font-awesome/css/font-awesome.min.css';
 @import '~simple-line-icons/css/simple-line-icons.css';
+@import '~flag-icon-css/css/flag-icon.min.css';
 
 // Import Other CSS Module
 
 // Override core variables
-@import "core-variables";
+@import 'core-variables';
 
 // Import core styles
-@import "core/core";
+@import 'core/core';
 
 // Custom styles
-@import "custom";
+@import 'custom';

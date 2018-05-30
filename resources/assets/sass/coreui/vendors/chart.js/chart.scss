@@ -10,11 +10,12 @@
 .doughnut-legend {
   list-style-type: none;
   margin-top: 5px;
-  text-align: center;
+  padding-left: 0;
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
-  padding-left: 0;
+  text-align: center;
 }
+
 .chart-legend li,
 .bar-legend li,
 .line-legend li,
@@ -22,15 +23,18 @@
 .radar-legend li,
 .polararea-legend li,
 .doughnut-legend li {
-  display: inline-block;
-  white-space: nowrap;
-  position: relative;
-  margin-bottom: 4px;
+
   @include border-radius($border-radius);
-  padding: 2px 8px 2px 28px;
-  font-size: smaller;
   cursor: default;
+  display: inline-block;
+  font-size: smaller;
+  margin-bottom: 4px;
+
+  padding: 2px 8px 2px 28px;
+  position: relative;
+  white-space: nowrap;
 }
+
 .chart-legend li span,
 .bar-legend li span,
 .line-legend li span,
@@ -38,11 +42,12 @@
 .radar-legend li span,
 .polararea-legend li span,
 .doughnut-legend li span {
+
+  @include border-radius($border-radius);
   display: block;
-  position: absolute;
+  height: 20px;
   left: 0;
+  position: absolute;
   top: 0;
   width: 20px;
-  height: 20px;
-  @include border-radius($border-radius);
 }
