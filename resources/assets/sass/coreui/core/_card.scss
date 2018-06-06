@@ -1,0 +1,194 @@
+.card {
+  margin-bottom: 1.5 * $spacer; // Cards with color accent
+
+  @each $color,
+    $value in $theme-colors {
+    &.bg-#{$color} {
+      border-color: darken($value, 12.5%);
+
+      .card-header {
+        background-color: darken($value, 3%);
+        border-color: darken($value, 12.5%);
+      }
+    }
+  }
+
+  &.drag,
+  .drag {
+    cursor: move;
+  }
+}
+
+.text-white .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.card-header {
+  .icon-bg {
+    background: $card-icon-bg;
+    border-right: $card-border-width solid $card-border-color;
+    color: $card-icon-color;
+    display: inline-block;
+    line-height: inherit;
+    margin-bottom: -$card-spacer-y;
+    margin-left: -$card-spacer-x;
+    margin-right: $card-spacer-x;
+    margin-top: -$card-spacer-y;
+    padding: $card-spacer-y $card-spacer-x !important;
+    vertical-align: bottom;
+  }
+
+  .nav.nav-tabs {
+    border-bottom: 0;
+    margin-bottom: -$card-spacer-y;
+    margin-top: -$card-spacer-y;
+
+    .nav-item {
+      border-top: 0;
+    }
+
+    .nav-link {
+      border-top: 0;
+      color: $text-muted;
+      padding: $card-spacer-y $card-spacer-x / 2;
+
+      &.active {
+        background: #fff;
+        color: $body-color;
+      }
+    }
+  }
+
+  &.card-header-inverse {
+    color: #fff;
+  }
+
+  .btn {
+    margin-top: - $input-btn-padding-y;
+  }
+
+  .btn-sm {
+    margin-top: - $input-btn-padding-y-sm;
+  }
+
+  .btn-lg {
+    margin-top: - $input-btn-padding-y-lg;
+  }
+
+  >i {
+    margin-right: $spacer / 2;
+  }
+
+  .card-actions {
+    position: absolute;
+    right: 0; //height: inherit;
+    top: 0;
+
+    a,
+    button {
+      background: transparent;
+      border: 0;
+      border-left: 1px solid $border-color;
+      box-shadow: 0;
+      color: $body-color;
+      display: block;
+      float: left;
+      margin: 0 !important;
+      padding: $card-spacer-y 0;
+      text-align: center;
+      width: 50px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      [class^='icon-'],
+      [class*=' icon-'] {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      i {
+        display: inline-block;
+        transition: 0.4s;
+      }
+
+      .r180 {
+        transform: rotate(180deg);
+      }
+    }
+
+    .input-group {
+      margin: 6px;
+      width: 230px;
+
+      .input-group-prepend,
+      .input-group-append {
+        background: #fff;
+      }
+
+      input {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+//
+.card-footer {
+  ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+
+    li {
+      display: table-cell;
+      padding: 0 $card-spacer-x;
+      text-align: center;
+    }
+  }
+}
+
+[class*='card-outline-'] {
+  .card-body {
+    background: #fff !important;
+  }
+
+  &.card-outline-top {
+    border-bottom-color: $border-color;
+    border-left-color: $border-color;
+    border-right-color: $border-color;
+    border-top-width: 2px;
+  }
+}
+
+// Cards with color accent
+@each $color,
+  $value in $theme-colors {
+  .card-accent-#{$color} {
+    @include card-accent-variant($value);
+  }
+}
+
+.card-full {
+  border: 0;
+  border-bottom: $card-border-width solid $border-color;
+  margin-left: - $grid-gutter-width / 2;
+  margin-right: - $grid-gutter-width / 2;
+  margin-top: - $spacer;
+}
+
+@include media-breakpoint-up(sm) {
+  .card-columns {
+    &.cols-2 {
+      column-count: 2;
+    }
+  }
+}
+
+.card-placeholder {
+  background: rgba(0, 0, 0, 0.025);
+  border: 1px dashed $gray-300;
+}

@@ -1,0 +1,59 @@
+.callout {
+  border: 0 solid $border-color;
+  border-left-width: 0.25rem;
+  margin: $spacer 0;
+  padding: 0 $spacer;
+  position: relative;
+
+  @if $enable-rounded {
+    border-radius: 0.25rem;
+  }
+
+  .chart-wrapper {
+    float: right;
+    left: 50%;
+    position: absolute;
+    top: 10px;
+    width: 50%;
+  }
+}
+
+.callout-bordered {
+  border: 1px solid $border-color;
+  border-left-width: 0.25rem;
+}
+
+.callout code {
+  border-radius: 0.25rem;
+}
+
+.callout h4 {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout + .callout {
+  margin-top: - 0.25rem;
+}
+
+.callout-default {
+  border-left-color: $text-muted;
+
+  h4 {
+    color: $text-muted;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .callout-#{$color} {
+    border-left-color: $value;
+
+    h4 {
+      color: $value;
+    }
+  }
+}

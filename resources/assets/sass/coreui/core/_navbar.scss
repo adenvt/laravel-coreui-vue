@@ -1,0 +1,130 @@
+.app-header.navbar {
+  @include borders($navbar-border);
+
+  background-color: $navbar-bg;
+  flex-direction: row;
+  height: $navbar-height;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  .navbar-brand {
+    @include borders($navbar-brand-border);
+
+    background-color: $navbar-brand-bg;
+    background-image: $navbar-brand-logo;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $navbar-brand-logo-size;
+    display: inline-block;
+    height: $navbar-height;
+    margin-right: 0;
+    padding: $navbar-padding-y $navbar-padding-x;
+    width: $navbar-brand-width;
+  }
+
+  .navbar-toggler {
+    min-width: 50px;
+    padding: $navbar-toggler-padding-y 0;
+
+    &:hover .navbar-toggler-icon {
+      background-image: $navbar-toggler-icon-hover;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-toggler-icon;
+    height: 23px;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 !important;
+    min-width: 50px;
+    position: relative;
+    text-align: center;
+
+    button {
+      margin: 0 auto;
+    }
+
+    .nav-link {
+      background: 0;
+      border: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+
+      .badge {
+        left: 50%;
+        margin-left: 0;
+        margin-top: -16px;
+        position: absolute;
+        top: 50%;
+      }
+
+      > .img-avatar {
+        height: $navbar-height - 20px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    line-height: $line-height-base;
+    padding-bottom: 0;
+  }
+
+  .dropdown-item {
+    min-width: 180px;
+  }
+}
+
+.navbar-brand {
+  color: $navbar-active-color;
+
+  @include hover-focus {
+    color: $navbar-active-color;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $navbar-color;
+
+    @include hover-focus {
+      color: $navbar-hover-color;
+    }
+  }
+
+  .open > .nav-link,
+  .active > .nav-link,
+  .nav-link.open,
+  .nav-link.active {
+    @include plain-hover-focus {
+      color: $navbar-active-color;
+    }
+  }
+}
+
+.navbar-divider {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+@include media-breakpoint-up(lg) {
+  .brand-minimized {
+    .app-header.navbar {
+      .navbar-brand {
+
+        @include borders($navbar-brand-minimized-border);
+        background-color: $navbar-brand-minimized-bg;
+        background-image: $navbar-brand-minimized-logo;
+        background-size: $navbar-brand-minimized-logo-size;
+        width: $navbar-brand-minimized-width;
+      }
+    }
+  }
+}

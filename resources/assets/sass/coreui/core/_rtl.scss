@@ -1,0 +1,269 @@
+//
+// RTL Support
+//
+// scss-lint:disable NestingDepth, SelectorDepth
+*[dir='rtl'] {
+  direction: rtl;
+  unicode-bidi: embed;
+
+  ul {
+    -webkit-padding-start: 0;
+  }
+
+  table tr th {
+    text-align: right;
+  } // Breadcrumb
+  .breadcrumb-item {
+    float: right;
+  }
+
+  .breadcrumb-menu {
+    left: $breadcrumb-padding-x;
+    right: auto;
+  } // Dropdown
+  .dropdown-item {
+    text-align: right;
+
+    i {
+      margin-left: 10px;
+      margin-right: -10px;
+    }
+
+    .badge {
+      left: 10px;
+      right: auto;
+    }
+  } //
+  // Sidebar
+  //
+  .sidebar-hidden {
+    .sidebar {
+      margin-right: - $sidebar-width;
+    }
+  }
+
+  .sidebar-fixed {
+    .main,
+    .app-footer {
+      margin-right: $sidebar-width;
+    }
+
+    &.sidebar-hidden {
+      .main,
+      .app-footer {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .sidebar-minimized {
+    .sidebar {
+      flex: 0 0 $sidebar-minimized-width;
+
+      .nav-link {
+        padding-right: 0;
+
+        i {
+          float: right;
+          margin: 0;
+          padding: 0;
+        }
+
+        .badge {
+          left: 15px;
+          right: auto;
+        }
+      }
+
+      .nav>.nav-dropdown {
+        &:hover {
+          >.nav-dropdown-items {
+            left: 0;
+            right: $sidebar-minimized-width;
+          }
+        }
+      }
+    }
+
+    &.sidebar-hidden {
+      .sidebar {
+        margin-left: 0;
+        margin-right: - $sidebar-minimized-width;
+      }
+    }
+
+    &.sidebar-fixed {
+      .main,
+      .app-footer {
+        margin-right: $sidebar-minimized-width;
+      }
+
+      &.sidebar-hidden {
+        .main,
+        .app-footer {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  //
+  // Aside Menu
+  //
+  .aside-menu-hidden {
+    .aside-menu {
+      margin-left: - $aside-menu-width;
+      margin-right: 0;
+    }
+  }
+
+  .aside-menu-fixed {
+    .aside-menu {
+      left: 0;
+      right: auto;
+    }
+
+    .main,
+    .app-footer {
+      //margin-right: 0;
+      margin-left: $aside-menu-width;
+    }
+
+    &.aside-menu-hidden {
+      .main,
+      .app-footer {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .aside-menu-off-canvas {
+    .aside-menu {
+      height: 100%;
+      position: fixed;
+      right: 0;
+      z-index: $zindex-sticky - 1;
+
+      .tab-content {
+        height: calc(100vh - #{$aside-menu-nav-padding-y * 2 + $font-size-base} - #{$navbar-height});
+      }
+    }
+  } // Sidebar Menu
+  .sidebar {
+    .sidebar-nav {
+      .nav {
+        .nav-item {
+          .nav-link {
+            direction: rtl;
+
+            i {
+              margin: 0 0 0 ($sidebar-nav-link-padding-x / 2);
+            }
+
+            .badge {
+              float: left;
+              margin-top: 2px; // margin-left: 10px;
+            }
+
+            &.nav-dropdown-toggle {
+              &::before {
+                left: $sidebar-nav-link-padding-x;
+                position: absolute;
+                right: auto !important;
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          &.nav-dropdown {
+            &.open {
+              >.nav-link.nav-dropdown-toggle::before {
+                transform: rotate(270deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  } // Horizontal bars
+  .horizontal-bars {
+    li {
+      .bars {
+        padding-left: 0;
+        padding-right: 100px;
+
+        .progress:first-child {
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    &.type-2 {
+      li {
+        i {
+          margin-left: $spacer;
+          margin-right: 5px;
+        }
+
+        .value {
+          float: left;
+          font-weight: 600;
+        }
+
+        .bars {
+          padding: 0;
+        }
+      }
+    }
+  } // Icon list
+  .icons-list {
+    li {
+      height: 40px;
+      position: relative;
+      vertical-align: middle;
+
+      i {
+        float: right;
+      }
+
+      .desc {
+        margin-left: 0;
+        margin-right: 50px;
+      }
+
+      .value {
+        left: 45px;
+        right: auto;
+        text-align: left;
+
+        strong {
+          display: block;
+          margin-top: -3px;
+        }
+      }
+
+      .actions {
+        left: 10px;
+        right: auto;
+      }
+    }
+  } // Callouts
+  .callout {
+    border: 0 solid $border-color;
+    border-right-width: 0.25rem;
+    @each $color,
+      $value in $theme-colors {
+      &.callout-#{$color} {
+        border-right-color: $value;
+      }
+    }
+
+    .chart-wrapper {
+      float: left;
+      left: 0;
+    }
+  }
+
+  .callout-default {
+    border-right-color: $text-muted;
+  }
+}

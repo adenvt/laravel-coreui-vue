@@ -1,0 +1,15 @@
+.row.row-equal {
+  margin-left: ($grid-gutter-width / -2);
+  margin-right: ($grid-gutter-width / -2);
+  padding-left: ($grid-gutter-width / 4);
+  padding-right: ($grid-gutter-width / 4);
+
+  [class*='col-'] {
+    padding-left: ($grid-gutter-width / 4);
+    padding-right: ($grid-gutter-width / 4);
+  }
+}
+
+.main .container-fluid {
+  padding: 0 30px;
+}

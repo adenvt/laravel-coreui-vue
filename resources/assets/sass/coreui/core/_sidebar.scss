@@ -1,0 +1,451 @@
+// scss-lint:disable NestingDepth, SelectorDepth
+.sidebar {
+  @include borders($sidebar-borders);
+  background: $sidebar-bg;
+  color: $sidebar-color;
+  display: flex;
+  flex-direction: column;
+  padding: $sidebar-padding;
+
+  .sidebar-close {
+    background: 0;
+    border: 0;
+    color: $sidebar-color;
+    display: none;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: $navbar-height;
+    opacity: 0.8;
+    padding: 0 $spacer;
+    position: absolute;
+    right: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  } // Will be added soon
+  // .sidebar-brand { }
+  .sidebar-header {
+    background: $sidebar-header-bg;
+    flex: 0 0 $sidebar-header-height;
+    padding: $sidebar-header-padding-y $sidebar-header-padding-x;
+    text-align: center;
+  }
+
+  .sidebar-form .form-control {
+    background: $sidebar-form-bg;
+    border: $sidebar-form-border;
+    color: $sidebar-form-color;
+
+    &::placeholder {
+      color: $sidebar-form-placeholder-color;
+    }
+  }
+
+  .sidebar-nav {
+    @include sidebar-width($sidebar-borders, $sidebar-width);
+    flex: 1;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      margin-left: -10px;
+      position: absolute;
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: lighten($sidebar-bg, 5%);
+      border-left: 1px solid darken($sidebar-bg, 5%);
+      border-right: 1px solid darken($sidebar-bg, 5%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-clip: content-box;
+      background-color: darken($sidebar-bg, 10%);
+      border-color: transparent;
+      border-style: solid;
+      border-width: 1px 2px;
+      height: 50px;
+    }
+  }
+
+  .nav {
+    @include sidebar-width($sidebar-borders, $sidebar-width);
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .nav-title {
+    color: $sidebar-nav-title-color;
+    font-size: 11px;
+    font-weight: 600;
+    padding: $sidebar-nav-title-padding-y $sidebar-nav-title-padding-x;
+    text-transform: uppercase;
+  }
+
+  .nav-divider,
+  .divider {
+    height: 10px;
+  }
+
+  .nav-item {
+    margin: 0;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .nav-dropdown-items {
+    margin: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease-in-out;
+
+    .nav-item {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .nav-link {
+    @include borders($sidebar-nav-link-borders);
+    background: $sidebar-nav-link-bg;
+    color: $sidebar-nav-link-color;
+    display: block;
+    padding: $sidebar-nav-link-padding-y $sidebar-nav-link-padding-x;
+    text-decoration: none;
+
+    i {
+      color: $sidebar-nav-link-icon-color;
+      display: inline-block;
+      font-size: 14px;
+      margin: 0 ($sidebar-nav-link-padding-x / 2) 0 0;
+      text-align: center;
+      width: 20px;
+    }
+
+    .badge {
+      float: right;
+      margin-top: 2px;
+    }
+
+    &.active {
+      @include borders($sidebar-nav-link-active-borders);
+      background: $sidebar-nav-link-active-bg;
+      color: $sidebar-nav-link-active-color;
+
+      i {
+        color: $sidebar-nav-link-active-icon-color;
+      }
+    }
+
+    &:hover {
+      @include borders($sidebar-nav-link-hover-borders);
+      background: $sidebar-nav-link-hover-bg;
+      color: $sidebar-nav-link-hover-color;
+
+      i {
+        color: $sidebar-nav-link-hover-icon-color;
+      }
+
+      &.nav-dropdown-toggle::before {
+        background-image: $sidebar-nav-dropdown-indicator-hover;
+      }
+    }
+    @if $enable-sidebar-nav-rounded {
+      border-radius: $border-radius;
+    }
+    @each $color,
+      $value in $theme-colors {
+      &.nav-link-#{$color} {
+        background: $value;
+
+        i {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        &:hover {
+          background: darken($value, 5%) !important;
+
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  } //  ex. <a class="nav-link nav-dropdown-toggle" href="#">Components</a>
+  .nav-dropdown-toggle {
+    position: relative;
+
+    &::before {
+      background-image: $sidebar-nav-dropdown-indicator;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 8px;
+      margin-top: -4px;
+      padding: 0;
+      position: absolute;
+      right: $sidebar-nav-link-padding-x;
+      top: 50%;
+      transition: transform 0.3s;
+      width: 8px;
+    }
+  } // ex.  <li class="nav-item nav-dropdown">
+  .nav-dropdown.open {
+    @include borders($sidebar-nav-dropdown-borders);
+    background: $sidebar-nav-dropdown-bg;
+
+    >.nav-dropdown-items {
+      max-height: 1500px;
+    }
+
+    .nav-link {
+      border-left: 0 !important;
+      color: $sidebar-nav-dropdown-color;
+    }
+
+    >.nav-link.nav-dropdown-toggle::before {
+      transform: rotate(-90deg);
+    }
+
+    .nav-dropdown.open {
+      border-left: 0;
+    }
+    @if $enable-sidebar-nav-rounded {
+      border-radius: $border-radius;
+    }
+  }
+
+  .nav-label {
+    color: $sidebar-nav-title-color;
+    display: block;
+    padding: ($sidebar-nav-link-padding-y / 8) $sidebar-nav-link-padding-x;
+
+    &:hover {
+      color: $sidebar-color;
+      text-decoration: none;
+    }
+
+    i {
+      color: $sidebar-nav-link-icon-color;
+      font-size: 10px;
+      margin: -3px ($sidebar-nav-link-padding-x / 2) 0 0;
+      text-align: center;
+      vertical-align: middle;
+      width: 20px;
+    }
+  }
+
+  .sidebar-footer {
+    @include borders($sidebar-footer-borders);
+    background: $sidebar-footer-bg;
+    flex: 0 0 $sidebar-footer-height;
+    padding: $sidebar-footer-padding-y $sidebar-footer-padding-x;
+  }
+
+  .sidebar-minimizer {
+    @include borders($sidebar-minimizer-borders);
+    background-color: $sidebar-minimizer-bg;
+    border: 0;
+    flex: 0 0 $sidebar-minimizer-height;
+    position: relative;
+
+    &::before {
+      background-image: $sidebar-minimizer-indicator;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: $sidebar-minimizer-height / 4;
+      content: '';
+      height: $sidebar-minimizer-height;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.3s;
+      width: $sidebar-minimizer-height;
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: $sidebar-minimizer-hover-bg;
+
+      &::before {
+        background-image: $sidebar-minimizer-hover-indicator;
+      }
+    }
+  }
+  @if (lightness( $sidebar-bg) < 40) {
+    .progress {
+      background-color: lighten($sidebar-bg, 15%) !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .sidebar-compact {
+    .sidebar {
+      .sidebar-nav {
+        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+      }
+
+      .nav {
+        @include sidebar-width($sidebar-borders, $sidebar-compact-width);
+
+        .nav-title {
+          text-align: center;
+        }
+
+        .nav-item {
+          border-left: 0 !important;
+          width: $sidebar-compact-width;
+
+          .nav-link {
+            text-align: center;
+
+            i {
+              display: block;
+              font-size: 24px;
+              margin: $spacer / 4 0;
+              width: 100%;
+            }
+
+            .badge {
+              position: absolute;
+              right: 10px;
+              top: 18px;
+            }
+
+            &.nav-dropdown-toggle {
+              &::before {
+                top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  } // Minimized Sidebar
+  .sidebar-minimized {
+    .hidden-cn {
+      display: none;
+    }
+
+    .sidebar {
+      z-index: $zindex-sticky - 1;
+
+      .sidebar-nav {
+        @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
+        overflow: visible;
+      }
+
+      .nav {
+        @include sidebar-width($sidebar-borders, $sidebar-minimized-width);
+      }
+
+      .nav-divider,
+      .divider,
+      .nav-title,
+      .sidebar-footer,
+      .sidebar-form,
+      .sidebar-header {
+        display: none;
+      }
+
+      .sidebar-minimizer::before {
+        transform: rotate(-180deg);
+        width: 100%;
+      }
+
+      .nav-item {
+        border-left: 0 !important;
+        overflow: hidden;
+        width: $sidebar-minimized-width;
+
+        &:hover {
+          overflow: visible;
+          width: $sidebar-width + $sidebar-minimized-width;
+
+          >.nav-link {
+            background: $sidebar-nav-link-hover-bg;
+
+            i {
+              color: $sidebar-nav-link-hover-color;
+            }
+          }
+        }
+      }
+
+      .nav-link {
+        border-left: 0 !important;
+        margin: 0;
+        padding-left: 0;
+        position: relative;
+        white-space: nowrap;
+
+        i {
+          display: block;
+          float: left; // padding: 0;
+          // margin: 0 !important;
+          font-size: 18px;
+          width: $sidebar-minimized-height;
+        }
+
+        .badge {
+          display: none;
+          position: absolute;
+          right: 15px;
+        }
+
+        &:hover {
+          background: $sidebar-nav-link-hover-bg;
+          width: $sidebar-width + $sidebar-minimized-width;
+
+          .badge {
+            display: inline;
+          }
+        }
+
+        &.nav-dropdown-toggle::before {
+          display: none;
+        }
+      }
+
+      .nav-dropdown-items {
+        .nav-item {
+          width: $sidebar-width;
+
+          .nav-link {
+            width: $sidebar-width;
+          }
+        }
+      }
+
+      .nav>.nav-dropdown {
+        >.nav-dropdown-items {
+          background: $sidebar-bg;
+          display: none;
+          max-height: 1000px;
+        }
+
+        &:hover {
+          background: $sidebar-nav-link-hover-bg;
+
+          >.nav-dropdown-items {
+            display: inline;
+            left: $sidebar-minimized-width;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// Links, buttons, and more within the dropdown menu
+.dropdown-item {
+  border-bottom: 1px solid $dropdown-border-color;
+  padding: 10px 20px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  i {
+    color: $dropdown-border-color;
+    display: inline-block;
+    margin-left: -10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+  }
+
+  .badge {
+    margin-top: 2px;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+// Dropdown section headers
+.dropdown-header {
+  background: $dropdown-divider-bg;
+  border-bottom: 1px solid $dropdown-border-color;
+  padding: 8px 20px;
+
+  .btn {
+    color: $dropdown-header-color;
+    margin-top: -7px;
+
+    &:hover {
+      color: $body-color;
+    }
+
+    &.pull-right {
+      margin-right: -20px;
+    }
+  }
+}
+
+.dropdown-menu-lg {
+  width: 250px;
+}
+
+.app-header {
+  .navbar-nav {
+    .dropdown-menu {
+      position: absolute;
+    }
+    // Menu positioning
+    //
+    // Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
+    // menu with the parent.
+    .dropdown-menu-right {
+      left: auto; // Reset the default from `.dropdown-menu`
+      right: 0;
+    }
+
+    .dropdown-menu-left {
+      left: 0;
+      right: auto;
+    }
+  }
+}

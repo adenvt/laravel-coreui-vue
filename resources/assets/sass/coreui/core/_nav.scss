@@ -1,0 +1,39 @@
+.nav-tabs {
+  .nav-link {
+    color: $gray-600;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      background: #fff;
+      border-bottom-color: #fff;
+      border-color: $border-color;
+      color: $gray-800;
+
+      &:focus {
+        background: #fff;
+        border-bottom-color: #fff;
+        border-color: $border-color;
+      }
+    }
+  }
+}
+
+.tab-content {
+  background: #fff;
+  border: 1px solid $border-color;
+  margin-top: -1px;
+
+  .tab-pane {
+    padding: $spacer;
+  }
+}
+
+.card-block {
+  .tab-content {
+    border: 0;
+    margin-top: 0;
+  }
+}

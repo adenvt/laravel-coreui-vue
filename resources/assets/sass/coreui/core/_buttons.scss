@@ -1,0 +1,593 @@
+button {
+  cursor: pointer;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn {
+  [class^='icon-'],
+  [class*=' icon-'] {
+    display: inline-block;
+    margin-top: -2px;
+    vertical-align: middle;
+  }
+}
+
+.btn-facebook,
+.btn-twitter,
+.btn-linkedin,
+.btn-flickr,
+.btn-tumblr,
+.btn-xing,
+.btn-github,
+.btn-html5,
+.btn-openid,
+.btn-stack-overflow,
+.btn-youtube,
+.btn-css3,
+.btn-dribbble,
+.btn-google-plus,
+.btn-instagram,
+.btn-pinterest,
+.btn-vk,
+.btn-yahoo,
+.btn-behance,
+.btn-dropbox,
+.btn-reddit,
+.btn-spotify,
+.btn-vine,
+.btn-foursquare,
+.btn-vimeo {
+
+  @include button-social-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
+  color: #fff !important;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  /* stylelint-disable font-family-no-missing-generic-family-keyword */
+  &::before {
+    display: block;
+    font-family: 'FontAwesome';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.icon {
+    span {
+      display: none;
+    }
+  }
+
+  &.text {
+    &::before {
+      display: none;
+    }
+
+    span {
+      margin-left: 0 !important;
+    }
+  }
+
+  &.btn-lg {
+    @include button-social-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+  }
+
+  &.btn-sm {
+    @include button-social-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+  }
+
+}
+
+.btn-facebook {
+  $color: $facebook;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f09a';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-twitter {
+  $color: $twitter;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f099';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-linkedin {
+  $color: $linkedin;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f0e1';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-flickr {
+  $color: $flickr;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f16e';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-tumblr {
+  $color: $tumblr;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f173';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-xing {
+  $color: $xing;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f168';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-github {
+  $color: $github;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f09b';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-html5 {
+  $color: $html5;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f13b';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-openid {
+  $color: $openid;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f19b';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-stack-overflow {
+  $color: $stack-overflow;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f16c';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-css3 {
+  $color: $css3;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f13c';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-youtube {
+  $color: $youtube;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f167';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-dribbble {
+  $color: $dribbble;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f17d';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-google-plus {
+  $color: $google-plus;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f0d5';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-instagram {
+  $color: $instagram;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f16d';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-pinterest {
+  $color: $pinterest;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f0d2';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-vk {
+  $color: $vk;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f189';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-yahoo {
+  $color: $yahoo;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f19e';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-behance {
+  $color: $behance;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f1b4';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-dropbox {
+  $color: $dropbox;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f16b';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-reddit {
+  $color: $reddit;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f1a1';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-spotify {
+  $color: $spotify;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f1bc';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-vine {
+  $color: $vine;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f1ca';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-foursquare {
+  $color: $foursquare;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f180';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}
+
+.btn-vimeo {
+  $color: $vimeo;
+
+  background: $color;
+
+  &::before {
+    background: darken($color, 5%);
+    content: '\f194';
+
+  }
+
+  &:hover {
+    background: darken($color, 5%);
+
+    &::before {
+      background: darken($color, 10%);
+    }
+  }
+}

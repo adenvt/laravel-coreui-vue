@@ -1,0 +1,10 @@
+.chart-wrapper {
+  canvas {
+    width: 100% !important;
+  }
+}
+// scss-lint:disable QualifyingElement
+// stylelint-disable selector-type-no-unknown, selector-no-qualifying-type
+base-chart.chart {
+  display: block !important;
+}

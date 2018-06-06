@@ -1,0 +1,10 @@
+.app-footer {
+
+  @include borders($footer-borders);
+  align-items: center;
+  background: $footer-bg;
+  color: $footer-color;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 $spacer;
+}

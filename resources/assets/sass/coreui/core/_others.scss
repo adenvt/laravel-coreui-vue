@@ -1,0 +1,5 @@
+// scss-lint:disable QualifyingElement
+// stylelint-disable selector-no-qualifying-type
+hr.transparent {
+  border-top: 1px solid transparent;
+}

@@ -1,0 +1,251 @@
+// .social-box
+.social-box {
+  @include border-radius($card-border-radius);
+  background: #fff;
+  border: $card-border-width solid $card-border-color;
+  margin-bottom: 2 * $card-spacer-y;
+  min-height: 160px;
+  text-align: center;
+
+  i {
+    @include border-radius($card-border-radius $card-border-radius 0 0);
+    background: $gray-200;
+    display: block;
+    font-size: 40px;
+    line-height: 90px;
+    margin: -1px -1px 0;
+  }
+
+  .chart-wrapper {
+    height: 90px;
+    margin: -90px 0 0;
+
+    canvas {
+      height: 90px !important;
+      width: 100% !important;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 10px 0;
+
+    li {
+      display: block;
+      float: left;
+      width: 50%;
+
+      &:first-child {
+        border-right: 1px solid $border-color;
+      }
+
+      strong {
+        display: block;
+        font-size: 20px;
+      }
+
+      span {
+        color: $border-color;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.facebook {
+    i {
+      background: $facebook;
+      color: #fff;
+    }
+  }
+
+  &.twitter {
+    i {
+      background: $twitter;
+      color: #fff;
+    }
+  }
+
+  &.linkedin {
+    i {
+      background: $linkedin;
+      color: #fff;
+    }
+  }
+
+  &.google-plus {
+    s i {
+      background: $google-plus;
+      color: #fff;
+    }
+  }
+}
+
+.horizontal-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    vertical-align: middle;
+
+    .title {
+      color: $text-muted;
+      font-size: 12px;
+      font-weight: 600;
+      vertical-align: middle;
+      width: 100px;
+    }
+
+    .bars {
+      padding-left: 100px;
+      position: absolute;
+      top: 15px;
+      width: 100%;
+
+      .progress:first-child {
+        margin-bottom: 2px;
+      }
+    }
+
+    &.legend {
+      text-align: center;
+
+      .badge {
+        display: inline-block;
+        height: 8px;
+        padding: 0;
+        width: 8px;
+      }
+    }
+
+    &.divider {
+      height: 40px;
+
+      i {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  &.type-2 {
+    li {
+      overflow: hidden;
+
+      i {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 40px;
+        margin-left: 5px;
+        margin-right: $spacer;
+      }
+
+      .title {
+        color: $body-color;
+        display: inline-block;
+        font-size: $font-size-base;
+        font-weight: normal;
+        line-height: 40px;
+        margin-top: -9px;
+        width: auto;
+      }
+
+      .value {
+        float: right;
+        font-weight: 600;
+      }
+
+      .bars {
+        bottom: 0;
+        padding: 0;
+        position: absolute;
+        top: auto;
+      }
+    }
+  }
+}
+
+.icons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    height: 40px;
+    position: relative;
+    vertical-align: middle;
+
+    i {
+      display: block;
+      float: left;
+      height: 35px !important;
+      line-height: 35px !important;
+      margin: 2px;
+      text-align: center;
+      width: 35px !important;
+    }
+
+    .desc {
+      border-bottom: 1px solid $border-color;
+      height: 40px;
+      margin-left: 50px;
+
+      .title {
+        margin: 0;
+        padding: 2px 0 0;
+      }
+
+      small {
+        color: $text-muted;
+        display: block;
+        margin-top: -4px;
+      }
+    }
+
+    .value {
+      position: absolute;
+      right: 45px;
+      text-align: right;
+      top: 2px;
+
+      strong {
+        display: block;
+        margin-top: -3px;
+      }
+    }
+
+    .actions {
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      right: 10px;
+      text-align: center;
+      top: -4px;
+      width: 40px;
+
+      i {
+        float: none;
+        height: auto;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+        width: auto;
+      }
+    }
+
+    &.divider {
+      height: 40px;
+
+      i {
+        font-size: 18px;
+        height: auto;
+        margin: 2px 0 0;
+        width: auto;
+      }
+    }
+  }
+}

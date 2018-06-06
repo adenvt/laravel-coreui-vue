@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint --ext .js,.vue resources/assets/js/ ./*.js",
+    "lint-css": "stylelint \"resources/assets/sass/**/*.scss\"",
+    "fix": "eslint --ext .js,.vue resources/assets/js/ ./*.js --fix",
+    "fix-css": "stylelint \"resources/assets/sass/**/*.scss\" --fix"
+  },
+  "engines": {
+    "node": ">= 8.9.4",
+    "npm": ">= 5.6.0"
+  },
+  "devDependencies": {
+    "babel-plugin-wildcard": "^5.0.0",
+    "cross-env": "^5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "laravel-mix": "^2.0",
+    "prettier": "^1.12.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-scss": "^3.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18",
+    "bootstrap": "^4.1.1",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "chart.js": "^2.7.2",
+    "flag-icon-css": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.12",
+    "simple-line-icons": "^2.4.1",
+    "vue": "^2.5.16",
+    "vue-chartjs": "^3.3.1",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
