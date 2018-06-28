@@ -209,6 +209,32 @@
             </div>
           </b-card>
         </b-col>
+        <b-col
+          cols="12"
+          md="6">
+          <b-card
+            header-tag="header"
+            footer-tag="footer">
+            <div slot="header">
+              <i class="fa fa-align-justify"/> Alerts <small>with <b>Vue Notification</b></small>
+            </div>
+            <b-button
+              variant="success"
+              @click="showNotify('success')">
+              Success
+            </b-button>
+            <b-button
+              variant="warning"
+              @click="showNotify('warning')">
+              Warning
+            </b-button>
+            <b-button
+              variant="danger"
+              @click="showNotify('danger')">
+              Danger
+            </b-button>
+          </b-card>
+        </b-col>
       </b-row>
     </div>
   </div>
@@ -230,6 +256,13 @@ export default {
     },
     showAlert () {
       this.dismissCountDown = this.dismissSecs
+    },
+    showNotify (type) {
+      this.$notify({
+        type,
+        title: 'Important message',
+        text : 'Hello user! This is a notification!',
+      })
     },
   },
 }
