@@ -1,7 +1,5 @@
 # Laravel CoreUI Vue
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
-
 > Laravel + CoreUI + Vue Boilerplate
 
 [![GitHub version](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue)
