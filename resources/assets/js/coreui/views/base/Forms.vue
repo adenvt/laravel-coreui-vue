@@ -163,6 +163,13 @@
               id="date"/>
           </b-form-group>
           <b-form-group
+            label="Datepicker"
+            :label-cols="3"
+            :horizontal="true">
+            <b-datepicker
+              v-model="datepicker"/>
+          </b-form-group>
+          <b-form-group
             description="Please enter your email"
             label="Email Input"
             label-for="basicEmail"
@@ -1462,7 +1469,8 @@ export default {
   name: 'Forms',
   data () {
     return {
-      selected: [], // Must be an array reference!
+      selected  : [], // Must be an array reference!
+      datepicker: new Date(),
     }
   },
   methods: {

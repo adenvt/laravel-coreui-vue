@@ -2,11 +2,29 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+import Datepicker from 'vuejs-datepicker'
+import { id } from 'vuejs-datepicker/dist/locale'
+import Notifications from 'vue-notification'
 import App from './App'
 import router from './router'
 import store from './store'
 
 Vue.use(BootstrapVue)
+Vue.use(Notifications)
+
+Vue.component('b-datepicker', {
+  extends: Datepicker,
+  props  : {
+    bootstrapStyling: {
+      type   : Boolean,
+      default: true,
+    },
+    language: {
+      type   : Object,
+      default: () => id,
+    },
+  },
+})
 
 window.Vue = new Vue({
   el        : '#app',

@@ -44,9 +44,12 @@
         "on": "colon"
       }
     }],
-    "vue/require-default-prop": "warning",
-    "vue/require-prop-types": "warning",
-    "vue/prop-name-casing": ["error", "camelCase"]
+    "vue/require-default-prop": "off",
+    "vue/require-prop-types": "off",
+    "vue/prop-name-casing": ["error", "camelCase"],
+    "unicorn/catch-error-name": ["error", {
+      "name": "err"
+    }]
   },
   "overrides": [{
     "files": ["resources/assets/js/coreui/**/*.vue"],
