@@ -1,5 +1,7 @@
 # Laravel CoreUI Vue
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
+
 > Laravel + CoreUI + Vue Boilerplate
 
 ## How to Install
