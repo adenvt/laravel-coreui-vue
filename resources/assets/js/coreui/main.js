@@ -10,8 +10,8 @@ Vue.use(BootstrapVue)
 
 window.Vue = new Vue({
   el        : '#app',
-  router,
-  store,
+  router    : router,
+  store     : store,
   template  : '<App/>',
   components: {
     App,

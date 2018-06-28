@@ -22,6 +22,7 @@ mix.webpackConfig({
     },
   },
 })
+
 mix.extend('vueOptions', (webpackConfig, vueOptions, ...args) => {
   const vueLoader = webpackConfig.module.rules.find(loader => loader.loader === 'vue-loader')
 
@@ -41,12 +42,9 @@ mix.vueOptions({
   },
 })
 
-if (mix.inProduction()) {
+if (mix.inProduction())
   mix.version()
-  mix.options({
-    clearConsole: true,
-  })
-} else
+else
   mix.sourceMaps()
 
 if (process.platform !== 'linux')
