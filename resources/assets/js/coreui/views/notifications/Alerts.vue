@@ -233,6 +233,56 @@
               @click="showNotify('danger')">
               Danger
             </b-button>
+            <p class="mt-3">
+              See
+              <a href="http://vue-notification.yev.io/">
+                Documentations
+              </a>
+              for more information
+            </p>
+          </b-card>
+        </b-col>
+        <b-col
+          cols="12"
+          md="6">
+          <b-card
+            header-tag="header"
+            footer-tag="footer">
+            <div slot="header">
+              <i class="fa fa-align-justify"/> Alerts <small>with <b>Sweat Alert 2</b></small>
+            </div>
+            <b-button
+              variant="success"
+              @click="showSwal('success')">
+              Success
+            </b-button>
+            <b-button
+              variant="warning"
+              @click="showSwal('warning')">
+              Warning
+            </b-button>
+            <b-button
+              variant="danger"
+              @click="showSwal('error')">
+              Error
+            </b-button>
+            <b-button
+              variant="info"
+              @click="showSwal('info')">
+              Info
+            </b-button>
+            <b-button
+              variant="secondary"
+              @click="showSwal('question')">
+              Question
+            </b-button>
+            <p class="mt-3">
+              See
+              <a href="https://sweetalert2.github.io/">
+                Documentations
+              </a>
+              for more information
+            </p>
           </b-card>
         </b-col>
       </b-row>
@@ -263,6 +313,9 @@ export default {
         title: 'Important message',
         text : 'Hello user! This is a notification!',
       })
+    },
+    showSwal (type) {
+      this.$swal('Hello Vue world!!!', 'This is Sweat Alert', type)
     },
   },
 }
