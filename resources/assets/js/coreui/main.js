@@ -5,13 +5,17 @@ import BootstrapVue from 'bootstrap-vue'
 import Datepicker from 'vuejs-datepicker'
 import { id } from 'vuejs-datepicker/dist/locale'
 import Notifications from 'vue-notification'
+import Sweetalert from 'vue-sweetalert2'
+import Loading from './components/Loading'
 import App from './App'
 import router from './router'
 import store from './store'
 
 Vue.use(BootstrapVue)
 Vue.use(Notifications)
+Vue.use(Sweetalert)
 
+Vue.component('b-loading', Loading)
 Vue.component('b-datepicker', {
   extends: Datepicker,
   props  : {

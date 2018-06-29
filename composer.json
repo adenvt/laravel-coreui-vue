@@ -1,7 +1,7 @@
 {
-  "name": "laravel/laravel",
-  "description": "The Laravel Framework.",
-  "keywords": ["framework", "laravel"],
+  "name": "adenvt/laravel-coreui-vue",
+  "description": "Laravel + CoreUI + Vue Boilerplate",
+  "keywords": ["framework", "boilerplate", "laravel", "coreui", "vue"],
   "license": "MIT",
   "type": "project",
   "require": {

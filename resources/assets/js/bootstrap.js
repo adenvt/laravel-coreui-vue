@@ -1,7 +1,3 @@
-window._ = require('lodash')
-window.Popper = require('popper.js').default
-window.Vue = require('vue')
-
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -9,7 +5,13 @@ window.Vue = require('vue')
  */
 
 try {
+  window._ = require('lodash')
   window.$ = window.jQuery = require('jquery')
+  window.Popper = require('popper.js').default
+  window.Vue = require('vue')
+
+  // Lodash Improvement
+  window._.mixin({ pascalCase: _.flow(_.camelCase, _.upperFirst) })
 
   // Animate CSS
   window.$.fn.extend({
