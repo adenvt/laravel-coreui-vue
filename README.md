@@ -63,7 +63,7 @@ npm run hot
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-[download]: https://github.com/adenvt/laravel-coreui-vue/archive/0.1.0.zip
+[download]: https://github.com/adenvt/laravel-coreui-vue/archive/0.2.0.zip
 [laravel]: https://laravel.com
 [coreui]: https://coreui.io
 [axios]: https://github.com/axios/axios
