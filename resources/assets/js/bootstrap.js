@@ -1,7 +1,3 @@
-window._ = require('lodash')
-window.Popper = require('popper.js').default
-window.Vue = require('vue')
-
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -9,10 +5,45 @@ window.Vue = require('vue')
  */
 
 try {
+  window._ = require('lodash')
   window.$ = window.jQuery = require('jquery')
+  window.Popper = require('popper.js').default
+  window.Vue = require('vue')
+
+  // Lodash Improvement
+  window._.mixin({ pascalCase: _.flow(_.camelCase, _.upperFirst) })
+
+  // Animate CSS
+  window.$.fn.extend({
+    animateCss: function (animationName, callback) {
+      const animationEnd = (function (el) {
+        const animations = {
+          animation      : 'animationend',
+          OAnimation     : 'oAnimationEnd',
+          MozAnimation   : 'mozAnimationEnd',
+          WebkitAnimation: 'webkitAnimationEnd',
+        }
+
+        for (const t in animations) {
+          if (el.style[t] !== undefined)
+            return animations[t]
+        }
+      })(document.createElement('div'))
+
+      this.addClass(`animated ${animationName}`).one(animationEnd, function () {
+        $(this).removeClass(`animated ${animationName}`)
+
+        if (typeof callback === 'function') callback()
+      })
+
+      return this
+    },
+  })
 
   require('bootstrap')
-} catch (e) {}
+} catch (err) {
+  console.error(err)
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -19,6 +19,7 @@ $simple-line-font-path: '~simple-line-icons/fonts/';
 @import '~font-awesome/css/font-awesome.min.css';
 @import '~simple-line-icons/css/simple-line-icons.css';
 @import '~flag-icon-css/css/flag-icon.min.css';
+// @import '~animate.css/animate.min.css';
 
 // Import Other CSS Module
 
@@ -30,3 +31,5 @@ $simple-line-font-path: '~simple-line-icons/fonts/';
 
 // Custom styles
 @import 'custom';
+@import 'vendors/vue-notification/notification';
+@import 'vendors/vue-loading-spinner/spinner';

@@ -208,6 +208,15 @@ export default {
       },
     },
     {
+      name : 'Loading',
+      url  : '/loading',
+      icon : 'icon-reload',
+      badge: {
+        variant: 'danger',
+        text   : 'HOT',
+      },
+    },
+    {
       divider: true,
     },
     {

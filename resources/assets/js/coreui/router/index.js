@@ -12,6 +12,7 @@ import Typography from '@/views/theme/Typography'
 
 import Charts from '@/views/Charts'
 import Widgets from '@/views/Widgets'
+import Loading from '@/views/Loading'
 
 // Views - Components
 import Cards from '@/views/base/Cards'
@@ -99,6 +100,11 @@ export default new Router({
           path     : 'widgets',
           name     : 'Widgets',
           component: Widgets,
+        },
+        {
+          path     : 'loading',
+          name     : 'Loading',
+          component: Loading,
         },
         {
           path     : 'base',
@@ -296,6 +302,11 @@ export default new Router({
           component: Register,
         },
       ],
+    },
+    {
+      path     : '*',
+      name     : '404',
+      component: Page404,
     },
   ],
 })

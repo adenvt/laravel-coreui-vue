@@ -1,7 +1,11 @@
 {
   "extends": [
     "standard",
-    "plugin:vue/strongly-recommended"
+    "plugin:vue/strongly-recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "plugins": [
+    "unicorn"
   ],
   "env": {
     "browser": true
@@ -41,6 +45,18 @@
       }
     }],
     "vue/require-default-prop": "off",
-    "vue/require-prop-types": "off"
-  }
+    "vue/require-prop-types": "off",
+    "vue/prop-name-casing": ["error", "camelCase"],
+    "unicorn/catch-error-name": ["error", {
+      "name": "err"
+    }]
+  },
+  "overrides": [{
+    "files": ["resources/assets/js/coreui/**/*.vue"],
+    "rules": {
+      "unicorn/filename-case": ["error", {
+        "case": "pascalCase"
+      }]
+    }
+  }]
 }
