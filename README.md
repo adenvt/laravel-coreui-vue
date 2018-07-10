@@ -28,21 +28,15 @@
 * For Ubuntu, require `apt-get install libpng16-dev`, [see](https://github.com/imagemin/imagemin-mozjpeg/issues/28)
 
 ## How to Install
-* [Download][download] and extract this repository
-* Install all depencies
+* Install using composer
 ```bash
-cd /path/to/folder
+composer create-project --prefer-dist adenvt/laravel-coreui-vue project_name
+```
+* Install Dependencies
+```bash
+cd project_name
 
-composer install
 npm install
-```
-* Copy `.env` file
-```bash
-cp -r .env.example .env
-```
-* Generate Application key
-```bash
-php artisan key:generate
 ```
 * Add write permission (Unix)
 ```bash
@@ -63,7 +57,6 @@ npm run hot
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-[download]: https://github.com/adenvt/laravel-coreui-vue/archive/0.2.0.zip
 [laravel]: https://laravel.com
 [coreui]: https://coreui.io
 [axios]: https://github.com/axios/axios
