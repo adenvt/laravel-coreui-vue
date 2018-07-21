@@ -4,7 +4,5 @@
 </template>
 <script>
 
-export default {
-  name: 'SidebarHeader',
-}
+export default { name: 'SidebarHeader' }
 </script>

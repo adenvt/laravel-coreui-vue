@@ -5,7 +5,5 @@
   </footer>
 </template>
 <script>
-export default {
-  name: 'CFooter',
-}
+export default { name: 'CFooter' }
 </script>

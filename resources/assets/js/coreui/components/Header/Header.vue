@@ -48,10 +48,8 @@ import HeaderDropdown from './HeaderDropdown.vue'
 
 export default {
   name      : 'CHeader',
-  components: {
-    HeaderDropdown,
-  },
-  methods: {
+  components: { HeaderDropdown },
+  methods   : {
     sidebarToggle (e) {
       e.preventDefault()
       document.body.classList.toggle('sidebar-hidden')

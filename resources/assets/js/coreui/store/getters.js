@@ -1,4 +1,2 @@
 // getters are functions like computed
-export default {
-
-}
+export default {}

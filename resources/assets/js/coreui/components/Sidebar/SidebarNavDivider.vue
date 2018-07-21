@@ -13,10 +13,7 @@ export default {
   },
   computed: {
     classList () {
-      return [
-        'divider',
-        ...this.itemClasses,
-      ]
+      return ['divider', ...this.itemClasses]
     },
     itemClasses () {
       return this.classes ? this.classes.split(' ') : ''

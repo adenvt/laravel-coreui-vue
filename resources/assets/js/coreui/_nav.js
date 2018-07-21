@@ -216,9 +216,7 @@ export default {
         text   : 'HOT',
       },
     },
-    {
-      divider: true,
-    },
+    { divider: true },
     {
       title: true,
       name : 'Extras',

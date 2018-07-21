@@ -1,11 +1,6 @@
 {
   "extends": [
-    "standard",
-    "plugin:vue/strongly-recommended",
-    "plugin:unicorn/recommended"
-  ],
-  "plugins": [
-    "unicorn"
+    "adenvt"
   ],
   "env": {
     "browser": true
@@ -21,42 +16,5 @@
     "axios": true,
     "Vue": true,
     "CONFIG": true
-  },
-  "rules": {
-    "curly": ["error", "multi-or-nest"],
-    "camelcase": "warn",
-    "comma-dangle": ["error", "always-multiline"],
-    "no-var": "error",
-    "no-console": ["error", {
-      "allow": ["warn", "error"]
-    }],
-    "prefer-const": ["error", {
-      "destructuring": "all"
-    }],
-    "quote-props": ["error", "consistent-as-needed"],
-    "prefer-template": "error",
-    "object-curly-spacing": ["error", "always"],
-    "linebreak-style": "off",
-    "key-spacing": ["error", {
-      "align": {
-        "beforeColon": false,
-        "afterColon": true,
-        "on": "colon"
-      }
-    }],
-    "vue/require-default-prop": "off",
-    "vue/require-prop-types": "off",
-    "vue/prop-name-casing": ["error", "camelCase"],
-    "unicorn/catch-error-name": ["error", {
-      "name": "err"
-    }]
-  },
-  "overrides": [{
-    "files": ["resources/assets/js/coreui/**/*.vue"],
-    "rules": {
-      "unicorn/filename-case": ["error", {
-        "case": "pascalCase"
-      }]
-    }
-  }]
+  }
 }

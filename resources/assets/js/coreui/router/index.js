@@ -5,47 +5,47 @@ import Router from 'vue-router'
 import Full from '@/containers/Full'
 
 // Views
-import Dashboard from '@/views/Dashboard'
+import Dashboard from '@/views/sample/Dashboard'
 
-import Colors from '@/views/theme/Colors'
-import Typography from '@/views/theme/Typography'
+import Colors from '@/views/sample/theme/Colors'
+import Typography from '@/views/sample/theme/Typography'
 
-import Charts from '@/views/Charts'
-import Widgets from '@/views/Widgets'
-import Loading from '@/views/Loading'
+import Charts from '@/views/sample/Charts'
+import Widgets from '@/views/sample/Widgets'
+import Loading from '@/views/sample/Loading'
 
 // Views - Components
-import Cards from '@/views/base/Cards'
-import Forms from '@/views/base/Forms'
-import Switches from '@/views/base/Switches'
-import Tables from '@/views/base/Tables'
-import Breadcrumbs from '@/views/base/Breadcrumbs'
-import Carousels from '@/views/base/Carousels'
-import Collapses from '@/views/base/Collapses'
-import Jumbotrons from '@/views/base/Jumbotrons'
-import ListGroups from '@/views/base/ListGroups'
-import Navs from '@/views/base/Navs'
-import Navbars from '@/views/base/Navbars'
-import Paginations from '@/views/base/Paginations'
-import Popovers from '@/views/base/Popovers'
-import ProgressBars from '@/views/base/ProgressBars'
-import Tooltips from '@/views/base/Tooltips'
+import Cards from '@/views/sample/base/Cards'
+import Forms from '@/views/sample/base/Forms'
+import Switches from '@/views/sample/base/Switches'
+import Tables from '@/views/sample/base/Tables'
+import Breadcrumbs from '@/views/sample/base/Breadcrumbs'
+import Carousels from '@/views/sample/base/Carousels'
+import Collapses from '@/views/sample/base/Collapses'
+import Jumbotrons from '@/views/sample/base/Jumbotrons'
+import ListGroups from '@/views/sample/base/ListGroups'
+import Navs from '@/views/sample/base/Navs'
+import Navbars from '@/views/sample/base/Navbars'
+import Paginations from '@/views/sample/base/Paginations'
+import Popovers from '@/views/sample/base/Popovers'
+import ProgressBars from '@/views/sample/base/ProgressBars'
+import Tooltips from '@/views/sample/base/Tooltips'
 
 // Views - Buttons
-import StandardButtons from '@/views/buttons/StandardButtons'
-import ButtonGroups from '@/views/buttons/ButtonGroups'
-import Dropdowns from '@/views/buttons/Dropdowns'
-import SocialButtons from '@/views/buttons/SocialButtons'
+import StandardButtons from '@/views/sample/buttons/StandardButtons'
+import ButtonGroups from '@/views/sample/buttons/ButtonGroups'
+import Dropdowns from '@/views/sample/buttons/Dropdowns'
+import SocialButtons from '@/views/sample/buttons/SocialButtons'
 
 // Views - Icons
-import Flags from '@/views/icons/Flags'
-import FontAwesome from '@/views/icons/FontAwesome'
-import SimpleLineIcons from '@/views/icons/SimpleLineIcons'
+import Flags from '@/views/sample/icons/Flags'
+import FontAwesome from '@/views/sample/icons/FontAwesome'
+import SimpleLineIcons from '@/views/sample/icons/SimpleLineIcons'
 
 // Views - Notifications
-import Alerts from '@/views/notifications/Alerts'
-import Badges from '@/views/notifications/Badges'
-import Modals from '@/views/notifications/Modals'
+import Alerts from '@/views/sample/notifications/Alerts'
+import Badges from '@/views/sample/notifications/Badges'
+import Modals from '@/views/sample/notifications/Modals'
 
 // Views - Pages
 import Page404 from '@/views/pages/Page404'
@@ -75,10 +75,8 @@ export default new Router({
           path     : 'theme',
           redirect : '/theme/colors',
           name     : 'Theme',
-          component: {
-            render (c) { return c('router-view') },
-          },
-          children: [
+          component: { render (c) { return c('router-view') } },
+          children : [
             {
               path     : 'colors',
               name     : 'Colors',
@@ -110,10 +108,8 @@ export default new Router({
           path     : 'base',
           redirect : '/base/cards',
           name     : 'Base',
-          component: {
-            render (c) { return c('router-view') },
-          },
-          children: [
+          component: { render (c) { return c('router-view') } },
+          children : [
             {
               path     : 'cards',
               name     : 'Cards',
@@ -195,10 +191,8 @@ export default new Router({
           path     : 'buttons',
           redirect : '/buttons/buttons',
           name     : 'Buttons',
-          component: {
-            render (c) { return c('router-view') },
-          },
-          children: [
+          component: { render (c) { return c('router-view') } },
+          children : [
             {
               path     : 'standard-buttons',
               name     : 'Standard Buttons',
@@ -225,10 +219,8 @@ export default new Router({
           path     : 'icons',
           redirect : '/icons/font-awesome',
           name     : 'Icons',
-          component: {
-            render (c) { return c('router-view') },
-          },
-          children: [
+          component: { render (c) { return c('router-view') } },
+          children : [
             {
               path     : 'flags',
               name     : 'Flags',
@@ -250,10 +242,8 @@ export default new Router({
           path     : 'notifications',
           redirect : '/notifications/alerts',
           name     : 'Notifications',
-          component: {
-            render (c) { return c('router-view') },
-          },
-          children: [
+          component: { render (c) { return c('router-view') } },
+          children : [
             {
               path     : 'alerts',
               name     : 'Alerts',
@@ -277,10 +267,8 @@ export default new Router({
       path     : '/pages',
       redirect : '/pages/404',
       name     : 'Pages',
-      component: {
-        render (c) { return c('router-view') },
-      },
-      children: [
+      component: { render (c) { return c('router-view') } },
+      children : [
         {
           path     : '404',
           name     : 'Page404',

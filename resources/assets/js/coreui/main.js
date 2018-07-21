@@ -35,7 +35,5 @@ window.Vue = new Vue({
   router    : router,
   store     : store,
   template  : '<App/>',
-  components: {
-    App,
-  },
+  components: { App },
 })

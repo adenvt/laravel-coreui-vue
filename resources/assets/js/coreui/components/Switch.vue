@@ -26,16 +26,10 @@ export default {
     event: 'change',
   },
   props: {
-    value: {
-      default: true,
-    },
-    uncheckedValue: {
-      default: false,
-    },
-    checked: {
-      default: false,
-    },
-    type: {
+    value         : { default: true },
+    uncheckedValue: { default: false },
+    checked       : { default: false },
+    type          : {
       type   : String,
       default: 'default',
     },
