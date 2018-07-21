@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     setPosNotify () {
-      const top = $(document).scrollTop()
+      const top    = $(document).scrollTop()
       const offset = top < 55 ? 55 - top : 0
 
       this.offset = `${offset}px`

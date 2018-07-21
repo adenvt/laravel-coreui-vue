@@ -1,6 +1,4 @@
-const state = {
-  config: {},
-}
+const state = { config: {} }
 
 const mutations = {
   set (state, { key, value }) {

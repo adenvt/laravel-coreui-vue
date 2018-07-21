@@ -5,10 +5,10 @@
  */
 
 try {
-  window._ = require('lodash')
-  window.$ = window.jQuery = require('jquery')
+  window._      = require('lodash')
+  window.$      = window.jQuery = require('jquery')
   window.Popper = require('popper.js').default
-  window.Vue = require('vue')
+  window.Vue    = require('vue')
 
   // Lodash Improvement
   window._.mixin({ pascalCase: _.flow(_.camelCase, _.upperFirst) })

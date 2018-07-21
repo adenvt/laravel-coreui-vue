@@ -1,5 +1,5 @@
 const path = require('path')
-const mix = require('laravel-mix')
+const mix  = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------

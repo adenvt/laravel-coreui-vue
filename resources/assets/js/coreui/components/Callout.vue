@@ -6,17 +6,10 @@
 
 <script>
 export default {
-  props: {
-    variant: {
-      type: String,
-    },
-  },
+  props   : { variant: { type: String } },
   computed: {
     classList () {
-      return [
-        'callout',
-        this.calloutVariant,
-      ]
+      return ['callout', this.calloutVariant]
     },
     calloutVariant () {
       return this.variant ? `callout-${this.variant}` : ''

@@ -17,10 +17,7 @@ export default {
   },
   computed: {
     classList () {
-      return [
-        'nav-item',
-        ...this.itemClasses,
-      ]
+      return ['nav-item', ...this.itemClasses]
     },
     itemClasses () {
       return this.classes ? this.classes.split(' ') : ''

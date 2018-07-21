@@ -16,10 +16,8 @@ export const COMPONENTS = _.mapKeys(Spinner, (value, key) => `Spinner${key}`)
 
 export default {
   name      : 'LoadingSpinner',
-  components: {
-    ...COMPONENTS,
-  },
-  props: {
+  components: { ...COMPONENTS },
+  props     : {
     variant: {
       type     : String,
       default  : 'rotate-square',

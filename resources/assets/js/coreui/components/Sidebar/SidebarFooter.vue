@@ -4,7 +4,5 @@
 </template>
 <script>
 
-export default {
-  name: 'SidebarFooter',
-}
+export default { name: 'SidebarFooter' }
 </script>
