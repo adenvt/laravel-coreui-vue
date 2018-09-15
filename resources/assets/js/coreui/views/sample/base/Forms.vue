@@ -291,6 +291,31 @@
               :value="[null,'c']"/>
           </b-form-group>
           <b-form-group
+            label="Select"
+            label-for="basicMultiSelect"
+            :label-cols="3"
+            :horizontal="true">
+            <b-select-2
+              id="basicMultiSelect"
+              placeholder="Please select some item"
+              :options="[
+                {
+                  text: 'This is First option',
+                  value: 'a'
+                }, {
+                  text: 'Default Selected Option',
+                  value: 'b'
+                }, {
+                  text: 'This is another option',
+                  value: 'c'
+                }, {
+                  text: 'This one is disabled',
+                  value: 'd',
+                  disabled: true
+              }]"
+              v-model="select2" />
+          </b-form-group>
+          <b-form-group
             label="Radios"
             label-for="basicRadios"
             :label-cols="3"
@@ -1471,6 +1496,7 @@ export default {
     return {
       selected  : [], // Must be an array reference!
       datepicker: new Date(),
+      select2   : 'a',
     }
   },
   methods: {
