@@ -49,6 +49,8 @@
     "jquery": "^3.2",
     "lodash": "^4.17.4",
     "popper.js": "^1.12",
+    "select2": "^4.0.6-rc.1",
+    "select2-bootstrap4-theme": "^1.0.0",
     "simple-line-icons": "^2.4.1",
     "vue": "^2.5.16",
     "vue-chartjs": "^3.3.2",
