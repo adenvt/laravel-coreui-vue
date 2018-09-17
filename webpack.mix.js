@@ -1,5 +1,7 @@
-const path = require('path')
-const mix = require('laravel-mix')
+const path        = require('path')
+const mix         = require('laravel-mix')
+const webpack     = require('webpack')
+const { version } = require('./package.json')
 
 /*
  |--------------------------------------------------------------------------
@@ -12,15 +14,16 @@ const mix = require('laravel-mix')
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-mix.sass('resources/assets/sass/app.scss', 'public/css')
+mix.js('resources/js/app.js', 'public/js')
+mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
   resolve: {
     alias: {
-      '@'     : path.resolve(__dirname, 'resources/assets/js/coreui/'),
-      'static': path.resolve(__dirname, 'resources/assets/static/'),
+      '@'     : path.resolve(__dirname, 'resources/js/coreui/'),
+      'static': path.resolve(__dirname, 'resources/static/'),
     },
   },
+  plugins: [new webpack.DefinePlugin({ __VERSION: JSON.stringify(version) })],
 })
 
 mix.extend('vueOptions', (webpackConfig, vueOptions, ...args) => {
@@ -42,10 +45,29 @@ mix.vueOptions({
   },
 })
 
+mix.extract([
+  'axios',
+  'bootstrap',
+  'bootstrap-vue',
+  'chart.js',
+  'jquery',
+  'lodash',
+  'popper.js',
+  'select2',
+  'vue',
+  'vue-chartjs',
+  'vue-loading-spinner',
+  'vue-notification',
+  'vue-router',
+  'vue-sweetalert2',
+  'vuejs-datepicker',
+  'vuex',
+])
+
 if (mix.inProduction())
   mix.version()
 else
   mix.sourceMaps()
 
-if (process.platform !== 'linux')
+if (process.platform === 'darwin')
   mix.disableNotifications()

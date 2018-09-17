@@ -1,0 +1,24 @@
+@import '~vue-loading-spinner/dist/vue-loading-spinner.css';
+
+.spinner-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+  min-width: 250px;
+  overflow: hidden;
+  width: 25%;
+
+  .spinner-body {
+    margin-top: 1rem;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-height {
+    height: 100vh;
+  }
+}
