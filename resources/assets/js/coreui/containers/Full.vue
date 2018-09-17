@@ -48,7 +48,8 @@ export default {
   methods: {
     setPosNotify () {
       const top    = $(document).scrollTop()
-      const offset = top < 55 ? 55 - top : 0
+      const height = $('.app-header').height()
+      const offset = top < height ? height - top : 0
 
       this.offset = `${offset}px`
     },
