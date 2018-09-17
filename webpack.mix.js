@@ -42,6 +42,25 @@ mix.vueOptions({
   },
 })
 
+mix.extract([
+  'axios',
+  'bootstrap',
+  'bootstrap-vue',
+  'chart.js',
+  'jquery',
+  'lodash',
+  'popper.js',
+  'select2',
+  'vue',
+  'vue-chartjs',
+  'vue-loading-spinner',
+  'vue-notification',
+  'vue-router',
+  'vue-sweetalert2',
+  'vuejs-datepicker',
+  'vuex',
+])
+
 if (mix.inProduction())
   mix.version()
 else
