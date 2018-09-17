@@ -15,6 +15,7 @@
     "moment": true,
     "axios": true,
     "Vue": true,
-    "CONFIG": true
+    "CONFIG": true,
+    "__VERSION": true
   }
 }
