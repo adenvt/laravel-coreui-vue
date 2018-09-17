@@ -12,13 +12,13 @@ const mix  = require('laravel-mix')
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-mix.sass('resources/assets/sass/app.scss', 'public/css')
+mix.js('resources/js/app.js', 'public/js')
+mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
   resolve: {
     alias: {
-      '@'     : path.resolve(__dirname, 'resources/assets/js/coreui/'),
-      'static': path.resolve(__dirname, 'resources/assets/static/'),
+      '@'     : path.resolve(__dirname, 'resources/js/coreui/'),
+      'static': path.resolve(__dirname, 'resources/static/'),
     },
   },
 })
@@ -47,5 +47,5 @@ if (mix.inProduction())
 else
   mix.sourceMaps()
 
-if (process.platform !== 'linux')
+if (process.platform === 'darwin')
   mix.disableNotifications()
