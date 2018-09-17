@@ -1,5 +1,7 @@
-const path = require('path')
-const mix  = require('laravel-mix')
+const path        = require('path')
+const mix         = require('laravel-mix')
+const webpack     = require('webpack')
+const { version } = require('./package.json')
 
 /*
  |--------------------------------------------------------------------------
@@ -21,6 +23,7 @@ mix.webpackConfig({
       'static': path.resolve(__dirname, 'resources/static/'),
     },
   },
+  plugins: [new webpack.DefinePlugin({ __VERSION: JSON.stringify(version) })],
 })
 
 mix.extend('vueOptions', (webpackConfig, vueOptions, ...args) => {
