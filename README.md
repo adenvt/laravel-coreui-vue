@@ -2,14 +2,14 @@
 
 > Laravel + CoreUI + Vue Boilerplate
 
-[![GitHub version](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue)
-[![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
+[![PHP version](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue)
 
 ## What's inside
-* [Laravel][laravel] 5.6, A PHP framework for web artisans
+* [Laravel][laravel] 5.7, A PHP framework for web artisans
 * [Core UI][coreui] for Vue, Free Bootstrap Admin Template
 * Usefull library: [Axios][axios], [jQuery][jquery], [Moment.js][moment], [Lodash][lodash]
 * [Vue Router][vue-router] and [Vuex][vuex], set out of the box
+* PWA ready, powered by [Offline-plugin][offline-plugin] and [Workbox][workbox]
 * Notification using [Vue-SweatAlert2][vue-sweatalert2] and [Vue-Notification][vue-notification]
 * Loading spinner with [Vue Loading Spinner][vue-loading-spinner]
 * Quick deployment with [Docker Compose][docker-compose] [TODO]
@@ -28,7 +28,7 @@
 * For Ubuntu, require `apt-get install libpng16-dev`, [see](https://github.com/imagemin/imagemin-mozjpeg/issues/28)
 
 ## How to Install
-* Install using composer
+* Install using composer (no need to cloning)
 ```bash
 composer create-project --prefer-dist adenvt/laravel-coreui-vue project_name
 ```
@@ -50,7 +50,7 @@ npm run dev
 ## for Production
 npm run prod
 
-### for Development with HMR (Hot Module Replacement)
+## for Development with HMR (Hot Module Replacement)
 npm run hot
 ```
 
@@ -69,3 +69,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [vue-notification]: http://vue-notification.yev.io/
 [vue-loading-spinner]: https://nguyenvanduocit.github.io/vue-loading-spinner/
 [docker-compose]: https://docs.docker.com/compose/
+[offline-plugin]: https://github.com/NekR/offline-plugin
+[workbox]: https://developers.google.com/web/tools/workbox/
