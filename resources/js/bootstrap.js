@@ -43,6 +43,7 @@ try {
 
   require('bootstrap')
   require('select2')
+  require('offline-plugin/runtime').install()
 
   $.fn.select2.defaults.set('theme', 'bootstrap4')
   $.fn.select2.defaults.set('width', '100%')
