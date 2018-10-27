@@ -3,8 +3,6 @@
 > Laravel + CoreUI + Vue Boilerplate
 
 [![GitHub version](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/gh/adenvt%2Flaravel-coreui-vue)
-[![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
-
 ## What's inside
 * [Laravel][laravel] 5.6, A PHP framework for web artisans
 * [Core UI][coreui] for Vue, Free Bootstrap Admin Template
@@ -12,7 +10,7 @@
 * [Vue Router][vue-router] and [Vuex][vuex], set out of the box
 * Notification using [Vue-SweatAlert2][vue-sweatalert2] and [Vue-Notification][vue-notification]
 * Loading spinner with [Vue Loading Spinner][vue-loading-spinner]
-* Quick deployment with [Docker Compose][docker-compose] [TODO]
+* Quick deployment with [Docker Compose][docker-compose]
 
 ## Requirement
 * **PHP** >= 7.1.3
@@ -50,9 +48,50 @@ npm run dev
 ## for Production
 npm run prod
 
-### for Development with HMR (Hot Module Replacement)
+## for Development with HMR (Hot Module Replacement)
 npm run hot
 ```
+
+## Using Docker Compose
+
+### For Development
+
+* Create and run Container
+```bash
+docker-compose up -d dev
+```
+
+* Enter workspace
+```bash
+docker-compose exec dev bash
+```
+
+* Install Depencies
+```
+composer install
+npm install
+```
+* Compile Static Asset
+```bash
+## Single run compile
+npm run dev
+
+## or watch and compile every change
+npm run watch
+
+## or using Hot Module Replacement
+npm run hot
+```
+* Open browser, goto `http://localhost:8080`
+
+### For Production
+* Create and run Container
+```
+docker-compose up -d prod
+```
+* Open browser, goto `http://localhost:8888`
+
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

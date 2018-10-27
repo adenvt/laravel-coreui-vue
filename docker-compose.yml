@@ -1,0 +1,15 @@
+version: '3'
+services:
+  prod:
+    build: ./
+    ports:
+     - 8888:80
+  dev:
+    build:
+      context: ./
+      dockerfile: deploy/dev/Dockerfile
+    volumes:
+      - ./:/var/www
+    ports:
+      - 8080:8080
+      - 8000:80
