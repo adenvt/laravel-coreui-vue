@@ -32,7 +32,7 @@ Vue.component('b-datepicker', {
   },
 })
 
-window.Vue = new Vue({
+export default new Vue({
   el        : '#app',
   router    : router,
   store     : store,
