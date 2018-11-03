@@ -87,6 +87,7 @@ mix.options({
     host: '0.0.0.0',
     port: 8080,
   },
+  uglify: { parallel: true },
 })
 
 if (mix.inProduction())

@@ -29,28 +29,34 @@
             <div class="app flex-row align-items-center">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <div class="clearfix">
-                                <h1 class="float-left display-3 mr-4">
-                                    <i class="fa fa-warning"></i>
-                                </h1>
-                                <h4 class="pt-3">Javascript Required</h4>
-                                <p class="text-muted">
-                                    Please enabling Javascript or try with other browser which have Javascript Support.<br>
-                                    <a class="btn btn-primary mt-3" href="{{ url()->current() }}">
-                                        Reload Page
-                                    </a>
-                                </p>
-                            </div>
+                        <div class="col-md-6 p-3">
+                            <h1 class="text-center text-md-left">
+                                <i class="fa fa-warning fa-2x"></i>
+                            </h1>
+                            <h4 class="pt-3">Browser not Support</h4>
+                            <p class="text-muted">
+                                Try other browser which have Javascript Support. Recommendation is
+                                <a href="https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjw6-_eBRBXEiwA-5zHaa78eJ_HfOScWr1D4PzHFZY2k2zRHc9pcHZ9gvAaHbljCsSC1gv0jBoCKIUQAvD_BwE&gclsrc=aw.ds">
+                                    Google Chrome
+                                </a>
+                                or
+                                <a href="https://www.mozilla.org/en-US/">
+                                    Mozilla Firefox
+                                </a>
+                                <br>
+                                <a class="btn btn-primary mt-3" href="{{ url()->current() }}">
+                                    Reload Page
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </noscript>
     </div>
-    <script src="{{ asset(mix('js/manifest.js')) }}"></script>
-    <script src="{{ asset(mix('js/vendor.js')) }}"></script>
-    <script src="{{ asset(mix('js/app.js')) }}"></script>
+    <script defer src="{{ asset(mix('js/manifest.js')) }}"></script>
+    <script defer src="{{ asset(mix('js/vendor.js')) }}"></script>
+    <script defer src="{{ asset(mix('js/app.js')) }}"></script>
 </body>
 
 </html>

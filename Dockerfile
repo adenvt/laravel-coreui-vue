@@ -35,16 +35,27 @@ COPY composer.json composer.json
 COPY composer.lock composer.lock
 RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
-RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /root/.composer
+RUN composer install \
+  --prefer-dist \
+  --no-ansi \
+  --no-dev \
+  --no-interaction \
+  --no-progress \
+  --no-scripts \
+  --no-autoloader \
+  && rm -rf /root/.composer
 
 COPY deploy/web/site.conf /etc/nginx/sites-available/default
 COPY deploy/web/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/web/mime.types /etc/nginx/mime.types
-COPY deploy/web/php.ini /usr/local/etc/php/
+COPY deploy/web/php.ini /usr/local/etc/php/php.ini
 COPY --from=compiler /var/www /var/www
 
-RUN composer dump-autoload --no-scripts --no-dev --optimize
+RUN composer dump-autoload --no-dev --optimize
 RUN chown -R www-data:www-data /var/www
+RUN php artisan config:cache \
+  && php artisan route:cache \
+  && php artisan view:cache
 RUN rm -rf /var/www/html/ /var/www/deploy/
 
 EXPOSE 80 443
