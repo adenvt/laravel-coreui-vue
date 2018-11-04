@@ -58,8 +58,7 @@ npm run hot
 ## Using Docker Compose
 
 ### For Development
-
-* Create and run Container
+* Create and start Container
 ```bash
 docker-compose up -d dev
 ```
@@ -74,6 +73,7 @@ docker-compose exec dev bash
 composer install
 npm install
 ```
+
 * Compile Static Asset
 ```bash
 ## Single run compile
@@ -88,11 +88,12 @@ npm run hot
 * Open browser, goto `http://localhost:8888`
 
 ### For Production
-* Create and run Container
+* Create and start Container
 ```
 docker-compose up -d prod
 ```
-* Open browser, goto `http://localhost:88`
+
+* Open browser, goto [http://localhost:88](http://localhost:88)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
