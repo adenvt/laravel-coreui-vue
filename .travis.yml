@@ -1,0 +1,20 @@
+sudo: required
+
+language: minimal
+
+services:
+  - docker
+
+before_install:
+  - cp .env.travis .env
+
+install:
+  - docker-compose up -d --build prod
+
+script:
+  - curl --silent --fail --show-error http://127.0.0.1:88 > $HOME/index.html
+
+after_failure:
+  - cat $HOME/index.html
+  - docker-compose exec prod bash -c "tail /var/log/nginx/access.log"
+  - docker-compose exec prod bash -c "tail /var/log/nginx/error.log"
