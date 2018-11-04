@@ -3,6 +3,7 @@
 > Laravel + CoreUI + Vue Boilerplate
 
 [![PHP version](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue)
+[![Build Status](https://travis-ci.com/adenvt/laravel-coreui-vue.svg?branch=master)](https://travis-ci.com/adenvt/laravel-coreui-vue)
 
 ## What's inside
 * [Laravel][laravel] 5.7, A PHP framework for web artisans
@@ -28,7 +29,7 @@
 * For Ubuntu, require `apt-get install libpng16-dev`, [see](https://github.com/imagemin/imagemin-mozjpeg/issues/28)
 
 ## How to Install
-* Install using composer (no need to cloning)
+* Install using composer (doesn't need to clone)
 ```bash
 composer create-project --prefer-dist adenvt/laravel-coreui-vue project_name
 ```
@@ -92,8 +93,6 @@ npm run hot
 docker-compose up -d prod
 ```
 * Open browser, goto `http://localhost:88`
-
-
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

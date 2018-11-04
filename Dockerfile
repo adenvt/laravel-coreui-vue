@@ -8,7 +8,7 @@ COPY package-lock.json /var/www
 RUN npm ci
 
 COPY . /var/www
-# RUN npm run prod
+RUN npm run prod
 RUN rm -rf /var/www/node_modules/
 
 FROM php:7.2-fpm AS server

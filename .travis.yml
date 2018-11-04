@@ -1,0 +1,12 @@
+sudo: required
+
+language: minimal
+
+services:
+  - docker
+
+install:
+  - docker-compose up -d prod
+
+script:
+  - curl --silent --fail --show-error --output /dev/null http://localhost:88
