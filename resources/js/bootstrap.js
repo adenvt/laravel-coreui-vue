@@ -9,6 +9,7 @@ try {
   window.$      = window.jQuery = require('jquery')
   window.Popper = require('popper.js').default
   window.Vue    = require('vue')
+  window.moment = require('moment')
 
   // Lodash Improvement
   window._.mixin({ pascalCase: _.flow(_.camelCase, _.upperFirst) })
@@ -42,6 +43,7 @@ try {
 
   require('bootstrap')
   require('select2')
+  require('offline-plugin/runtime').install()
 
   $.fn.select2.defaults.set('theme', 'bootstrap4')
   $.fn.select2.defaults.set('width', '100%')

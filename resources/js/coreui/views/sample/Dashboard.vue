@@ -838,7 +838,7 @@ export default {
       selected  : 'Month',
       tableItems: [
         {
-          avatar: { url: 'static/img/avatars/1.jpg', status: 'success' },
+          avatar: { url: require('static/img/avatars/1.jpg'), status: 'success' },
           user  : {
             name      : 'Yiorgos Avraamu', new       : true, registered: 'Jan 1, 2015',
           },
@@ -848,7 +848,7 @@ export default {
           activity: '10 sec ago',
         },
         {
-          avatar: { url: 'static/img/avatars/2.jpg', status: 'danger' },
+          avatar: { url: require('static/img/avatars/2.jpg'), status: 'danger' },
           user  : {
             name      : 'Avram Tarasios', new       : false, registered: 'Jan 1, 2015',
           },
@@ -858,7 +858,7 @@ export default {
           activity: '5 minutes ago',
         },
         {
-          avatar: { url: 'static/img/avatars/3.jpg', status: 'warning' },
+          avatar: { url: require('static/img/avatars/3.jpg'), status: 'warning' },
           user  : {
             name      : 'Quintin Ed', new       : true, registered: 'Jan 1, 2015',
           },
@@ -868,7 +868,7 @@ export default {
           activity: '1 hour ago',
         },
         {
-          avatar: { url: 'static/img/avatars/4.jpg', status: '' },
+          avatar: { url: require('static/img/avatars/4.jpg'), status: '' },
           user  : {
             name      : 'Enéas Kwadwo', new       : true, registered: 'Jan 1, 2015',
           },
@@ -878,7 +878,7 @@ export default {
           activity: 'Last month',
         },
         {
-          avatar: { url: 'static/img/avatars/5.jpg', status: 'success' },
+          avatar: { url: require('static/img/avatars/5.jpg'), status: 'success' },
           user  : {
             name      : 'Agapetus Tadeáš', new       : true, registered: 'Jan 1, 2015',
           },
@@ -888,7 +888,7 @@ export default {
           activity: 'Last week',
         },
         {
-          avatar: { url: 'static/img/avatars/6.jpg', status: 'danger' },
+          avatar: { url: require('static/img/avatars/6.jpg'), status: 'danger' },
           user  : {
             name      : 'Friderik Dávid', new       : true, registered: 'Jan 1, 2015',
           },

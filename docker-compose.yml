@@ -1,0 +1,20 @@
+version: '3'
+services:
+  prod:
+    build:
+      context: ./
+      args:
+        - FORCE_HTTPS=false
+    ports:
+     - 88:80
+  dev:
+    build:
+      context: ./
+      dockerfile: deploy/dev/Dockerfile
+      args:
+        - FORCE_HTTPS=false
+    volumes:
+      - ./:/var/www
+    ports:
+      - 8888:80
+      - 8080:8080

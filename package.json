@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.3.0",
+  "version": "1.0.0-rc.1",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -9,10 +9,10 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "lint": "eslint --ext .js,.vue resources/assets/js/ ./*.js",
-    "lint-css": "stylelint \"resources/assets/sass/**/*.scss\"",
-    "fix": "eslint --ext .js,.vue resources/assets/js/ ./*.js --fix",
-    "fix-css": "stylelint \"resources/assets/sass/**/*.scss\" --fix",
+    "lint": "eslint --ext .js,.vue resources/js/ ./*.js",
+    "lint-css": "stylelint \"resources/sass/**/*.scss\"",
+    "fix": "eslint --ext .js,.vue resources/js/ ./*.js --fix",
+    "fix-css": "stylelint \"resources/sass/**/*.scss\" --fix",
     "lint-full": "npm run lint && npm run lint-css",
     "fix-full": "npm run fix && npm run fix-css"
   },
@@ -35,6 +35,7 @@
     "eslint-plugin-varspacing": "^1.2.1",
     "eslint-plugin-vue": "^4.7.1",
     "laravel-mix": "^2.1.14",
+    "offline-plugin": "^5.0.5",
     "pre-commit": "^1.2.2",
     "prettier": "1.12.1",
     "stylelint": "^9.5.0",
@@ -51,6 +52,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2",
     "lodash": "^4.17.11",
+    "moment": "^2.22.2",
     "popper.js": "^1.14.4",
     "select2": "^4.0.6-rc.1",
     "select2-bootstrap4-theme": "^1.0.0",
@@ -62,7 +64,8 @@
     "vue-router": "^3.0.1",
     "vue-sweetalert2": "^1.5.3",
     "vuejs-datepicker": "^1.5.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-easy-access": "^3.1.4"
   },
   "pre-commit": [
     "lint"
