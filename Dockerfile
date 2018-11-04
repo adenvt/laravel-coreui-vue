@@ -8,7 +8,7 @@ COPY package-lock.json /var/www
 RUN npm ci
 
 COPY . /var/www
-RUN npm run prod
+# RUN npm run prod
 RUN rm -rf /var/www/node_modules/
 
 FROM php:7.2-fpm AS server
@@ -50,6 +50,12 @@ COPY deploy/web/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/web/mime.types /etc/nginx/mime.types
 COPY deploy/web/php.ini /usr/local/etc/php/php.ini
 COPY --from=compiler /var/www /var/www
+
+# Force HTTPS
+ARG FORCE_HTTPS=false
+RUN if [ ${FORCE_HTTPS} = true ]; then \
+  sed -i 's/# fastcgi_param HTTPS/fastcgi_param HTTPS/' /etc/nginx/sites-available/default \
+;fi
 
 RUN composer dump-autoload --no-dev --optimize
 RUN chown -R www-data:www-data /var/www

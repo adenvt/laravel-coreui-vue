@@ -84,8 +84,8 @@ mix.extract([
 
 mix.options({
   hmrOptions: {
-    host: '0.0.0.0',
-    port: 8080,
+    host: process.env.MIX_HMR_HOST,
+    port: process.env.MIX_HMR_PORT,
   },
   uglify: { parallel: true },
 })
