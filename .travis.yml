@@ -9,4 +9,4 @@ install:
   - docker-compose up -d prod
 
 script:
-  - curl --silent --fail --show-error --output /dev/null http://localhost:88
+  - curl --silent --fail --show-error http://127.0.0.1:88

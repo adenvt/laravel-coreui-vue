@@ -58,10 +58,10 @@ RUN if [ ${FORCE_HTTPS} = true ]; then \
 ;fi
 
 RUN composer dump-autoload --no-dev --optimize
-RUN chown -R www-data:www-data /var/www
 RUN php artisan config:cache \
   && php artisan route:cache \
   && php artisan view:cache
+RUN chown -R www-data:www-data /var/www
 RUN rm -rf /var/www/html/ /var/www/deploy/
 
 EXPOSE 80 443
