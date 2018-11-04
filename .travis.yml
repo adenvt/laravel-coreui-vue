@@ -10,3 +10,7 @@ install:
 
 script:
   - curl --silent --fail --show-error http://127.0.0.1:88
+
+after_failure:
+  - docker-compose exec prod bash -c "tail /var/log/nginx/access.log"
+  - docker-compose exec prod bash -c "tail /var/log/nginx/error.log"
