@@ -84,14 +84,14 @@ npm run watch
 ## or using Hot Module Replacement
 npm run hot
 ```
-* Open browser, goto `http://localhost:8080`
+* Open browser, goto `http://localhost:8888`
 
 ### For Production
 * Create and run Container
 ```
 docker-compose up -d prod
 ```
-* Open browser, goto `http://localhost:8888`
+* Open browser, goto `http://localhost:88`
 
 
 
