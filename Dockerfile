@@ -49,7 +49,6 @@ COPY deploy/web/site.conf /etc/nginx/sites-available/default
 COPY deploy/web/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/web/mime.types /etc/nginx/mime.types
 COPY deploy/web/php.ini /usr/local/etc/php/php.ini
-COPY --from=compiler /var/www /var/www
 
 # Force HTTPS
 ARG FORCE_HTTPS=false
@@ -57,8 +56,11 @@ RUN if [ ${FORCE_HTTPS} = true ]; then \
   sed -i 's/# fastcgi_param HTTPS/fastcgi_param HTTPS/' /etc/nginx/sites-available/default \
 ;fi
 
+COPY --from=compiler /var/www /var/www
 RUN composer dump-autoload --no-dev --optimize
-RUN php artisan config:cache \
+RUN grep -q "APP_KEY=" .env || echo "APP_KEY=" >> .env
+RUN php artisan key:generate \
+  && php artisan config:cache \
   && php artisan route:cache \
   && php artisan view:cache
 RUN chown -R www-data:www-data /var/www
