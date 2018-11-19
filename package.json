@@ -9,12 +9,14 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "lint": "eslint --ext .js,.vue resources/js/ ./*.js",
+    "lint-js": "eslint --ext .js,.vue resources/js/ ./*.js",
     "lint-css": "stylelint \"resources/sass/**/*.scss\"",
-    "fix": "eslint --ext .js,.vue resources/js/ ./*.js --fix",
+    "fix-js": "eslint --ext .js,.vue resources/js/ ./*.js --fix",
     "fix-css": "stylelint \"resources/sass/**/*.scss\" --fix",
-    "lint-all": "npm run lint && npm run lint-css",
-    "fix-all": "npm run fix && npm run fix-css"
+    "lint-php": "php php-cs-fixer fix --dry-run",
+    "fix-php": "php php-cs-fixer fix",
+    "lint": "npm run lint-js && npm run lint-css && npm run lint-php",
+    "fix": "npm run fix-js && npm run fix-css && npm run fix-php"
   },
   "engines": {
     "node": ">= 8.9.4",
