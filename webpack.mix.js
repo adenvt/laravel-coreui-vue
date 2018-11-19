@@ -45,7 +45,7 @@ mix.webpackConfig({
 })
 
 mix.extend('vueOptions', (webpackConfig, vueOptions, ...args) => {
-  const vueLoader = webpackConfig.module.rules.find(loader => loader.loader === 'vue-loader')
+  const vueLoader = webpackConfig.module.rules.find((loader) => loader.loader === 'vue-loader')
 
   vueLoader.options = require('webpack-merge').smart(vueLoader.options, vueOptions)
 })

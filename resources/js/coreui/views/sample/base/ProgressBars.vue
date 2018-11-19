@@ -333,7 +333,7 @@ export default {
   },
   mounted () {
     this.timer = setInterval(() => {
-      this.bars.forEach(bar => {
+      this.bars.forEach((bar) => {
         bar.value = 25 + (Math.random() * 75)
       })
     }, 2000)

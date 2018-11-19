@@ -66,7 +66,7 @@ export default {
 
       if (isArray(options)) {
         // Normalize flat-ish arrays to Array of Objects
-        return options.map(option => {
+        return options.map((option) => {
           if (isObject(option)) {
             return {
               id      : option[valueField],
@@ -83,7 +83,7 @@ export default {
       } else {
         // options is Object
         // Normalize Objects to Array of Objects
-        return keys(options).map(key => {
+        return keys(options).map((key) => {
           const option = options[key] || {}
           if (isObject(option)) {
             const value = option[valueField]
