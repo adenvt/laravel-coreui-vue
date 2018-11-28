@@ -34,7 +34,7 @@
     "eslint-plugin-unicorn": "^6.0.1",
     "eslint-plugin-varspacing": "^1.2.1",
     "eslint-plugin-vue": "^4.7.1",
-    "laravel-mix": "^2.1.14",
+    "laravel-mix": "^3.0.0",
     "offline-plugin": "^5.0.5",
     "pre-commit": "^1.2.2",
     "prettier": "1.15.0",
