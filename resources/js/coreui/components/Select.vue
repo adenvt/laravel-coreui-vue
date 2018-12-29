@@ -1,6 +1,6 @@
 <template>
   <select>
-    <slot/>
+    <slot />
   </select>
 </template>
 
@@ -39,23 +39,6 @@ export default {
   data () {
     return { localValue: this.value }
   },
-  watch: {
-    value (value) {
-      $(this.$el)
-        .val(value)
-        .trigger('change.select2')
-    },
-    options () {
-      $(this.$el)
-        .empty()
-        .select2({
-          data       : this.formOptions,
-          placeholder: this.placeholder,
-        })
-        .val(this.value)
-        .trigger('change.select2')
-    },
-  },
   computed: {
     formOptions () {
       const options = this.options
@@ -66,7 +49,7 @@ export default {
 
       if (isArray(options)) {
         // Normalize flat-ish arrays to Array of Objects
-        return options.map(option => {
+        return options.map((option) => {
           if (isObject(option)) {
             return {
               id      : option[valueField],
@@ -83,7 +66,7 @@ export default {
       } else {
         // options is Object
         // Normalize Objects to Array of Objects
-        return keys(options).map(key => {
+        return keys(options).map((key) => {
           const option = options[key] || {}
           if (isObject(option)) {
             const value = option[valueField]
@@ -103,6 +86,29 @@ export default {
       }
     },
   },
+  watch: {
+    value (value) {
+      $(this.$el)
+        .val(value)
+        .trigger('change.select2')
+    },
+    options () {
+      $(this.$el)
+        .empty()
+        .select2({
+          data       : this.formOptions,
+          placeholder: this.placeholder,
+        })
+        .val(this.value)
+        .trigger('change.select2')
+    },
+  },
+  mounted () {
+    this.createSelect()
+  },
+  destroyed () {
+    $(this.$el).off().select2('destroy')
+  },
   methods: {
     createSelect () {
       const vm = this
@@ -120,12 +126,6 @@ export default {
           vm.$emit('input', vm.localValue)
         })
     },
-  },
-  mounted () {
-    this.createSelect()
-  },
-  destroyed () {
-    $(this.$el).off().select2('destroy')
   },
 }
 </script>

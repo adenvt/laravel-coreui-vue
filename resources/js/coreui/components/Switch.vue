@@ -1,21 +1,23 @@
 <template>
   <label :class="classList">
     <input
-      type="checkbox"
-      class="switch-input"
       :value="value"
       :checked="isChecked"
-      @change="handleChange">
+      type="checkbox"
+      class="switch-input"
+      @change="handleChange"
+    >
     <template v-if="isOn">
       <span
-        class="switch-label"
         :data-on="on"
-        :data-off="off"/>
+        :data-off="off"
+        class="switch-label"
+      />
     </template>
     <template v-else>
-      <span class="switch-label"/>
+      <span class="switch-label" />
     </template>
-    <span class="switch-handle"/>
+    <span class="switch-handle" />
   </label>
 </template>
 

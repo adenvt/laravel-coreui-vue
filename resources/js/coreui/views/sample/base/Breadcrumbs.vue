@@ -5,16 +5,22 @@
         <b-col cols="12">
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Bootstrap Breadcrumb</strong>
+              <i class="fa fa-align-justify" /> <strong>Bootstrap Breadcrumb</strong>
               <div class="card-actions">
                 <a
                   href="https://bootstrap-vue.js.org/docs/components/breadcrumb"
-                  target="_blank"><small class="text-muted">docs</small></a>
+                  target="_blank"
+                >
+                  <small class="text-muted">
+                    docs
+                  </small>
+                </a>
               </div>
             </div>
-            <b-breadcrumb :items="items"/>
+            <b-breadcrumb :items="items" />
           </b-card>
         </b-col>
       </b-row>

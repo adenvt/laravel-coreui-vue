@@ -2,7 +2,8 @@
   <button
     class="sidebar-minimizer"
     type="button"
-    @click="sidebarMinimize();brandMinimize()"/>
+    @click="sidebarMinimize();brandMinimize()"
+  />
 </template>
 <script>
 

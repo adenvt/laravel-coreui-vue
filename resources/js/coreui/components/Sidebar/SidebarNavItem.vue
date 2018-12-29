@@ -1,8 +1,9 @@
 <template>
   <li
     :class="classList"
-    @click="hideMobile">
-    <slot/>
+    @click="hideMobile"
+  >
+    <slot />
   </li>
 </template>
 

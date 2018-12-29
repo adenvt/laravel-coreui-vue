@@ -3,32 +3,41 @@
     <div class="animated fadeIn">
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
           <i class="fa fa-align-justify" />
           <strong>Bootstrap Jumbotron</strong>
           <div class="card-actions">
             <a
               href="https://bootstrap-vue.js.org/docs/components/jumbotron"
-              target="_blank">
-              <small class="text-muted">docs</small>
+              target="_blank"
+            >
+              <small class="text-muted">
+                docs
+              </small>
             </a>
           </div>
         </div>
         <div>
           <b-jumbotron
             header="Bootstrap 4"
-            lead="Bootstrap 4 Components for Vue.js 2">
+            lead="Bootstrap 4 Components for Vue.js 2"
+          >
             <p>For more information visit website</p>
             <b-btn
               variant="primary"
-              href="#">More Info</b-btn>
+              href="#"
+            >
+              More Info
+            </b-btn>
           </b-jumbotron>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
           <i class="fa fa-align-justify" />
           <strong>Jumbotron</strong>
@@ -48,16 +57,23 @@
             </p>
             <b-btn
               variant="primary"
-              href="#">Do Something</b-btn>
+              href="#"
+            >
+              Do Something
+            </b-btn>
             <b-btn
               variant="success"
-              href="#">Do Something Else</b-btn>
+              href="#"
+            >
+              Do Something Else
+            </b-btn>
           </b-jumbotron>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
           <i class="fa fa-align-justify" />
           <strong>Jumbotron</strong>
@@ -67,7 +83,8 @@
           <b-jumbotron
             bg-variant="info"
             text-variant="white"
-            border-variant="dark">
+            border-variant="dark"
+          >
             <template slot="header">
               Bootstrap 4
             </template>

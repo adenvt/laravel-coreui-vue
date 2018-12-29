@@ -2,6 +2,7 @@ const path          = require('path')
 const mix           = require('laravel-mix')
 const webpack       = require('webpack')
 const { version }   = require('./package.json')
+const WebpackBar    = require('webpackbar')
 const OfflinePlugin = require('offline-plugin')
 
 /*
@@ -18,13 +19,16 @@ const OfflinePlugin = require('offline-plugin')
 mix.js('resources/js/app.js', 'public/js')
 mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
-  resolve: {
+  devServer: { disableHostCheck: true },
+  resolve  : {
     alias: {
-      '@'     : path.resolve(__dirname, 'resources/js/coreui/'),
-      'static': path.resolve(__dirname, 'resources/static/'),
+      '@'         : path.resolve(__dirname, 'resources/js/coreui/'),
+      'static'    : path.resolve(__dirname, 'resources/static/'),
+      'validators': 'vuelidate/lib/validators',
     },
   },
   plugins: [
+    new WebpackBar({ profile: true }),
     new webpack.DefinePlugin({ __VERSION: JSON.stringify(version) }),
     new OfflinePlugin({
       publicPath      : '/',
@@ -45,7 +49,7 @@ mix.webpackConfig({
 })
 
 mix.extend('vueOptions', (webpackConfig, vueOptions, ...args) => {
-  const vueLoader = webpackConfig.module.rules.find(loader => loader.loader === 'vue-loader')
+  const vueLoader = webpackConfig.module.rules.find((loader) => loader.loader === 'vue-loader')
 
   vueLoader.options = require('webpack-merge').smart(vueLoader.options, vueOptions)
 })
@@ -70,6 +74,7 @@ mix.extract([
   'chart.js',
   'jquery',
   'lodash',
+  'moment',
   'popper.js',
   'select2',
   'vue',
@@ -79,15 +84,18 @@ mix.extract([
   'vue-router',
   'vue-sweetalert2',
   'vuejs-datepicker',
+  'vuelidate',
   'vuex',
+  'vuex-easy-access',
 ])
 
 mix.options({
-  hmrOptions: {
+  clearConsole: false,
+  hmrOptions  : {
     host: process.env.MIX_HMR_HOST,
     port: process.env.MIX_HMR_PORT,
   },
-  uglify: { parallel: true },
+  terser: { terserOptions: { parallel: true } },
 })
 
 if (mix.inProduction())

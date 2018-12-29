@@ -3,4 +3,7 @@
 // first argument, followed by additional payload arguments.
 // mutations must be synchronous and can be recorded by plugins
 // for debugging purposes.
-export default {}
+import state from './state'
+import { defaultMutations } from 'vuex-easy-access'
+
+export default { ...defaultMutations(state) }

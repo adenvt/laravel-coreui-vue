@@ -14,6 +14,7 @@
 * Notification using [Vue-SweatAlert2][vue-sweatalert2] and [Vue-Notification][vue-notification]
 * Loading spinner with [Vue Loading Spinner][vue-loading-spinner]
 * Quick deployment with [Docker Compose][docker-compose]
+* [Laravel Page Speed][laravel-page-speed], Simple package to minify HTML output on demand which results in a 35%+ optimization
 
 ## Requirement
 * **PHP** >= 7.1.3
@@ -85,7 +86,7 @@ npm run watch
 ## or using Hot Module Replacement
 npm run hot
 ```
-* Open browser, goto `http://localhost:8888`
+* Open browser, goto [http://localhost:8888](link)
 
 ### For Production
 * Create and start Container
@@ -93,7 +94,7 @@ npm run hot
 docker-compose up -d prod
 ```
 
-* Open browser, goto [http://localhost:88](http://localhost:88)
+* Open browser, goto [http://localhost:88](link)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
@@ -112,3 +113,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [docker-compose]: https://docs.docker.com/compose/
 [offline-plugin]: https://github.com/NekR/offline-plugin
 [workbox]: https://developers.google.com/web/tools/workbox/
+[laravel-page-speed]: https://github.com/renatomarinho/laravel-page-speed

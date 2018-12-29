@@ -8,6 +8,8 @@ COPY package-lock.json /var/www
 RUN npm ci
 
 COPY . /var/www
+RUN npm run lint-js
+RUN npm run lint-css
 RUN npm run prod
 RUN rm -rf /var/www/node_modules/
 
@@ -57,12 +59,11 @@ RUN if [ ${FORCE_HTTPS} = true ]; then \
 ;fi
 
 COPY --from=compiler /var/www /var/www
+RUN php php-cs-fixer fix --dry-run
 RUN composer dump-autoload --no-dev --optimize
 RUN grep -q "APP_KEY=" .env || echo "APP_KEY=" >> .env
 RUN php artisan key:generate \
-  && php artisan config:cache \
-  && php artisan route:cache \
-  && php artisan view:cache
+  && php artisan optimize
 RUN chown -R www-data:www-data /var/www
 RUN rm -rf /var/www/html/ /var/www/deploy/
 

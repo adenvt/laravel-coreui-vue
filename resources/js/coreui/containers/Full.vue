@@ -1,20 +1,21 @@
 <template>
   <div class="app">
-    <AppHeader/>
+    <app-header />
     <div class="app-body">
-      <Sidebar :nav-items="nav"/>
+      <sidebar :nav-items="nav" />
       <notifications
+        :style="{ 'margin-top': offset }"
         class="custom-notifications"
-        :style="{ 'margin-top': offset }" />
+      />
       <main class="main">
-        <breadcrumb :list="list"/>
+        <breadcrumb :list="list" />
         <div class="container-fluid">
-          <router-view/>
+          <router-view />
         </div>
       </main>
-      <AppAside/>
+      <app-aside />
     </div>
-    <AppFooter/>
+    <app-footer />
   </div>
 </template>
 
@@ -45,6 +46,12 @@ export default {
       return this.$route.matched
     },
   },
+  mounted () {
+    $(window).on('scroll', this.setPosNotify)
+  },
+  beforeDestroy () {
+    $(window).off('scroll', this.setPosNotify)
+  },
   methods: {
     setPosNotify () {
       const top    = $(document).scrollTop()
@@ -53,12 +60,6 @@ export default {
 
       this.offset = `${offset}px`
     },
-  },
-  mounted () {
-    $(window).on('scroll', this.setPosNotify)
-  },
-  beforeDestroy () {
-    $(window).off('scroll', this.setPosNotify)
   },
 }
 </script>

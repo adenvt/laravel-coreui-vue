@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import EasyAccess from 'vuex-easy-access'
+
 import state from './state'
 import mutations from './mutations'
 import getter from './getters'
 import actions from './actions'
-import EasyAccess from 'vuex-easy-access'
+import modules from './modules'
 
 Vue.use(Vuex)
 
@@ -13,5 +15,6 @@ export default new Vuex.Store({
   mutations,
   getter,
   actions,
+  modules,
   plugins: [EasyAccess()],
 })

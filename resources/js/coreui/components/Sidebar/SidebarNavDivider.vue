@@ -1,5 +1,5 @@
 <template>
-  <li :class="classList"/>
+  <li :class="classList" />
 </template>
 
 <script>

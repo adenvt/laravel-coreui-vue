@@ -1,14 +1,18 @@
 <template>
   <router-link
+    :to="url"
     tag="li"
     class="nav-item nav-dropdown"
-    :to="url"
-    disabled>
+    disabled
+  >
     <div
       class="nav-link nav-dropdown-toggle"
-      @click="handleClick"><i :class="icon"/> {{ name }}</div>
+      @click="handleClick"
+    >
+      <i :class="icon" /> {{ name }}
+    </div>
     <ul class="nav-dropdown-items">
-      <slot/>
+      <slot />
     </ul>
   </router-link>
 </template>

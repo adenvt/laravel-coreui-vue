@@ -4,33 +4,50 @@
       <b-row>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Bootstrap Collapse</strong>
+              <i class="fa fa-align-justify" /> <strong>Bootstrap Collapse</strong>
               <div class="card-actions">
                 <a
                   href="https://bootstrap-vue.js.org/docs/components/collapse"
-                  target="_blank"><small class="text-muted">docs</small></a>
+                  target="_blank"
+                >
+                  <small class="text-muted">
+                    docs
+                  </small>
+                </a>
               </div>
             </div>
             <div>
               <b-btn
                 v-b-toggle.collapse1
-                variant="primary">Toggle Collapse</b-btn>
+                variant="primary"
+              >
+                Toggle Collapse
+              </b-btn>
               <b-collapse
                 id="collapse1"
-                class="mt-2">
+                class="mt-2"
+              >
                 <b-card>
-                  <p class="card-text">Collapse contents Here</p>
+                  <p class="card-text">
+                    Collapse contents Here
+                  </p>
                   <b-btn
                     v-b-toggle.collapse1_inner
-                    size="sm">Toggle Inner Collapse</b-btn>
+                    size="sm"
+                  >
+                    Toggle Inner Collapse
+                  </b-btn>
                   <b-collapse
-                    id=collapse1_inner
-                    class="mt-2">
+                    id="collapse1_inner"
+                    class="mt-2"
+                  >
                     <b-card>Hello!</b-card>
                   </b-collapse>
                 </b-card>
@@ -40,23 +57,31 @@
         </b-col>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Collapse</strong> <small>with <code>v-b-toggle</code> directive</small>
+              <i class="fa fa-align-justify" /> <strong>Collapse</strong> <small>with <code>v-b-toggle</code> directive</small>
             </div>
             <div>
               <!-- Using modifiers -->
               <b-btn
                 v-b-toggle.collapse2
-                class="m-1">Toggle Collapse</b-btn>
+                class="m-1"
+              >
+                Toggle Collapse
+              </b-btn>
 
               <!-- Using value -->
               <b-btn
                 v-b-toggle="'collapse2'"
-                class="m-1">Toggle Collapse</b-btn>
+                class="m-1"
+              >
+                Toggle Collapse
+              </b-btn>
 
               <!-- element to collapse -->
               <b-collapse id="collapse2">
@@ -71,20 +96,26 @@
       <b-row>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Collapse</strong> <small>with <code>visibility</code></small>
+              <i class="fa fa-align-justify" /> <strong>Collapse</strong> <small>with <code>visibility</code></small>
             </div>
             <div>
               <b-btn
                 v-b-toggle.collapse3
-                class="m-1">Toggle Collapse</b-btn>
+                class="m-1"
+              >
+                Toggle Collapse
+              </b-btn>
               <b-collapse
+                id="collapse3"
                 visible
-                id="collapse3">
+              >
                 <b-card>
                   I should start open!
                 </b-card>
@@ -94,25 +125,29 @@
         </b-col>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Collapse</strong> <small>with <code>v-model</code></small>
+              <i class="fa fa-align-justify" /> <strong>Collapse</strong> <small>with <code>v-model</code></small>
             </div>
             <div>
               <b-btn
-                @click="showCollapse = !showCollapse"
                 :class="showCollapse ? 'collapsed' : null"
+                :aria-expanded="showCollapse ? 'true' : 'false'"
                 aria-controls="collapse4"
-                :aria-expanded="showCollapse ? 'true' : 'false'">
+                @click="showCollapse = !showCollapse"
+              >
                 Toggle Collapse
               </b-btn>
               <b-collapse
-                class="mt-2"
+                id="collapse4"
                 v-model="showCollapse"
-                id="collapse4">
+                class="mt-2"
+              >
                 <b-card>
                   I should start open!
                 </b-card>
@@ -124,28 +159,34 @@
       <b-row>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Collapse</strong> <small>multiple elements</small>
+              <i class="fa fa-align-justify" /> <strong>Collapse</strong> <small>multiple elements</small>
             </div>
             <div>
               <!-- Single button triggers two b-collapse components -->
-              <b-btn v-b-toggle.collapseA.collapseB>Toggle Both Collapse A and B</b-btn>
+              <b-btn v-b-toggle.collapseA.collapseB>
+                Toggle Both Collapse A and B
+              </b-btn>
 
               <!-- elements to collapse -->
               <b-collapse
                 id="collapseA"
-                class="mt-2">
+                class="mt-2"
+              >
                 <b-card>
                   I am collapsable content A!
                 </b-card>
               </b-collapse>
               <b-collapse
                 id="collapseB"
-                class="mt-2">
+                class="mt-2"
+              >
                 <b-card>
                   I am collapsable content B!
                 </b-card>
@@ -155,32 +196,40 @@
         </b-col>
         <b-col
           cols="12"
-          md="6">
+          md="6"
+        >
           <b-card
             header-tag="header"
-            footer-tag="footer">
+            footer-tag="footer"
+          >
             <div slot="header">
-              <i class="fa fa-align-justify"/> <strong>Collapse</strong> <small><code>accordion</code> support</small>
+              <i class="fa fa-align-justify" /> <strong>Collapse</strong> <small><code>accordion</code> support</small>
             </div>
             <div role="tablist">
               <b-card
                 no-body
-                class="mb-1">
+                class="mb-1"
+              >
                 <b-card-header
                   header-tag="header"
                   class="p-1"
-                  role="tab">
+                  role="tab"
+                >
                   <b-btn
+                    v-b-toggle.accordion1
                     block
                     href="#"
-                    v-b-toggle.accordion1
-                    variant="info">Accordion 1</b-btn>
+                    variant="info"
+                  >
+                    Accordion 1
+                  </b-btn>
                 </b-card-header>
                 <b-collapse
                   id="accordion1"
                   visible
                   accordion="my-accordion"
-                  role="tabpanel">
+                  role="tabpanel"
+                >
                   <b-card-body>
                     <p class="card-text">
                       I start opened because <code>visible</code> is <code>true</code>
@@ -193,21 +242,27 @@
               </b-card>
               <b-card
                 no-body
-                class="mb-1">
+                class="mb-1"
+              >
                 <b-card-header
                   header-tag="header"
                   class="p-1"
-                  role="tab">
+                  role="tab"
+                >
                   <b-btn
+                    v-b-toggle.accordion2
                     block
                     href="#"
-                    v-b-toggle.accordion2
-                    variant="info">Accordion 2</b-btn>
+                    variant="info"
+                  >
+                    Accordion 2
+                  </b-btn>
                 </b-card-header>
                 <b-collapse
                   id="accordion2"
                   accordion="my-accordion"
-                  role="tabpanel">
+                  role="tabpanel"
+                >
                   <b-card-body>
                     <p class="card-text">
                       {{ text }}
@@ -217,21 +272,27 @@
               </b-card>
               <b-card
                 no-body
-                class="mb-1">
+                class="mb-1"
+              >
                 <b-card-header
                   header-tag="header"
                   class="p-1"
-                  role="tab">
+                  role="tab"
+                >
                   <b-btn
+                    v-b-toggle.accordion3
                     block
                     href="#"
-                    v-b-toggle.accordion3
-                    variant="info">Accordion 3</b-btn>
+                    variant="info"
+                  >
+                    Accordion 3
+                  </b-btn>
                 </b-card-header>
                 <b-collapse
                   id="accordion3"
                   accordion="my-accordion"
-                  role="tabpanel">
+                  role="tabpanel"
+                >
                   <b-card-body>
                     <p class="card-text">
                       {{ text }}
@@ -242,7 +303,6 @@
             </div>
           </b-card>
         </b-col>
-
       </b-row>
     </div>
   </div>
