@@ -6,6 +6,7 @@ import Datepicker from 'vuejs-datepicker'
 import { id } from 'vuejs-datepicker/dist/locale'
 import Notifications from 'vue-notification'
 import Sweetalert from 'vue-sweetalert2'
+import Vuelidate from 'vuelidate'
 import Loading from './components/Loading'
 import Select2 from './components/Select'
 import App from './App'
@@ -15,6 +16,16 @@ import store from './store'
 Vue.use(BootstrapVue)
 Vue.use(Notifications)
 Vue.use(Sweetalert)
+Vue.use(Vuelidate)
+
+Vue.filter('state', (value, dirtyOnly = true) => {
+  if (dirtyOnly) {
+    if (!value.$dirty)
+      return null
+  }
+
+  return !value.$invalid ? 'valid' : 'invalid'
+})
 
 Vue.component('b-loading', Loading)
 Vue.component('b-select-2', Select2)
