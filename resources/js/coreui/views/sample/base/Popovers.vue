@@ -50,10 +50,10 @@
         <div class="my-3">
           <b-row>
             <b-col
-              md="4"
-              class="py-4 text-center"
               v-for="placement in placements"
-              :key="placement">
+              :key="placement"
+              md="4"
+              class="py-4 text-center">
               <b-btn
                 :id="'exPopover1-'+placement"
                 variant="primary">
@@ -62,9 +62,9 @@
               <b-popover
                 :target="'exPopover1-'+placement"
                 :placement="placement"
+                :content="`Placement ${placement}`"
                 title="Popover!"
-                triggers="hover focus"
-                :content="`Placement ${placement}`"/>
+                triggers="hover focus"/>
             </b-col>
           </b-row>
         </div>

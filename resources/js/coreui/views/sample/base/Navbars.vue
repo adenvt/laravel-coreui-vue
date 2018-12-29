@@ -24,8 +24,8 @@
           <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
           <b-collapse
-            is-nav
-            id="nav_collapse">
+            id="nav_collapse"
+            is-nav>
 
             <b-navbar-nav>
               <b-nav-item href="#">Link</b-nav-item>
@@ -110,8 +110,8 @@
             <b-navbar-toggle target="nav_text_collapse"/>
             <b-navbar-brand>BootstrapVue</b-navbar-brand>
             <b-collapse
-              is-nav
-              id="nav_text_collapse">
+              id="nav_text_collapse"
+              is-nav>
               <b-navbar-nav>
                 <b-nav-text>Navbar text</b-nav-text>
               </b-navbar-nav>
@@ -133,8 +133,8 @@
             toggleable>
             <b-navbar-toggle target="nav_dropdown_collapse"/>
             <b-collapse
-              is-nav
-              id="nav_dropdown_collapse">
+              id="nav_dropdown_collapse"
+              is-nav>
               <b-navbar-nav>
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#">Link</b-nav-item>

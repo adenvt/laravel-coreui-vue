@@ -158,16 +158,16 @@
                 Dismissible Alert!
               </b-alert>
               <b-alert
+                :show="showDismissibleAlert"
                 variant="danger"
                 dismissible
-                :show="showDismissibleAlert"
                 @dismissed="showDismissibleAlert=false">
                 Dismissible Alert!
               </b-alert>
               <b-btn
-                @click="showDismissibleAlert=true"
                 variant="info"
-                class="m-1">
+                class="m-1"
+                @click="showDismissibleAlert=true">
                 Show dismissible alert ({{ showDismissibleAlert?'visible':'hidden' }})
               </b-btn>
             </div>
@@ -195,15 +195,15 @@
                 @dismiss-count-down="countDownChanged">
                 Alert will dismiss after {{ dismissCountDown }} seconds...
                 <b-progress
-                  variant="info"
                   :max="dismissSecs"
                   :value="dismissCountDown"
+                  variant="info"
                   height="4px"/>
               </b-alert>
               <b-btn
-                @click="showAlert"
                 variant="info"
-                class="m-1">
+                class="m-1"
+                @click="showAlert">
                 Show alert with timer
               </b-btn>
             </div>

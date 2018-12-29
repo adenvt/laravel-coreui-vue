@@ -26,8 +26,8 @@
             <div slot="footer">
               <b-button variant="primary">
                 Notifications <b-badge
-                  variant="light"
-                  :style="{position: 'static'}">4</b-badge>
+                  :style="{position: 'static'}"
+                  variant="light">4</b-badge>
               </b-button>
             </div>
           </b-card>

@@ -255,8 +255,8 @@
               <i class="fa fa-align-justify"/> <strong>Dropdown</strong> <small><code>variant</code></small>
             </div>
             <b-dropdown
-              size="sm"
               id="ddown_primary"
+              size="sm"
               text="Primary"
               variant="primary"
               class="m-0">
@@ -265,8 +265,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_secondary"
+              size="sm"
               text="Secondary"
               variant="secondary"
               class="m-0">
@@ -275,8 +275,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_success"
+              size="sm"
               text="Success"
               variant="success"
               class="m-0">
@@ -285,8 +285,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_warning"
+              size="sm"
               text="Warning"
               variant="warning"
               class="m-0">
@@ -295,8 +295,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_danger"
+              size="sm"
               text="Danger"
               variant="danger"
               class="m-0">
@@ -305,8 +305,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_info"
+              size="sm"
               text="Info"
               variant="info"
               class="m-0">
@@ -315,8 +315,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_light"
+              size="sm"
               text="Light"
               variant="light"
               class="m-0">
@@ -325,8 +325,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_dark"
+              size="sm"
               text="Dark"
               variant="dark"
               class="m-0">
@@ -335,8 +335,8 @@
               <b-dropdown-item>Third Action</b-dropdown-item>
             </b-dropdown>
             <b-dropdown
-              size="sm"
               id="ddown_link"
+              size="sm"
               text="Link"
               variant="link"
               class="m-0">

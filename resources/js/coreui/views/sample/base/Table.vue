@@ -6,11 +6,11 @@
       :bordered="bordered"
       :small="small"
       :fixed="fixed"
-      responsive="sm"
       :items="items"
       :fields="fields"
       :current-page="currentPage"
-      :per-page="perPage">
+      :per-page="perPage"
+      responsive="sm">
       <template
         slot="status"
         slot-scope="data">

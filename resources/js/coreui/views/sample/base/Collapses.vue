@@ -29,7 +29,7 @@
                     v-b-toggle.collapse1_inner
                     size="sm">Toggle Inner Collapse</b-btn>
                   <b-collapse
-                    id=collapse1_inner
+                    id="collapse1_inner"
                     class="mt-2">
                     <b-card>Hello!</b-card>
                   </b-collapse>
@@ -83,8 +83,8 @@
                 v-b-toggle.collapse3
                 class="m-1">Toggle Collapse</b-btn>
               <b-collapse
-                visible
-                id="collapse3">
+                id="collapse3"
+                visible>
                 <b-card>
                   I should start open!
                 </b-card>
@@ -103,16 +103,16 @@
             </div>
             <div>
               <b-btn
-                @click="showCollapse = !showCollapse"
                 :class="showCollapse ? 'collapsed' : null"
+                :aria-expanded="showCollapse ? 'true' : 'false'"
                 aria-controls="collapse4"
-                :aria-expanded="showCollapse ? 'true' : 'false'">
+                @click="showCollapse = !showCollapse">
                 Toggle Collapse
               </b-btn>
               <b-collapse
-                class="mt-2"
+                id="collapse4"
                 v-model="showCollapse"
-                id="collapse4">
+                class="mt-2">
                 <b-card>
                   I should start open!
                 </b-card>
@@ -171,9 +171,9 @@
                   class="p-1"
                   role="tab">
                   <b-btn
+                    v-b-toggle.accordion1
                     block
                     href="#"
-                    v-b-toggle.accordion1
                     variant="info">Accordion 1</b-btn>
                 </b-card-header>
                 <b-collapse
@@ -199,9 +199,9 @@
                   class="p-1"
                   role="tab">
                   <b-btn
+                    v-b-toggle.accordion2
                     block
                     href="#"
-                    v-b-toggle.accordion2
                     variant="info">Accordion 2</b-btn>
                 </b-card-header>
                 <b-collapse
@@ -223,9 +223,9 @@
                   class="p-1"
                   role="tab">
                   <b-btn
+                    v-b-toggle.accordion3
                     block
                     href="#"
-                    v-b-toggle.accordion3
                     variant="info">Accordion 3</b-btn>
                 </b-card-header>
                 <b-collapse

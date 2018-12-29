@@ -87,108 +87,108 @@
             <strong>Disabled state</strong> <small>Add this <code>:disabled="true"</code></small>
           </div>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="primary"
-            :disabled="true">Primary</b-button>
+            variant="primary">Primary</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="secondary"
-            :disabled="true">Secondary</b-button>
+            variant="secondary">Secondary</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="success"
-            :disabled="true">Success</b-button>
+            variant="success">Success</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="info"
-            :disabled="true">Info</b-button>
+            variant="info">Info</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="warning"
-            :disabled="true">Warning</b-button>
+            variant="warning">Warning</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="danger"
-            :disabled="true">Danger</b-button>
+            variant="danger">Danger</b-button>
           <b-button
+            :disabled="true"
             size="lg"
-            variant="link"
-            :disabled="true">Link</b-button>
+            variant="link">Link</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Active state</strong> <small>Add this <code>:active="true"</code></small>
           </div>
           <b-button
-            variant="primary"
-            :active="true">Primary</b-button>
+            :active="true"
+            variant="primary">Primary</b-button>
           <b-button
-            variant="secondary"
-            :active="true">Secondary</b-button>
+            :active="true"
+            variant="secondary">Secondary</b-button>
           <b-button
-            variant="success"
-            :active="true">Success</b-button>
+            :active="true"
+            variant="success">Success</b-button>
           <b-button
-            variant="info"
-            :active="true">Info</b-button>
+            :active="true"
+            variant="info">Info</b-button>
           <b-button
-            variant="warning"
-            :active="true">Warning</b-button>
+            :active="true"
+            variant="warning">Warning</b-button>
           <b-button
-            variant="danger"
-            :active="true">Danger</b-button>
+            :active="true"
+            variant="danger">Danger</b-button>
           <b-button
-            variant="link"
-            :active="true">Link</b-button>
+            :active="true"
+            variant="link">Link</b-button>
         </b-card>
         <b-card header-tag="header">
           <div slot="header">
             <strong>Pressed state</strong> <small>Add this <code>:pressed="true"</code></small>
           </div>
           <b-button
-            variant="primary"
-            :pressed="true">Primary</b-button>
+            :pressed="true"
+            variant="primary">Primary</b-button>
           <b-button
-            variant="secondary"
-            :pressed="true">Secondary</b-button>
+            :pressed="true"
+            variant="secondary">Secondary</b-button>
           <b-button
-            variant="success"
-            :pressed="true">Success</b-button>
+            :pressed="true"
+            variant="success">Success</b-button>
           <b-button
-            variant="info"
-            :pressed="true">Info</b-button>
+            :pressed="true"
+            variant="info">Info</b-button>
           <b-button
-            variant="warning"
-            :pressed="true">Warning</b-button>
+            :pressed="true"
+            variant="warning">Warning</b-button>
           <b-button
-            variant="danger"
-            :pressed="true">Danger</b-button>
+            :pressed="true"
+            variant="danger">Danger</b-button>
           <b-button
-            variant="link"
-            :pressed="true">Link</b-button>
+            :pressed="true"
+            variant="link">Link</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Toggle pressed state</strong>
           </div>
           <b-button
-            variant="primary"
-            :pressed.sync="myToggle">Primary {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="primary">Primary {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="secondary"
-            :pressed.sync="myToggle">Secondary {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="secondary">Secondary {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="success"
-            :pressed.sync="myToggle">Success {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="success">Success {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="info"
-            :pressed.sync="myToggle">Info {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="info">Info {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="warning"
-            :pressed.sync="myToggle">Warning {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="warning">Warning {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="danger"
-            :pressed.sync="myToggle">Danger {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="danger">Danger {{ myToggle ? 'On ' : 'Off' }}</b-button>
         </b-card>
 
         <b-card>
@@ -196,33 +196,33 @@
             <strong>Block Level Buttons</strong> <small>Add this <code>:block="true"</code></small>
           </div>
           <b-button
+            :block="true"
             size="lg"
-            variant="secondary"
-            :block="true">Block level button</b-button>
+            variant="secondary">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="primary"
-            :block="true">Block level button</b-button>
+            variant="primary">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="success"
-            :block="true">Block level button</b-button>
+            variant="success">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="info"
-            :block="true">Block level button</b-button>
+            variant="info">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="warning"
-            :block="true">Block level button</b-button>
+            variant="warning">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="danger"
-            :block="true">Block level button</b-button>
+            variant="danger">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="link"
-            :block="true">Block level button</b-button>
+            variant="link">Block level button</b-button>
         </b-card>
       </b-col><!--/.col-->
       <b-col md="6">
@@ -302,121 +302,121 @@
             <strong>Disabled state</strong> <small>Add this <code>:disabled="true"</code></small>
           </div>
           <b-button
-            variant="outline-primary"
-            :disabled="true">Primary</b-button>
+            :disabled="true"
+            variant="outline-primary">Primary</b-button>
           <b-button
-            variant="outline-secondary"
-            :disabled="true">Secondary</b-button>
+            :disabled="true"
+            variant="outline-secondary">Secondary</b-button>
           <b-button
-            variant="success"
-            :disabled="true">Success</b-button>
+            :disabled="true"
+            variant="success">Success</b-button>
           <b-button
-            variant="outline-info"
-            :disabled="true">Info</b-button>
+            :disabled="true"
+            variant="outline-info">Info</b-button>
           <b-button
-            variant="outline-warning"
-            :disabled="true">Warning</b-button>
+            :disabled="true"
+            variant="outline-warning">Warning</b-button>
           <b-button
-            variant="outline-danger"
-            :disabled="true">Danger</b-button>
+            :disabled="true"
+            variant="outline-danger">Danger</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Active state</strong> <small>Add this <code>:active="true"</code></small>
           </div>
           <b-button
-            variant="outline-primary"
-            :active="true">Primary</b-button>
+            :active="true"
+            variant="outline-primary">Primary</b-button>
           <b-button
-            variant="outline-secondary"
-            :active="true">Secondary</b-button>
+            :active="true"
+            variant="outline-secondary">Secondary</b-button>
           <b-button
-            variant="outline-success"
-            :active="true">Success</b-button>
+            :active="true"
+            variant="outline-success">Success</b-button>
           <b-button
-            variant="outline-info"
-            :active="true">Info</b-button>
+            :active="true"
+            variant="outline-info">Info</b-button>
           <b-button
-            variant="outline-warning"
-            :active="true">Warning</b-button>
+            :active="true"
+            variant="outline-warning">Warning</b-button>
           <b-button
-            variant="outline-danger"
-            :active="true">Danger</b-button>
+            :active="true"
+            variant="outline-danger">Danger</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Pressed state</strong> <small>Add this <code>:pressed="true"</code></small>
           </div>
           <b-button
-            variant="outline-primary"
-            :pressed="true">Primary</b-button>
+            :pressed="true"
+            variant="outline-primary">Primary</b-button>
           <b-button
-            variant="outline-secondary"
-            :pressed="true">Secondary</b-button>
+            :pressed="true"
+            variant="outline-secondary">Secondary</b-button>
           <b-button
-            variant="outline-success"
-            :pressed="true">Success</b-button>
+            :pressed="true"
+            variant="outline-success">Success</b-button>
           <b-button
-            variant="outline-info"
-            :pressed="true">Info</b-button>
+            :pressed="true"
+            variant="outline-info">Info</b-button>
           <b-button
-            variant="outline-warning"
-            :pressed="true">Warning</b-button>
+            :pressed="true"
+            variant="outline-warning">Warning</b-button>
           <b-button
-            variant="outline-danger"
-            :pressed="true">Danger</b-button>
+            :pressed="true"
+            variant="outline-danger">Danger</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Toggle pressed state</strong>
           </div>
           <b-button
-            variant="outline-primary"
-            :pressed.sync="myToggle">Primary {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-primary">Primary {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="outline-secondary"
-            :pressed.sync="myToggle">Secondary {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-secondary">Secondary {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="outline-success"
-            :pressed.sync="myToggle">Success {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-success">Success {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="outline-info"
-            :pressed.sync="myToggle">Info {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-info">Info {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="outline-warning"
-            :pressed.sync="myToggle">Warning {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-warning">Warning {{ myToggle ? 'On ' : 'Off' }}</b-button>
           <b-button
-            variant="outline-danger"
-            :pressed.sync="myToggle">Danger {{ myToggle ? 'On ' : 'Off' }}</b-button>
+            :pressed.sync="myToggle"
+            variant="outline-danger">Danger {{ myToggle ? 'On ' : 'Off' }}</b-button>
         </b-card>
         <b-card>
           <div slot="header">
             <strong>Block Level Buttons</strong> <small>Add this <code>:block="true"</code></small>
           </div>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-secondary"
-            :block="true">Block level button</b-button>
+            variant="outline-secondary">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-primary"
-            :block="true">Block level button</b-button>
+            variant="outline-primary">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-success"
-            :block="true">Block level button</b-button>
+            variant="outline-success">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-info"
-            :block="true">Block level button</b-button>
+            variant="outline-info">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-warning"
-            :block="true">Block level button</b-button>
+            variant="outline-warning">Block level button</b-button>
           <b-button
+            :block="true"
             size="lg"
-            variant="outline-danger"
-            :block="true">Block level button</b-button>
+            variant="outline-danger">Block level button</b-button>
         </b-card>
       </b-col><!--/.col-->
     </b-row><!--/.row-->

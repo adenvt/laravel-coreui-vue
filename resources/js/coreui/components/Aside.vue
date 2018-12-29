@@ -3,7 +3,7 @@
     <b-tabs>
       <b-tab>
         <template slot="title">
-          <i class='icon-list'/>
+          <i class="icon-list"/>
         </template>
         <Callout class="m-0 py-2 text-muted text-center bg-light text-uppercase">
           <small><b>Today</b></small>
@@ -144,7 +144,7 @@
       </b-tab>
       <b-tab>
         <template slot="title">
-          <i class='icon-speech'/>
+          <i class="icon-speech"/>
         </template>
         <div class="p-3">
           <div class="message">
@@ -250,7 +250,7 @@
       </b-tab>
       <b-tab>
         <template slot="title">
-          <i class='icon-settings'/>
+          <i class="icon-settings"/>
         </template>
         <div class="p-3">
           <h6>Settings</h6>
@@ -258,14 +258,14 @@
             <div class="clearfix mt-4">
               <small><b>Option 1</b></small>
               <c-switch
+                :pill="true"
+                :checked="true"
                 type="text"
                 variant="success"
                 on="on"
                 off="off"
-                :pill="true"
                 size="sm"
-                class="float-right"
-                :checked="true"/>
+                class="float-right"/>
             </div>
             <div>
               <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
@@ -275,11 +275,11 @@
             <div class="clearfix mt-3">
               <small><b>Option 2</b></small>
               <c-switch
+                :pill="true"
                 type="text"
                 variant="success"
                 on="on"
                 off="off"
-                :pill="true"
                 size="sm"
                 class="float-right"/>
             </div>
@@ -291,11 +291,11 @@
             <div class="clearfix mt-3">
               <small><b>Option 3</b></small>
               <c-switch
+                :pill="true"
                 type="text"
                 variant="success"
                 on="on"
                 off="off"
-                :pill="true"
                 size="sm"
                 class="float-right"/>
             </div>
@@ -304,45 +304,45 @@
             <div class="clearfix mt-3">
               <small><b>Option 4</b></small>
               <c-switch
+                :pill="true"
+                :checked="true"
                 type="text"
                 variant="success"
                 on="on"
                 off="off"
-                :pill="true"
                 size="sm"
-                class="float-right"
-                :checked="true"/>
+                class="float-right"/>
             </div>
           </div>
           <hr>
           <h6>System Utilization</h6>
           <div class="text-uppercase mb-1 mt-4"><small><b>CPU Usage</b></small></div>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs"
-            variant="info"
-            :value="25"/>
+            variant="info"/>
           <small class="text-muted">348 Processes. 1/4 Cores.</small>
           <div class="text-uppercase mb-1 mt-2"><small><b>Memory Usage</b></small></div>
           <b-progress
-            height={}
+            :value="70"
+            height="{}"
             class="progress-xs"
-            variant="warning"
-            :value="70"/>
+            variant="warning"/>
           <small class="text-muted">11444GB/16384MB</small>
           <div class="text-uppercase mb-1 mt-2"><small><b>SSD 1 Usage</b></small></div>
           <b-progress
-            height={}
+            :value="95"
+            height="{}"
             class="progress-xs"
-            variant="danger"
-            :value="95"/>
+            variant="danger"/>
           <small class="text-muted">243GB/256GB</small>
           <div class="text-uppercase mb-1 mt-2"><small><b>SSD 2 Usage</b></small></div>
           <b-progress
-            height={}
+            :value="10"
+            height="{}"
             class="progress-xs"
-            variant="success"
-            :value="10"/>
+            variant="success"/>
           <small class="text-muted">25GB/256GB</small>
         </div>
       </b-tab>

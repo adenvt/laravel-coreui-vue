@@ -39,23 +39,6 @@ export default {
   data () {
     return { localValue: this.value }
   },
-  watch: {
-    value (value) {
-      $(this.$el)
-        .val(value)
-        .trigger('change.select2')
-    },
-    options () {
-      $(this.$el)
-        .empty()
-        .select2({
-          data       : this.formOptions,
-          placeholder: this.placeholder,
-        })
-        .val(this.value)
-        .trigger('change.select2')
-    },
-  },
   computed: {
     formOptions () {
       const options = this.options
@@ -103,6 +86,29 @@ export default {
       }
     },
   },
+  watch: {
+    value (value) {
+      $(this.$el)
+        .val(value)
+        .trigger('change.select2')
+    },
+    options () {
+      $(this.$el)
+        .empty()
+        .select2({
+          data       : this.formOptions,
+          placeholder: this.placeholder,
+        })
+        .val(this.value)
+        .trigger('change.select2')
+    },
+  },
+  mounted () {
+    this.createSelect()
+  },
+  destroyed () {
+    $(this.$el).off().select2('destroy')
+  },
   methods: {
     createSelect () {
       const vm = this
@@ -120,12 +126,6 @@ export default {
           vm.$emit('input', vm.localValue)
         })
     },
-  },
-  mounted () {
-    this.createSelect()
-  },
-  destroyed () {
-    $(this.$el).off().select2('destroy')
   },
 }
 </script>

@@ -17,11 +17,11 @@
                     </b-input-group-text>
                   </b-input-group-prepend>
                   <b-input
+                    :state="$v.form.username | state"
+                    v-model="form.username"
                     type="text"
                     class="form-control"
-                    placeholder="Username"
-                    :state="$v.form.username | state"
-                    v-model="form.username" />
+                    placeholder="Username" />
                   <b-form-invalid-feedback>
                     Required
                   </b-form-invalid-feedback>
@@ -33,11 +33,11 @@
                     </b-input-group-text>
                   </b-input-group-prepend>
                   <b-input
+                    :state="$v.form.password | state"
+                    v-model="form.password"
                     type="password"
                     class="form-control"
-                    placeholder="Password"
-                    :state="$v.form.password | state"
-                    v-model="form.password" />
+                    placeholder="Password" />
                   <b-form-invalid-feedback>
                     Required
                   </b-form-invalid-feedback>

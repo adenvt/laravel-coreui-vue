@@ -183,8 +183,8 @@
                     <b-input-group-text>Size</b-input-group-text>
                   </b-input-group-prepend>
                   <b-form-select
-                    value="Medium"
-                    :options="['Large','Medium','Small']"/>
+                    :options="['Large','Medium','Small']"
+                    value="Medium"/>
                 </b-input-group>
                 <b-button-group
                   size="sm"

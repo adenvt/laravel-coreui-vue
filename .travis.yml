@@ -7,7 +7,6 @@ services:
 
 before_install:
   - cp .env.travis .env
-  - npm run lint
 
 install:
   - docker-compose up -d --build prod

@@ -17,14 +17,14 @@
             <div>
               <b-carousel
                 id="carousel1"
+                :interval="4000"
+                v-model="slide"
                 style="text-shadow: 1px 1px 2px #333;"
                 controls
                 indicators
                 background="#ababab"
-                :interval="4000"
                 img-width="1024"
                 img-height="480"
-                v-model="slide"
                 @sliding-start="onSlideStart"
                 @sliding-end="onSlideEnd"
               >

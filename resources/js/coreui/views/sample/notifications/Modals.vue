@@ -44,8 +44,8 @@
 
     <!-- Modal Component -->
     <b-modal
-      title="Modal title"
       v-model="myModal"
+      title="Modal title"
       @ok="myModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -55,9 +55,9 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="largeModal"
       title="Modal title"
       size="lg"
-      v-model="largeModal"
       @ok="largeModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -67,9 +67,9 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="smallModal"
       title="Modal title"
       size="sm"
-      v-model="smallModal"
       @ok="smallModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -80,9 +80,9 @@
     </b-modal>
 
     <b-modal
+      v-model="primaryModal"
       title="Modal title"
       class="modal-primary"
-      v-model="primaryModal"
       @ok="primaryModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -92,11 +92,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="successModal"
       title="Modal title"
       class="modal-success"
-      v-model="successModal"
-      @ok="successModal = false"
-      ok-variant="success">
+      ok-variant="success"
+      @ok="successModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -105,11 +105,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="warningModal"
       title="Modal title"
       class="modal-warning"
-      v-model="warningModal"
-      @ok="warningModal = false"
-      ok-variant="warning">
+      ok-variant="warning"
+      @ok="warningModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -118,11 +118,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="dangerModal"
       title="Modal title"
       class="modal-danger"
-      v-model="dangerModal"
-      @ok="dangerModal = false"
-      ok-variant="danger">
+      ok-variant="danger"
+      @ok="dangerModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -131,11 +131,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
     <b-modal
+      v-model="infoModal"
       title="Modal title"
       class="modal-info"
-      v-model="infoModal"
-      @ok="infoModal = false"
-      ok-variant="info">
+      ok-variant="info"
+      @ok="infoModal = false">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

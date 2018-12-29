@@ -135,11 +135,11 @@
             class="float-right"
             aria-label="Toolbar with buttons group">
             <b-form-radio-group
-              class="mr-3"
               id="radiosBtn"
+              v-model="selected"
+              class="mr-3"
               buttons
               button-variant="outline-secondary"
-              v-model="selected"
               name="radiosBtn">
               <b-form-radio
                 class="mx-0"
@@ -164,50 +164,50 @@
             <div class="text-muted">Visits</div>
             <strong>29.703 Users (40%)</strong>
             <b-progress
-              height={}
-              class="progress-xs mt-2"
               :precision="1"
-              variant="success"
-              :value="40"/>
+              :value="40"
+              height="{}"
+              class="progress-xs mt-2"
+              variant="success"/>
           </li>
           <li class="d-none d-md-table-cell">
             <div class="text-muted">Unique</div>
             <strong>24.093 Users (20%)</strong>
             <b-progress
-              height={}
-              class="progress-xs mt-2"
               :precision="1"
-              variant="info"
-              :value="20"/>
+              :value="20"
+              height="{}"
+              class="progress-xs mt-2"
+              variant="info"/>
           </li>
           <li>
             <div class="text-muted">Pageviews</div>
             <strong>78.706 Views (60%)</strong>
             <b-progress
-              height={}
-              class="progress-xs mt-2"
               :precision="1"
-              variant="warning"
-              :value="60"/>
+              :value="60"
+              height="{}"
+              class="progress-xs mt-2"
+              variant="warning"/>
           </li>
           <li class="d-none d-md-table-cell">
             <div class="text-muted">New Users</div>
             <strong>22.123 Users (80%)</strong>
             <b-progress
-              height={}
-              class="progress-xs mt-2"
               :precision="1"
-              variant="danger"
-              :value="80"/>
+              :value="80"
+              height="{}"
+              class="progress-xs mt-2"
+              variant="danger"/>
           </li>
           <li class="d-none d-md-table-cell">
             <div class="text-muted">Bounce Rate</div>
             <strong>40.15%</strong>
             <b-progress
-              height={}
-              class="progress-xs mt-2"
               :precision="1"
-              :value="40"/>
+              :value="40"
+              height="{}"
+              class="progress-xs mt-2"/>
           </li>
         </ul>
       </div>
@@ -345,14 +345,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="34"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="78"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -362,14 +362,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="56"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="94"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -379,14 +379,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="12"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="67"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -396,14 +396,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="43"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="91"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -413,14 +413,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="22"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="73"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -430,14 +430,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="53"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="82"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -447,14 +447,14 @@
                   </div>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="9"
+                      height="{}"
+                      class="progress-xs"
                       variant="info"/>
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="69"
+                      height="{}"
+                      class="progress-xs"
                       variant="danger"/>
                   </div>
                 </li>
@@ -506,9 +506,9 @@
                   <span class="value">43%</span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="43"
+                      height="{}"
+                      class="progress-xs"
                       variant="warning"/>
                   </div>
                 </li>
@@ -518,9 +518,9 @@
                   <span class="value">37%</span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="37"
+                      height="{}"
+                      class="progress-xs"
                       variant="warning"/>
                   </div>
                 </li>
@@ -531,9 +531,9 @@
                   <span class="value">191,235 <span class="text-muted small">(56%)</span></span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="56"
+                      height="{}"
+                      class="progress-xs"
                       variant="success"/>
                   </div>
                 </li>
@@ -543,9 +543,9 @@
                   <span class="value">51,223 <span class="text-muted small">(15%)</span></span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="15"
+                      height="{}"
+                      class="progress-xs"
                       variant="success"/>
                   </div>
                 </li>
@@ -555,9 +555,9 @@
                   <span class="value">37,564 <span class="text-muted small">(11%)</span></span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="11"
+                      height="{}"
+                      class="progress-xs"
                       variant="success"/>
                   </div>
                 </li>
@@ -567,9 +567,9 @@
                   <span class="value">27,319 <span class="text-muted small">(8%)</span></span>
                   <div class="bars">
                     <b-progress
-                      height={}
-                      class="progress-xs"
                       :value="8"
+                      height="{}"
+                      class="progress-xs"
                       variant="success"/>
                   </div>
                 </li>
@@ -736,23 +736,23 @@
           </b-row>
           <br>
           <b-table
+            :items="tableItems"
+            :fields="tableFields"
             class="mb-0 table-outline"
             responsive="sm"
             hover
-            :items="tableItems"
-            :fields="tableFields"
             head-variant="light">
             <div
               slot="avatar"
-              class="avatar"
-              slot-scope="item">
+              slot-scope="item"
+              class="avatar">
               <img
                 :src="item.value.url"
                 class="img-avatar"
                 alt="">
               <span
-                class="avatar-status"
-                :class="{ 'bg-success': item.value.status == 'success', 'bg-warning': item.value.status == 'warning', 'bg-danger': item.value.status == 'danger', 'bg-secondary': item.value.status == '' }"/>
+                :class="{ 'bg-success': item.value.status == 'success', 'bg-warning': item.value.status == 'warning', 'bg-danger': item.value.status == 'danger', 'bg-secondary': item.value.status == '' }"
+                class="avatar-status"/>
             </div>
             <div
               slot="user"
@@ -767,15 +767,15 @@
             </div>
             <i
               slot="country"
-              class="h4 mb-0"
-              :class="flag(item.value.flag)"
               slot-scope="item"
+              :class="flag(item.value.flag)"
               :title="item.value.flag"
-              :id="item.value.flag"/>
+              :id="item.value.flag"
+              class="h4 mb-0"/>
             <i
+              id="pw"
               class="flag-icon flag-icon-pw h1"
-              title="pw"
-              id="pw"/>
+              title="pw"/>
             <div
               slot="usage"
               slot-scope="item">
@@ -788,10 +788,10 @@
                 </div>
               </div>
               <b-progress
-                height={}
-                class="progress-xs"
                 v-model="item.value.value"
-                :variant="variant(item.value.value)"/>
+                :variant="variant(item.value.value)"
+                height="{}"
+                class="progress-xs"/>
             </div>
             <i
               slot="payment"

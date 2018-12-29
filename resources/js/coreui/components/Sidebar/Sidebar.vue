@@ -45,9 +45,9 @@
                       :url="childL1.url"
                       :icon="childL1.icon">
                       <li
-                        class="nav-item"
+                        v-for="(childL2, index2) in childL1.children"
                         :key="index2"
-                        v-for="(childL2, index2) in childL1.children">
+                        class="nav-item">
                         <SidebarNavLink
                           :name="childL2.name"
                           :url="childL2.url"
@@ -107,14 +107,7 @@ import SidebarNavTitle from './SidebarNavTitle'
 import SidebarNavItem from './SidebarNavItem'
 import SidebarNavLabel from './SidebarNavLabel'
 export default {
-  name : 'Sidebar',
-  props: {
-    navItems: {
-      type    : Array,
-      required: true,
-      default : () => [],
-    },
-  },
+  name      : 'Sidebar',
   components: {
     SidebarFooter,
     SidebarForm,
@@ -126,6 +119,13 @@ export default {
     SidebarNavTitle,
     SidebarNavItem,
     SidebarNavLabel,
+  },
+  props: {
+    navItems: {
+      type    : Array,
+      required: true,
+      default : () => [],
+    },
   },
   methods: {
     handleClick (e) {

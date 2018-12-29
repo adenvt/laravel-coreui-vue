@@ -142,8 +142,8 @@
             </b-btn>
 
             <b-tooltip
-              :disabled.sync="disabled"
               ref="tooltip2"
+              :disabled.sync="disabled"
               target="tooltipButton-disable">
               Hello <strong>World!</strong>
             </b-tooltip>

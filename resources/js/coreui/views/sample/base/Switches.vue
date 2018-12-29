@@ -4,792 +4,792 @@
       <b-col md="12">
         <b-card header="3d Switch">
           <c-switch
+            :checked="true"
             type="3d"
-            variant="primary"
-            :checked="true"/>
+            variant="primary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="3d"
-            variant="secondary"
-            :checked="true"/>
+            variant="secondary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="3d"
-            variant="success"
-            :checked="true"/>
+            variant="success"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="3d"
-            variant="warning"
-            :checked="true"/>
+            variant="warning"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="3d"
-            variant="info"
-            :checked="true"/>
+            variant="info"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="3d"
-            variant="danger"
-            :checked="true"/>
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch default">
           <c-switch
+            :checked="true"
             type="default"
-            variant="primary"
-            :checked="true"/>
+            variant="primary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="secondary"
-            :checked="true"/>
+            variant="secondary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="success"
-            :checked="true"/>
+            variant="success"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="warning"
-            :checked="true"/>
+            variant="warning"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="info"
-            :checked="true"/>
+            variant="info"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="danger"
-            :checked="true"/>
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch default - pills">
           <c-switch
-            type="default"
-            variant="primary"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="primary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="secondary"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="secondary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="success"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="success"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="warning"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="warning"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="info"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="info"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="danger"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch outline">
           <c-switch
+            :checked="true"
             type="default"
-            variant="primary-outline"
-            :checked="true"/>
+            variant="primary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="secondary-outline"
-            :checked="true"/>
+            variant="secondary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="success-outline"
-            :checked="true"/>
+            variant="success-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="warning-outline"
-            :checked="true"/>
+            variant="warning-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="info-outline"
-            :checked="true"/>
+            variant="info-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="danger-outline"
-            :checked="true"/>
+            variant="danger-outline"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch outline - pills">
           <c-switch
-            type="default"
-            variant="primary-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="primary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="secondary-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="secondary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="success-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="success-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="warning-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="warning-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="info-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="info-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="danger-outline"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="danger-outline"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch outline alternative">
           <c-switch
+            :checked="true"
             type="default"
-            variant="primary-outline-alt"
-            :checked="true"/>
+            variant="primary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="secondary-outline-alt"
-            :checked="true"/>
+            variant="secondary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="success-outline-alt"
-            :checked="true"/>
+            variant="success-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="warning-outline-alt"
-            :checked="true"/>
+            variant="warning-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="info-outline-alt"
-            :checked="true"/>
+            variant="info-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="default"
-            variant="danger-outline-alt"
-            :checked="true"/>
+            variant="danger-outline-alt"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch outline alternative - pills">
           <c-switch
-            type="default"
-            variant="primary-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="primary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="secondary-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="secondary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="success-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="success-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="warning-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="warning-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="info-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="info-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="default"
-            variant="danger-outline-alt"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="default"
+            variant="danger-outline-alt"/>
         </b-card>
       </b-col>
 
       <b-col md="6">
         <b-card header="Switch with text">
           <c-switch
+            :checked="true"
             type="text"
             variant="primary"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="secondary"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="success"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="warning"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="info"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="danger"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with text - pills">
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="primary"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="secondary"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="success"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="warning"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="info"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="danger"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with text outline">
           <c-switch
+            :checked="true"
             type="text"
             variant="primary-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="secondary-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="success-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="warning-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="info-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="danger-outline"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with text outline - pills">
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="primary-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="secondary-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="success-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="warning-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="info-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="danger-outline"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with text outline alternative">
           <c-switch
+            :checked="true"
             type="text"
             variant="primary-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="secondary-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="success-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="warning-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="info-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :checked="true"
             type="text"
             variant="danger-outline-alt"
             on="On"
-            off="Off"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with text outline alternative - pills">
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="primary-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="secondary-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="success-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="warning-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="info-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
+            :pill="true"
+            :checked="true"
             type="text"
             variant="danger-outline-alt"
             on="On"
-            off="Off"
-            :pill="true"
-            :checked="true"/>
+            off="Off"/>
         </b-card>
       </b-col>
 
       <b-col md="6">
         <b-card header="Switch with icon">
           <c-switch
-            type="icon"
-            variant="primary"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with icon - pills">
           <c-switch
-            type="icon"
-            variant="primary"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with icon outline">
           <c-switch
-            type="icon"
-            variant="primary-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger-outline"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with icon outline - pills">
           <c-switch
-            type="icon"
-            variant="primary-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info-outline"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger-outline"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger-outline"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with icon outline alternative">
           <c-switch
-            type="icon"
-            variant="primary-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger-outline-alt"/>
         </b-card>
       </b-col>
       <b-col md="6">
         <b-card header="Switch with icon outline alternative - pills">
           <c-switch
-            type="icon"
-            variant="primary-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="primary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="secondary-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="secondary-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="success-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="success-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="warning-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="warning-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="info-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="info-outline-alt"/>
           &nbsp;&nbsp;&nbsp;
           <c-switch
-            type="icon"
-            variant="danger-outline-alt"
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
-            :checked="true"/>
+            :checked="true"
+            type="icon"
+            variant="danger-outline-alt"/>
         </b-card>
       </b-col>
 
@@ -800,12 +800,12 @@
           </div>
           <b-card-body class="p-0">
             <b-table
+              :items="items"
+              :fields="fields"
               hover
               striped
               responsive="sm"
-              class="table-align-middle mb-0"
-              :items="items"
-              :fields="fields">
+              class="table-align-middle mb-0">
               <template
                 slot="example"
                 slot-scope="data">
@@ -829,12 +829,7 @@ import cSwitch from '@/components/Switch'
 export default {
   name      : 'Switches',
   components: { cSwitch },
-  computed  : {
-    icon (icon) {
-      return icon
-    },
-  },
-  data: () => {
+  data      : () => {
     return {
       fields: [
         { key: 'size' },
@@ -872,6 +867,11 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    icon (icon) {
+      return icon
+    },
   },
 }
 </script>

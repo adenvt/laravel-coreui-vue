@@ -17,27 +17,27 @@
         <div>
           <h6>Default</h6>
           <b-pagination
-            size="md"
             :total-rows="100"
             v-model="currentPage"
-            :per-page="10"/>
+            :per-page="10"
+            size="md"/>
           <br>
 
           <h6>Small</h6>
           <b-pagination
-            size="sm"
             :total-rows="100"
             v-model="currentPage"
-            :per-page="10"/>
+            :per-page="10"
+            size="sm"/>
           <br>
 
           <div class="d-sm-down-none">
             <h6>Large</h6>
             <b-pagination
-              size="lg"
               :total-rows="100"
               v-model="currentPage"
-              :per-page="10"/>
+              :per-page="10"
+              size="lg"/>
             <br>
           </div>
 
@@ -61,18 +61,18 @@
 
           <h6>Center alignment</h6>
           <b-pagination
-            align="center"
             :total-rows="100"
             v-model="currentPage"
-            :per-page="10"/>
+            :per-page="10"
+            align="center"/>
           <br>
 
           <h6>Right (end) alignment</h6>
           <b-pagination
-            align="right"
             :total-rows="100"
             v-model="currentPage"
-            :per-page="10"/>
+            :per-page="10"
+            align="right"/>
           <br>
 
           <div>currentPage: {{ currentPage }}</div>
@@ -95,9 +95,9 @@
         <div>
           <h6>Default</h6>
           <b-pagination-nav
-            base-url="#"
             :number-of-pages="10"
-            v-model="currentPage"/>
+            v-model="currentPage"
+            base-url="#"/>
 
           <h6 class="mt-4">With link generator function</h6>
           <b-pagination-nav

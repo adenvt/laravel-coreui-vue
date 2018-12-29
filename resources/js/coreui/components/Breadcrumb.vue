@@ -1,15 +1,15 @@
 <template>
   <ol class="breadcrumb">
     <li
-      class="breadcrumb-item"
+      v-for="(item, index) in list"
       :key="index"
-      v-for="(item, index) in list">
+      class="breadcrumb-item">
       <span
-        class="active"
-        v-if="isLast(index)">{{ showName(item) }}</span>
+        v-if="isLast(index)"
+        class="active">{{ showName(item) }}</span>
       <router-link
-        :to="item"
-        v-else>{{ showName(item) }}</router-link>
+        v-else
+        :to="item">{{ showName(item) }}</router-link>
     </li>
   </ol>
 </template>

@@ -1,8 +1,8 @@
 <template>
   <router-link
+    :to="url"
     tag="li"
     class="nav-item nav-dropdown"
-    :to="url"
     disabled>
     <div
       class="nav-link nav-dropdown-toggle"

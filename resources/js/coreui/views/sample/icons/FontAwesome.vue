@@ -1,8 +1,8 @@
 <template>
   <div class="animated fadeIn">
     <b-card
-      no-body
-      id="new47">
+      id="new47"
+      no-body>
       <div slot="header">
         <i class="fa fa-font-awesome"/> 50 New Icons in 4.7
       </div>
@@ -397,8 +397,8 @@
       </b-card-body>
     </b-card>
     <b-card
-      no-body
-      id="new">
+      id="new"
+      no-body>
       <div slot="header">20 New Icons in 4.5</div>
       <b-card-body>
         <b-row class="text-center">
@@ -550,8 +550,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="web-application">
+      id="web-application"
+      no-body>
       <div slot="header">Web Application Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3307,8 +3307,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="hand">
+      id="hand"
+      no-body>
       <div slot="header">Hand Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3439,8 +3439,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="transportation">
+      id="transportation"
+      no-body>
       <div slot="header">Transportation Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3570,8 +3570,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="gender">
+      id="gender"
+      no-body>
       <div slot="header">Gender Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3680,8 +3680,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="file-type">
+      id="file-type"
+      no-body>
       <div slot="header">File Type Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3818,8 +3818,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="spinner">
+      id="spinner"
+      no-body>
       <div slot="header">Spinner Icons</div>
       <b-card-body>
         <div class="alert alert-success">
@@ -3873,8 +3873,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="form-control">
+      id="form-control"
+      no-body>
       <div slot="header">Form Control Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -3962,8 +3962,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="payment">
+      id="payment"
+      no-body>
       <div slot="header">Payment Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -4058,8 +4058,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="chart">
+      id="chart"
+      no-body>
       <div slot="header">Chart Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -4105,8 +4105,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="currency">
+      id="currency"
+      no-body>
       <div slot="header">Currency Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -4299,8 +4299,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="text-editor">
+      id="text-editor"
+      no-body>
       <div slot="header">Text Editor Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -4654,8 +4654,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="directional">
+      id="directional"
+      no-body>
       <div slot="header">Directional Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -5037,8 +5037,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="video-player">
+      id="video-player"
+      no-body>
       <div slot="header">Video Player Icons</div>
       <b-card-body>
         <b-row class="text-center">
@@ -5196,8 +5196,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="brand">
+      id="brand"
+      no-body>
       <div slot="header">Brand Icons</div>
       <b-card-body>
         <div class="alert alert-warning">
@@ -6315,8 +6315,8 @@
     </b-card>
 
     <b-card
-      no-body
-      id="medical">
+      id="medical"
+      no-body>
       <div slot="header">Medical Icons</div>
       <b-card-body>
         <b-row class="text-center">

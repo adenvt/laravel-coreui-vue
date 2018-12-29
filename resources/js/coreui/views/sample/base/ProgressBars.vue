@@ -21,8 +21,8 @@
             show-progress
             animated/>
           <b-progress
-            class="mt-1"
             :max="max"
+            class="mt-1"
             show-value>
             <b-progress-bar
               :value="counter*(6/10)"
@@ -116,18 +116,18 @@
             class="mb-3"/>
           <h5>Custom heights</h5>
           <b-progress
+            :value="value3"
             height="2rem"
-            :value="value3"
             show-progress
             class="mb-2"/>
           <b-progress
+            :value="value3"
             height="20px"
-            :value="value3"
             show-progress
             class="mb-2"/>
           <b-progress
-            height="2px"
-            :value="value3"/>
+            :value="value3"
+            height="2px"/>
         </div>
       </b-card>
       <b-card
@@ -138,8 +138,8 @@
         </div>
         <div>
           <div
-            :key="index"
             v-for="(bar, index) in bars"
+            :key="index"
             class="row mb-1">
             <div class="col-sm-2">{{ bar.variant }}:</div>
             <div class="col-sm-10 pt-1">
@@ -161,23 +161,23 @@
         <div>
           <b-progress
             :value="25"
-            variant="success"
             :striped="striped"
+            variant="success"
             class="mb-2"/>
           <b-progress
             :value="50"
-            variant="info"
             :striped="striped"
+            variant="info"
             class="mb-2"/>
           <b-progress
             :value="75"
-            variant="warning"
             :striped="striped"
+            variant="warning"
             class="mb-2"/>
           <b-progress
             :value="100"
-            variant="danger"
             :striped="striped"
+            variant="danger"
             class="mb-2"/>
           <b-button
             variant="secondary"
@@ -195,26 +195,26 @@
         <div>
           <b-progress
             :value="25"
+            :animated="animate"
             variant="success"
             striped
-            :animated="animate"
             class="mb-2"/>
           <b-progress
             :value="50"
+            :animated="animate"
             variant="info"
             striped
-            :animated="animate"
             class="mb-2"/>
           <b-progress
             :value="75"
+            :animated="animate"
             variant="warning"
             striped
-            :animated="animate"
             class="mb-2"/>
           <b-progress
             :value="100"
-            variant="danger"
             :animated="animate"
+            variant="danger"
             class="mb-3"/>
           <b-button
             variant="secondary"
@@ -234,59 +234,59 @@
             :max="max3"
             class="mb-3">
             <b-progress-bar
-              variant="primary"
-              :value="values[0]"/>
+              :value="values[0]"
+              variant="primary"/>
             <b-progress-bar
-              variant="success"
-              :value="values[1]"/>
+              :value="values[1]"
+              variant="success"/>
             <b-progress-bar
-              variant="info"
-              :value="values[2]"/>
+              :value="values[2]"
+              variant="info"/>
           </b-progress>
           <b-progress
-            show-progress
             :max="max3"
+            show-progress
             class="mb-3">
             <b-progress-bar
-              variant="primary"
-              :value="values[0]"/>
+              :value="values[0]"
+              variant="primary"/>
             <b-progress-bar
-              variant="success"
-              :value="values[1]"/>
+              :value="values[1]"
+              variant="success"/>
             <b-progress-bar
-              variant="info"
-              :value="values[2]"/>
+              :value="values[2]"
+              variant="info"/>
           </b-progress>
           <b-progress
+            :max="max3"
             show-value
             striped
-            :max="max3"
             class="mb-3">
             <b-progress-bar
-              variant="primary"
-              :value="values[0]"/>
+              :value="values[0]"
+              variant="primary"/>
             <b-progress-bar
-              variant="success"
-              :value="values[1]"/>
+              :value="values[1]"
+              variant="success"/>
             <b-progress-bar
-              variant="info"
-              :value="values[2]"/>
+              :value="values[2]"
+              variant="info"/>
           </b-progress>
           <b-progress
             :max="max3"
             class="mb-3">
             <b-progress-bar
-              variant="primary"
               :value="values[0]"
+              variant="primary"
               show-progress/>
             <b-progress-bar
-              variant="success"
               :value="values[1]"
+              variant="success"
               animated
               show-progress/>
             <b-progress-bar
-              variant="info"
               :value="values[2]"
+              variant="info"
               striped
               show-progress/>
           </b-progress>
@@ -326,11 +326,6 @@ export default {
       ],
     }
   },
-  methods: {
-    clicked () {
-      this.counter = Math.random() * this.max
-    },
-  },
   mounted () {
     this.timer = setInterval(() => {
       this.bars.forEach((bar) => {
@@ -341,6 +336,11 @@ export default {
   beforeDestroy () {
     clearInterval(this.timer)
     this.timer = null
+  },
+  methods: {
+    clicked () {
+      this.counter = Math.random() * this.max
+    },
   },
 }
 </script>

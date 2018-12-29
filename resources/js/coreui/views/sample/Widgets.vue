@@ -8,10 +8,10 @@
           <div class="h4 m-0">89.9%</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs my-3"
-            variant="success"
-            :value="25"/>
+            variant="success"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -22,10 +22,10 @@
           <div class="h4 m-0">12.124</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs my-3"
-            variant="info"
-            :value="25"/>
+            variant="info"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -36,10 +36,10 @@
           <div class="h4 m-0">$98.111,00</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs my-3"
-            variant="warning"
-            :value="25"/>
+            variant="warning"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -50,10 +50,10 @@
           <div class="h4 m-0">2 TB</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs my-3"
-            variant="danger"
-            :value="25"/>
+            variant="danger"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -66,9 +66,9 @@
           <div class="h4 m-0">89.9%</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
-            class="progress-white progress-xs my-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs my-3"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -79,9 +79,9 @@
           <div class="h4 m-0">12.124</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
-            class="progress-white progress-xs my-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs my-3"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -92,9 +92,9 @@
           <div class="h4 m-0">$98.111,00</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
-            class="progress-white progress-xs my-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs my-3"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -105,9 +105,9 @@
           <div class="h4 m-0">2 TB</div>
           <div>Lorem ipsum...</div>
           <b-progress
-            height={}
-            class="progress-white progress-xs my-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs my-3"/>
           <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
         </b-card>
       </b-col>
@@ -398,10 +398,10 @@
         <div class="h4 mb-0">87.500</div>
         <small class="text-muted text-uppercase font-weight-bold">Visitors</small>
         <b-progress
-          height={}
+          :value="25"
+          height="{}"
           class="progress-xs mt-3 mb-0"
-          variant="info"
-          :value="25"/>
+          variant="info"/>
       </b-card>
       <b-card>
         <div class="h1 text-muted text-right mb-4">
@@ -410,10 +410,10 @@
         <div class="h4 mb-0">385</div>
         <small class="text-muted text-uppercase font-weight-bold">New Clients</small>
         <b-progress
-          height={}
+          :value="25"
+          height="{}"
           class="progress-xs mt-3 mb-0"
-          variant="success"
-          :value="25"/>
+          variant="success"/>
       </b-card>
       <b-card>
         <div class="h1 text-muted text-right mb-4">
@@ -422,10 +422,10 @@
         <div class="h4 mb-0">1238</div>
         <small class="text-muted text-uppercase font-weight-bold">Products sold</small>
         <b-progress
-          height={}
+          :value="25"
+          height="{}"
           class="progress-xs mt-3 mb-0"
-          variant="warning"
-          :value="25"/>
+          variant="warning"/>
       </b-card>
       <b-card>
         <div class="h1 text-muted text-right mb-4">
@@ -434,9 +434,9 @@
         <div class="h4 mb-0">28%</div>
         <small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
         <b-progress
-          height={}
-          class="progress-xs mt-3 mb-0"
-          :value="25"/>
+          :value="25"
+          height="{}"
+          class="progress-xs mt-3 mb-0"/>
       </b-card>
       <b-card>
         <div class="h1 text-muted text-right mb-4">
@@ -445,10 +445,10 @@
         <div class="h4 mb-0">5:34:11</div>
         <small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
         <b-progress
-          height={}
+          :value="25"
+          height="{}"
           class="progress-xs mt-3 mb-0"
-          variant="danger"
-          :value="25"/>
+          variant="danger"/>
       </b-card>
     </b-card-group>
     <b-row>
@@ -462,10 +462,10 @@
           <div class="h4 mb-0">87.500</div>
           <small class="text-muted text-uppercase font-weight-bold">Visitors</small>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs mt-3 mb-0"
-            variant="info"
-            :value="25"/>
+            variant="info"/>
         </b-card>
       </b-col>
       <b-col
@@ -478,10 +478,10 @@
           <div class="h4 mb-0">385</div>
           <small class="text-muted text-uppercase font-weight-bold">New Clients</small>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs mt-3 mb-0"
-            variant="success"
-            :value="25"/>
+            variant="success"/>
         </b-card>
       </b-col>
       <b-col
@@ -494,10 +494,10 @@
           <div class="h4 mb-0">1238</div>
           <small class="text-muted text-uppercase font-weight-bold">Products sold</small>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs mt-3 mb-0"
-            variant="warning"
-            :value="25"/>
+            variant="warning"/>
         </b-card>
       </b-col>
       <b-col
@@ -510,9 +510,9 @@
           <div class="h4 mb-0">28%</div>
           <small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
           <b-progress
-            height={}
-            class="progress-xs mt-3 mb-0"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-xs mt-3 mb-0"/>
         </b-card>
       </b-col>
       <b-col
@@ -525,10 +525,10 @@
           <div class="h4 mb-0">5:34:11</div>
           <small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs mt-3 mb-0"
-            variant="danger"
-            :value="25"/>
+            variant="danger"/>
         </b-card>
       </b-col>
       <b-col
@@ -541,10 +541,10 @@
           <div class="h4 mb-0">972</div>
           <small class="text-muted text-uppercase font-weight-bold">Comments</small>
           <b-progress
-            height={}
+            :value="25"
+            height="{}"
             class="progress-xs mt-3 mb-0"
-            variant="info"
-            :value="25"/>
+            variant="info"/>
         </b-card>
       </b-col>
     </b-row><!--/.row-->
@@ -559,9 +559,9 @@
           <div class="h4 mb-0">87.500</div>
           <small class="text-muted text-uppercase font-weight-bold">Visitors</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
       <b-col
@@ -574,9 +574,9 @@
           <div class="h4 mb-0">385</div>
           <small class="text-muted text-uppercase font-weight-bold">New Clients</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
       <b-col
@@ -589,9 +589,9 @@
           <div class="h4 mb-0">1238</div>
           <small class="text-muted text-uppercase font-weight-bold">Products sold</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
       <b-col
@@ -604,9 +604,9 @@
           <div class="h4 mb-0">28%</div>
           <small class="text-muted text-uppercase font-weight-bold">Returning Visitors</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
       <b-col
@@ -619,9 +619,9 @@
           <div class="h4 mb-0">5:34:11</div>
           <small class="text-muted text-uppercase font-weight-bold">Avg. Time</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
       <b-col
@@ -634,9 +634,9 @@
           <div class="h4 mb-0">972</div>
           <small class="text-muted text-uppercase font-weight-bold">Comments</small>
           <b-progress
-            height={}
-            class="progress-white progress-xs mt-3"
-            :value="25"/>
+            :value="25"
+            height="{}"
+            class="progress-white progress-xs mt-3"/>
         </b-card>
       </b-col>
     </b-row><!--/.row-->

@@ -11,8 +11,8 @@
               <b-form-group>
                 <label for="name">Name</label>
                 <b-form-input
-                  type="text"
                   id="name"
+                  type="text"
                   placeholder="Enter your name"/>
               </b-form-group>
             </b-col>
@@ -22,8 +22,8 @@
               <b-form-group>
                 <label for="ccnumber">Credit Card Number</label>
                 <b-form-input
-                  type="text"
                   id="ccnumber"
+                  type="text"
                   placeholder="0000 0000 0000 0000"/>
               </b-form-group>
             </b-col>
@@ -51,8 +51,8 @@
               <b-form-group>
                 <label for="cvv">CVV/CVC</label>
                 <b-form-input
-                  type="text"
                   id="cvv"
+                  type="text"
                   placeholder="123"/>
               </b-form-group>
             </b-col>
@@ -67,22 +67,22 @@
           <b-form-group>
             <label for="company">Company</label>
             <b-form-input
-              type="text"
               id="company"
+              type="text"
               placeholder="Enter your company name"/>
           </b-form-group>
           <b-form-group>
             <label for="vat">VAT</label>
             <b-form-input
-              type="text"
               id="vat"
+              type="text"
               placeholder="PL1234567890"/>
           </b-form-group>
           <b-form-group>
             <label for="street">Street</label>
             <b-form-input
-              type="text"
               id="street"
+              type="text"
               placeholder="Enter street name"/>
           </b-form-group>
           <b-row>
@@ -90,8 +90,8 @@
               <b-form-group>
                 <label for="city">City</label>
                 <b-form-input
-                  type="text"
                   id="city"
+                  type="text"
                   placeholder="Enter your city"/>
               </b-form-group>
             </b-col>
@@ -99,8 +99,8 @@
               <b-form-group>
                 <label for="postal-code">Postal Code</label>
                 <b-form-input
-                  type="text"
                   id="postal-code"
+                  type="text"
                   placeholder="Postal Code"/>
               </b-form-group>
             </b-col>
@@ -108,8 +108,8 @@
           <b-form-group>
             <label for="country">Country</label>
             <b-form-input
-              type="text"
               id="country"
+              type="text"
               placeholder="Country name"/>
           </b-form-group>
         </b-card>
@@ -122,91 +122,91 @@
             <strong>Basic Form</strong> Elements
           </div>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             description="Let us know your full name."
             label="Enter your name"
-            label-for="basicName"
-            :label-cols="3"
-            :horizontal="true">
+            label-for="basicName">
             <b-form-input
               id="basicName"
               type="text"/>
           </b-form-group>
           <b-form-group
-            label="Static"
-            label-for="basicStatic"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Static"
+            label-for="basicStatic">
             <b-form-input
-              plaintext
               id="basicStatic"
+              plaintext
               type="text"
               value="Username"/>
           </b-form-group>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             description="This is a help text"
             label="Text Input"
-            label-for="basicText"
-            :label-cols="3"
-            :horizontal="true">
+            label-for="basicText">
             <b-form-input
               id="basicText"
               type="text"
               placeholder="Text"/>
           </b-form-group>
           <b-form-group
-            label="Date"
-            label-for="date"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Date"
+            label-for="date">
             <b-form-input
-              type="date"
-              id="date"/>
+              id="date"
+              type="date"/>
           </b-form-group>
           <b-form-group
-            label="Datepicker"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Datepicker">
             <b-datepicker
               v-model="datepicker"/>
           </b-form-group>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             description="Please enter your email"
             label="Email Input"
-            label-for="basicEmail"
-            :label-cols="3"
-            :horizontal="true">
+            label-for="basicEmail">
             <b-form-input
               id="basicEmail"
               type="email"
               placeholder="Enter your email"/>
           </b-form-group>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             description="Please enter a complex password"
             label="Password Input"
-            label-for="basicPassword"
-            :label-cols="3"
-            :horizontal="true">
+            label-for="basicPassword">
             <b-form-input
               id="basicPassword"
               type="password"
               placeholder="Enter your password"/>
           </b-form-group>
           <b-form-group
-            label="Disabled Input"
-            label-for="basicInputDisabled"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Disabled Input"
+            label-for="basicInputDisabled">
             <b-form-input
               id="basicInputDisabled"
-              type="text"
               :disabled="true"
+              type="text"
               placeholder="Disabled"/>
           </b-form-group>
           <b-form-group
-            label="Textarea"
-            label-for="basicTextarea"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Textarea"
+            label-for="basicTextarea">
             <b-form-input
               id="basicTextarea"
               :textarea="true"
@@ -214,10 +214,10 @@
               placeholder="Content.."/>
           </b-form-group>
           <b-form-group
-            label="Select"
-            label-for="basicSelect"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Select"
+            label-for="basicSelect">
             <b-form-select
               id="basicSelect"
               :plain="true"
@@ -225,34 +225,34 @@
               value="Please select"/>
           </b-form-group>
           <b-form-group
-            label="Select large"
-            label-for="basicSelectLg"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Select large"
+            label-for="basicSelectLg">
             <b-form-select
               id="basicSelectLg"
-              size="lg"
               :plain="true"
               :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              size="lg"
               value="Please select"/>
           </b-form-group>
           <b-form-group
-            label="Select small"
-            label-for="basicSelectSm"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Select small"
+            label-for="basicSelectSm">
             <b-form-select
               id="basicSelectSm"
-              size="sm"
               :plain="true"
               :options="['Please select','Option 1', 'Option 2', 'Option 3']"
+              size="sm"
               value="Please select"/>
           </b-form-group>
           <b-form-group
-            label="Disabled select"
-            label-for="basicSelectDisabled"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Disabled select"
+            label-for="basicSelectDisabled">
             <b-form-select
               id="basicSelectDisabled"
               :plain="true"
@@ -261,10 +261,10 @@
               value="Please select"/>
           </b-form-group>
           <b-form-group
-            label="Select"
-            label-for="basicMultiSelect"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Select"
+            label-for="basicMultiSelect">
             <b-form-select
               id="basicMultiSelect"
               :plain="true"
@@ -291,13 +291,12 @@
               :value="[null,'c']"/>
           </b-form-group>
           <b-form-group
-            label="Select"
-            label-for="basicMultiSelect"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Select"
+            label-for="basicMultiSelect">
             <b-select-2
               id="basicMultiSelect"
-              placeholder="Please select some item"
               :options="[
                 {
                   text: 'This is First option',
@@ -313,13 +312,14 @@
                   value: 'd',
                   disabled: true
               }]"
-              v-model="select2" />
+              v-model="select2"
+              placeholder="Please select some item" />
           </b-form-group>
           <b-form-group
-            label="Radios"
-            label-for="basicRadios"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Radios"
+            label-for="basicRadios">
             <b-form-radio-group
               id="basicRadios"
               :plain="true"
@@ -332,10 +332,10 @@
               stacked/>
           </b-form-group>
           <b-form-group
-            label="Inline radios"
-            label-for="basicInlineRadios"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Inline radios"
+            label-for="basicInlineRadios">
             <b-form-radio-group
               id="basicInlineRadios"
               :plain="true"
@@ -348,31 +348,31 @@
           </b-form-group>
 
           <b-form-group
+            :label-cols="3"
             label="Checkboxes"
             label-for="basicCheckboxes"
-            :label-cols="3"
             horizontal>
             <b-form-checkbox-group
-              stacked
               id="basicCheckboxes"
-              name="Checkboxes"
               :plain="true"
-              :checked="[2,3]">
+              :checked="[2,3]"
+              stacked
+              name="Checkboxes">
               <b-form-checkbox value="1">Option 1</b-form-checkbox>
               <b-form-checkbox value="2">Option 2</b-form-checkbox>
               <b-form-checkbox value="3">Option 3</b-form-checkbox>
             </b-form-checkbox-group>
           </b-form-group>
           <b-form-group
-            label="Inline checkboxes"
-            label-for="basicInlineCheckboxes"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Inline checkboxes"
+            label-for="basicInlineCheckboxes">
             <b-form-checkbox-group
               id="basicInlineCheckboxes"
-              name="InlineCheckboxes"
               :plain="true"
-              :checked="[1,3]">
+              :checked="[1,3]"
+              name="InlineCheckboxes">
               <b-form-checkbox
                 :plain="true"
                 value="1">Option 1</b-form-checkbox>
@@ -386,18 +386,18 @@
           </b-form-group>
           <!--custom controls - radios/checkboxes - temporary fix-->
           <b-form-group
-            label="Radios - custom"
-            label-for="basicRadiosCustom"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Radios - custom"
+            label-for="basicRadiosCustom">
             <b-form-radio-group
               id="basicRadiosCustom"
               value="1"
               stacked>
               <div class="custom-control custom-radio">
                 <input
-                  type="radio"
                   id="customRadio1"
+                  type="radio"
                   name="customRadio"
                   class="custom-control-input"
                   value="1">
@@ -407,8 +407,8 @@
               </div>
               <div class="custom-control custom-radio">
                 <input
-                  type="radio"
                   id="customRadio2"
+                  type="radio"
                   name="customRadio"
                   class="custom-control-input"
                   value="2"
@@ -419,8 +419,8 @@
               </div>
               <div class="custom-control custom-radio">
                 <input
-                  type="radio"
                   id="customRadio3"
+                  type="radio"
                   name="customRadio"
                   class="custom-control-input"
                   value="3">
@@ -431,17 +431,17 @@
             </b-form-radio-group>
           </b-form-group>
           <b-form-group
-            label="Inline radios - custom"
-            label-for="basicCustomRadios1"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Inline radios - custom"
+            label-for="basicCustomRadios1">
             <b-form-radio-group
               id="basicCustomRadios1"
               name="customRadioInline1">
               <div class="custom-control custom-radio custom-control-inline">
                 <input
-                  type="radio"
                   id="customRadioInline1"
+                  type="radio"
                   name="customRadioInline1"
                   class="custom-control-input"
                   value="1">
@@ -451,8 +451,8 @@
               </div>
               <div class="custom-control custom-radio custom-control-inline">
                 <input
-                  type="radio"
                   id="customRadioInline2"
+                  type="radio"
                   name="customRadioInline1"
                   class="custom-control-input"
                   value="2"
@@ -463,8 +463,8 @@
               </div>
               <div class="custom-control custom-radio custom-control-inline">
                 <input
-                  type="radio"
                   id="customRadioInline3"
+                  type="radio"
                   name="customRadioInline1"
                   class="custom-control-input"
                   value="3">
@@ -475,18 +475,18 @@
             </b-form-radio-group>
           </b-form-group>
           <b-form-group
-            label="Checkboxes - custom"
-            label-for="basicCustomCheckboxes"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Checkboxes - custom"
+            label-for="basicCustomCheckboxes">
             <b-form-checkbox-group
-              stacked
-              id="basicCustomCheckboxes">
+              id="basicCustomCheckboxes"
+              stacked>
               <div class="custom-control custom-checkbox">
                 <input
+                  id="customChk1"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customChk1"
                   value="1"
                   checked>
                 <label
@@ -495,9 +495,9 @@
               </div>
               <div class="custom-control custom-checkbox">
                 <input
+                  id="customChk2"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customChk2"
                   value="2">
                 <label
                   class="custom-control-label"
@@ -505,9 +505,9 @@
               </div>
               <div class="custom-control custom-checkbox">
                 <input
+                  id="customChk3"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customChk3"
                   value="3">
                 <label
                   class="custom-control-label"
@@ -516,16 +516,16 @@
             </b-form-checkbox-group>
           </b-form-group>
           <b-form-group
-            label="Inline checkboxes - custom"
-            label-for="basicInlineCustomCheckboxes"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Inline checkboxes - custom"
+            label-for="basicInlineCustomCheckboxes">
             <b-form-checkbox-group id="basicInlineCustomCheckboxes">
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
+                  id="customInChk1"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customInChk1"
                   value="1">
                 <label
                   class="custom-control-label"
@@ -533,9 +533,9 @@
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
+                  id="customInChk2"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customInChk2"
                   value="2"
                   checked>
                 <label
@@ -544,9 +544,9 @@
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
+                  id="customInChk3"
                   type="checkbox"
                   class="custom-control-input"
-                  id="customInChk3"
                   value="3">
                 <label
                   class="custom-control-label"
@@ -555,19 +555,19 @@
             </b-form-checkbox-group>
           </b-form-group>
           <b-form-group
-            label="File input"
-            label-for="fileInput"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="File input"
+            label-for="fileInput">
             <b-form-file
               id="fileInput"
               :plain="true"/>
           </b-form-group>
           <b-form-group
-            label="Multiple file input"
-            label-for="fileInputMulti"
             :label-cols="3"
-            :horizontal="true">
+            :horizontal="true"
+            label="Multiple file input"
+            label-for="fileInputMulti">
             <b-form-file
               id="fileInputMulti"
               :plain="true"
@@ -623,22 +623,22 @@
             <strong>Horizontal</strong> Form
           </div>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             label="Email"
             label-for="horizEmail"
-            description="Please enter your email."
-            :label-cols="3"
-            :horizontal="true">
+            description="Please enter your email.">
             <b-form-input
               id="horizEmail"
               type="email"
               placeholder="Enter Email.."/>
           </b-form-group>
           <b-form-group
+            :label-cols="3"
+            :horizontal="true"
             label="Password"
             label-for="horizPass"
-            description="Please enter your password."
-            :label-cols="3"
-            :horizontal="true">
+            description="Please enter your password.">
             <b-form-input
               id="horizPass"
               type="password"
@@ -693,8 +693,8 @@
           </div>
         </b-card>
         <b-card
-          no-body
-          :no-block="true">
+          :no-block="true"
+          no-body>
           <div slot="header">
             Input <strong>Grid</strong>
           </div>
@@ -786,11 +786,11 @@
             Input <strong>Sizes</strong>
           </div>
           <b-form-group
+            :label-cols="5"
+            :horizontal="true"
             label="Small input"
             label-for="smInput"
-            label-size="sm"
-            :label-cols="5"
-            :horizontal="true">
+            label-size="sm">
             <b-form-input
               id="smInput"
               type="text"
@@ -798,21 +798,21 @@
               placeholder="size='sm'"/>
           </b-form-group>
           <b-form-group
-            label="Default input"
-            label-for="defaultInput"
             :label-cols="5"
-            :horizontal="true">
+            :horizontal="true"
+            label="Default input"
+            label-for="defaultInput">
             <b-form-input
               id="defaultInput"
               type="text"
               placeholder="normal"/>
           </b-form-group>
           <b-form-group
+            :label-cols="5"
+            :horizontal="true"
             label="Large input"
             label-for="lgInput"
-            label-size="lg"
-            :label-cols="5"
-            :horizontal="true">
+            label-size="lg">
             <b-form-input
               id="lgInput"
               type="text"
@@ -837,8 +837,8 @@
         sm="12"
         md="6">
         <b-card
-          no-body
-          :no-block="true">
+          :no-block="true"
+          no-body>
           <div slot="header">
             <strong>Validation feedback</strong> Form
           </div>
@@ -848,9 +848,9 @@
                 class="col-form-label"
                 for="inputIsValid">Input is valid</label>
               <input
+                id="inputIsValid"
                 type="text"
-                class="form-control is-valid"
-                id="inputIsValid">
+                class="form-control is-valid">
               <b-form-valid-feedback>
                 Input is valid.
               </b-form-valid-feedback>
@@ -860,9 +860,9 @@
                 class="col-form-label"
                 for="inputIsInvalid">Input is invalid</label>
               <input
+                id="inputIsInvalid"
                 type="text"
-                class="form-control is-invalid"
-                id="inputIsInvalid">
+                class="form-control is-invalid">
               <b-form-invalid-feedback>
                 Please provide a valid information.
               </b-form-invalid-feedback>
@@ -874,8 +874,8 @@
         sm="12"
         md="6">
         <b-card
-          no-body
-          :no-block="true">
+          :no-block="true"
+          no-body>
           <div slot="header">
             <strong>Validation feedback</strong> Form
           </div>
@@ -887,9 +887,9 @@
                 label-for="inputSuccess2"
                 label="Non-required input">
                 <b-form-input
+                  id="inputSuccess2"
                   type="text"
-                  class="form-control-success"
-                  id="inputSuccess2"/>
+                  class="form-control-success"/>
                 <b-form-valid-feedback>
                   Input is not required.
                 </b-form-valid-feedback>
@@ -898,9 +898,9 @@
                 label-for="inputError2"
                 label="Required input">
                 <b-form-input
+                  id="inputError2"
                   type="text"
                   class="form-control-warning"
-                  id="inputError2"
                   required/>
                 <b-form-valid-feedback>
                   Input provided.
@@ -1398,8 +1398,8 @@
                 href="#"
                 class="btn btn-setting"><i class="icon-settings"/></a>
               <b-btn
-                class="btn btn-minimize"
-                v-b-toggle.collapse1><i class="icon-arrow-up"/></b-btn>
+                v-b-toggle.collapse1
+                class="btn btn-minimize"><i class="icon-arrow-up"/></b-btn>
               <a
                 href="#"
                 class="btn btn-close"><i class="icon-close"/></a>

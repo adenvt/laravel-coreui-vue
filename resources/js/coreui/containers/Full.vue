@@ -4,8 +4,8 @@
     <div class="app-body">
       <Sidebar :nav-items="nav"/>
       <notifications
-        class="custom-notifications"
-        :style="{ 'margin-top': offset }" />
+        :style="{ 'margin-top': offset }"
+        class="custom-notifications" />
       <main class="main">
         <breadcrumb :list="list"/>
         <div class="container-fluid">
@@ -45,6 +45,12 @@ export default {
       return this.$route.matched
     },
   },
+  mounted () {
+    $(window).on('scroll', this.setPosNotify)
+  },
+  beforeDestroy () {
+    $(window).off('scroll', this.setPosNotify)
+  },
   methods: {
     setPosNotify () {
       const top    = $(document).scrollTop()
@@ -53,12 +59,6 @@ export default {
 
       this.offset = `${offset}px`
     },
-  },
-  mounted () {
-    $(window).on('scroll', this.setPosNotify)
-  },
-  beforeDestroy () {
-    $(window).off('scroll', this.setPosNotify)
   },
 }
 </script>
