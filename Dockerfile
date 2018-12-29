@@ -5,10 +5,10 @@ LABEL maintainer="Ade Novid <adenvt@gmail.com>"
 WORKDIR /var/www
 COPY package.json /var/www
 COPY package-lock.json /var/www
-RUN npm run lint
 RUN npm ci
 
 COPY . /var/www
+RUN npm run lint
 RUN npm run prod
 RUN rm -rf /var/www/node_modules/
 
