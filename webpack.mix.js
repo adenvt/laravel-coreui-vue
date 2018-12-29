@@ -20,8 +20,9 @@ mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
   resolve: {
     alias: {
-      '@'     : path.resolve(__dirname, 'resources/js/coreui/'),
-      'static': path.resolve(__dirname, 'resources/static/'),
+      '@'         : path.resolve(__dirname, 'resources/js/coreui/'),
+      'static'    : path.resolve(__dirname, 'resources/static/'),
+      'validators': 'vuelidate/lib/validators',
     },
   },
   plugins: [
@@ -70,6 +71,7 @@ mix.extract([
   'chart.js',
   'jquery',
   'lodash',
+  'moment',
   'popper.js',
   'select2',
   'vue',
@@ -79,7 +81,9 @@ mix.extract([
   'vue-router',
   'vue-sweetalert2',
   'vuejs-datepicker',
+  'vuelidate',
   'vuex',
+  'vuex-easy-access',
 ])
 
 mix.options({

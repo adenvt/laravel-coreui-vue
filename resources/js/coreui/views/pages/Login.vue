@@ -11,24 +11,45 @@
                 <h1>Login</h1>
                 <p class="text-muted">Sign In to your account</p>
                 <b-input-group class="mb-3">
-                  <b-input-group-prepend><b-input-group-text><i class="icon-user"/></b-input-group-text></b-input-group-prepend>
-                  <input
+                  <b-input-group-prepend>
+                    <b-input-group-text>
+                      <i class="icon-user"/>
+                    </b-input-group-text>
+                  </b-input-group-prepend>
+                  <b-input
                     type="text"
                     class="form-control"
-                    placeholder="Username">
+                    placeholder="Username"
+                    :state="$v.form.username | state"
+                    v-model="form.username" />
+                  <b-form-invalid-feedback>
+                    Required
+                  </b-form-invalid-feedback>
                 </b-input-group>
                 <b-input-group class="mb-4">
-                  <b-input-group-prepend><b-input-group-text><i class="icon-lock"/></b-input-group-text></b-input-group-prepend>
-                  <input
+                  <b-input-group-prepend>
+                    <b-input-group-text>
+                      <i class="icon-lock"/>
+                    </b-input-group-text>
+                  </b-input-group-prepend>
+                  <b-input
                     type="password"
                     class="form-control"
-                    placeholder="Password">
+                    placeholder="Password"
+                    :state="$v.form.password | state"
+                    v-model="form.password" />
+                  <b-form-invalid-feedback>
+                    Required
+                  </b-form-invalid-feedback>
                 </b-input-group>
                 <b-row>
                   <b-col cols="6">
                     <b-button
                       variant="primary"
-                      class="px-4">Login</b-button>
+                      class="px-4"
+                      @click="submit">
+                      Login
+                    </b-button>
                   </b-col>
                   <b-col
                     cols="6"
@@ -62,5 +83,30 @@
 </template>
 
 <script>
-export default { name: 'Login' }
+import { required } from 'validators'
+
+export default {
+  name: 'Login',
+  data () {
+    return {
+      form: {
+        username: '',
+        password: '',
+      },
+    }
+  },
+  validations () {
+    return {
+      form: {
+        username: { required },
+        password: { required },
+      },
+    }
+  },
+  methods: {
+    submit () {
+      this.$v.$touch()
+    },
+  },
+}
 </script>
