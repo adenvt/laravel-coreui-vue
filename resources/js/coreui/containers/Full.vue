@@ -1,20 +1,21 @@
 <template>
   <div class="app">
-    <AppHeader/>
+    <app-header />
     <div class="app-body">
-      <Sidebar :nav-items="nav"/>
+      <sidebar :nav-items="nav" />
       <notifications
         :style="{ 'margin-top': offset }"
-        class="custom-notifications" />
+        class="custom-notifications"
+      />
       <main class="main">
-        <breadcrumb :list="list"/>
+        <breadcrumb :list="list" />
         <div class="container-fluid">
-          <router-view/>
+          <router-view />
         </div>
       </main>
-      <AppAside/>
+      <app-aside />
     </div>
-    <AppFooter/>
+    <app-footer />
   </div>
 </template>
 

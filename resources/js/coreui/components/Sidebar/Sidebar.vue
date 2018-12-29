@@ -1,25 +1,27 @@
 <template>
   <div class="sidebar">
-    <SidebarHeader/>
-    <SidebarForm/>
+    <sidebar-header />
+    <sidebar-form />
     <nav class="sidebar-nav">
-      <div slot="header"/>
+      <div slot="header" />
       <ul class="nav">
         <template v-for="(item, index) in navItems">
           <template v-if="item.title">
-            <SidebarNavTitle
+            <sidebar-nav-title
               :key="index"
               :name="item.name"
               :classes="item.class"
-              :wrapper="item.wrapper" />
+              :wrapper="item.wrapper"
+            />
           </template>
           <template v-else-if="item.divider">
-            <SidebarNavDivider
+            <sidebar-nav-divider
               :key="index"
-              :classes="item.class" />
+              :classes="item.class"
+            />
           </template>
           <template v-else-if="item.label">
-            <SidebarNavLabel
+            <sidebar-nav-label
               :key="index"
               :name="item.name"
               :url="item.url"
@@ -31,24 +33,27 @@
           <template v-else>
             <template v-if="item.children">
               <!-- First level dropdown -->
-              <SidebarNavDropdown
+              <sidebar-nav-dropdown
                 :key="index"
                 :name="item.name"
                 :url="item.url"
-                :icon="item.icon">
+                :icon="item.icon"
+              >
                 <template v-for="(childL1, index1) in item.children">
                   <template v-if="childL1.children">
                     <!-- Second level dropdown -->
-                    <SidebarNavDropdown
+                    <sidebar-nav-dropdown
                       :key="index1"
                       :name="childL1.name"
                       :url="childL1.url"
-                      :icon="childL1.icon">
+                      :icon="childL1.icon"
+                    >
                       <li
                         v-for="(childL2, index2) in childL1.children"
                         :key="index2"
-                        class="nav-item">
-                        <SidebarNavLink
+                        class="nav-item"
+                      >
+                        <sidebar-nav-link
                           :name="childL2.name"
                           :url="childL2.url"
                           :icon="childL2.icon"
@@ -56,43 +61,46 @@
                           :variant="item.variant"
                         />
                       </li>
-                    </SidebarNavDropdown>
+                    </sidebar-nav-dropdown>
                   </template>
                   <template v-else>
-                    <SidebarNavItem
+                    <sidebar-nav-item
                       :key="index1"
-                      :classes="item.class">
-                      <SidebarNavLink
+                      :classes="item.class"
+                    >
+                      <sidebar-nav-link
                         :name="childL1.name"
                         :url="childL1.url"
                         :icon="childL1.icon"
                         :badge="childL1.badge"
                         :variant="item.variant"
                       />
-                    </SidebarNavItem>
+                    </sidebar-nav-item>
                   </template>
                 </template>
-              </SidebarNavDropdown>
+              </sidebar-nav-dropdown>
             </template>
             <template v-else>
-              <SidebarNavItem
+              <sidebar-nav-item
                 :key="index"
-                :classes="item.class">
-                <SidebarNavLink
+                :classes="item.class"
+              >
+                <sidebar-nav-link
                   :name="item.name"
                   :url="item.url"
                   :icon="item.icon"
                   :badge="item.badge"
-                  :variant="item.variant" />
-              </SidebarNavItem>
+                  :variant="item.variant"
+                />
+              </sidebar-nav-item>
             </template>
           </template>
         </template>
       </ul>
-      <slot/>
+      <slot />
     </nav>
-    <SidebarFooter/>
-    <SidebarMinimizer/>
+    <sidebar-footer />
+    <sidebar-minimizer />
   </div>
 </template>
 <script>

@@ -6,7 +6,7 @@
     "browser": true
   },
   "parserOptions": {
-    "ecmaVersion": 8
+    "parser": "babel-eslint"
   },
   "globals": {
     "$": true,

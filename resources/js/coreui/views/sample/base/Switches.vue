@@ -6,32 +6,38 @@
           <c-switch
             :checked="true"
             type="3d"
-            variant="primary"/>
+            variant="primary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="3d"
-            variant="secondary"/>
+            variant="secondary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="3d"
-            variant="success"/>
+            variant="success"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="3d"
-            variant="warning"/>
+            variant="warning"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="3d"
-            variant="info"/>
+            variant="info"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="3d"
-            variant="danger"/>
+            variant="danger"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -39,32 +45,38 @@
           <c-switch
             :checked="true"
             type="default"
-            variant="primary"/>
+            variant="primary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="secondary"/>
+            variant="secondary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="success"/>
+            variant="success"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="warning"/>
+            variant="warning"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="info"/>
+            variant="info"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="danger"/>
+            variant="danger"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -73,37 +85,43 @@
             :pill="true"
             :checked="true"
             type="default"
-            variant="primary"/>
+            variant="primary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="secondary"/>
+            variant="secondary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="success"/>
+            variant="success"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="warning"/>
+            variant="warning"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="info"/>
+            variant="info"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="danger"/>
+            variant="danger"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -111,32 +129,38 @@
           <c-switch
             :checked="true"
             type="default"
-            variant="primary-outline"/>
+            variant="primary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="secondary-outline"/>
+            variant="secondary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="success-outline"/>
+            variant="success-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="warning-outline"/>
+            variant="warning-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="info-outline"/>
+            variant="info-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="danger-outline"/>
+            variant="danger-outline"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -145,37 +169,43 @@
             :pill="true"
             :checked="true"
             type="default"
-            variant="primary-outline"/>
+            variant="primary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="secondary-outline"/>
+            variant="secondary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="success-outline"/>
+            variant="success-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="warning-outline"/>
+            variant="warning-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="info-outline"/>
+            variant="info-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="danger-outline"/>
+            variant="danger-outline"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -183,32 +213,38 @@
           <c-switch
             :checked="true"
             type="default"
-            variant="primary-outline-alt"/>
+            variant="primary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="secondary-outline-alt"/>
+            variant="secondary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="success-outline-alt"/>
+            variant="success-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="warning-outline-alt"/>
+            variant="warning-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="info-outline-alt"/>
+            variant="info-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="default"
-            variant="danger-outline-alt"/>
+            variant="danger-outline-alt"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -217,37 +253,43 @@
             :pill="true"
             :checked="true"
             type="default"
-            variant="primary-outline-alt"/>
+            variant="primary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="secondary-outline-alt"/>
+            variant="secondary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="success-outline-alt"/>
+            variant="success-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="warning-outline-alt"/>
+            variant="warning-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="info-outline-alt"/>
+            variant="info-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
             :checked="true"
             type="default"
-            variant="danger-outline-alt"/>
+            variant="danger-outline-alt"
+          />
         </b-card>
       </b-col>
 
@@ -258,42 +300,48 @@
             type="text"
             variant="primary"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="secondary"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="success"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="warning"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="info"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="danger"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -304,7 +352,8 @@
             type="text"
             variant="primary"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -312,7 +361,8 @@
             type="text"
             variant="secondary"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -320,7 +370,8 @@
             type="text"
             variant="success"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -328,7 +379,8 @@
             type="text"
             variant="warning"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -336,7 +388,8 @@
             type="text"
             variant="info"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -344,7 +397,8 @@
             type="text"
             variant="danger"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -354,42 +408,48 @@
             type="text"
             variant="primary-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="secondary-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="success-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="warning-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="info-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="danger-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -400,7 +460,8 @@
             type="text"
             variant="primary-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -408,7 +469,8 @@
             type="text"
             variant="secondary-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -416,7 +478,8 @@
             type="text"
             variant="success-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -424,7 +487,8 @@
             type="text"
             variant="warning-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -432,7 +496,8 @@
             type="text"
             variant="info-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -440,7 +505,8 @@
             type="text"
             variant="danger-outline"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -450,42 +516,48 @@
             type="text"
             variant="primary-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="secondary-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="success-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="warning-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="info-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :checked="true"
             type="text"
             variant="danger-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -496,7 +568,8 @@
             type="text"
             variant="primary-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -504,7 +577,8 @@
             type="text"
             variant="secondary-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -512,7 +586,8 @@
             type="text"
             variant="success-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -520,7 +595,8 @@
             type="text"
             variant="warning-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -528,7 +604,8 @@
             type="text"
             variant="info-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             :pill="true"
@@ -536,7 +613,8 @@
             type="text"
             variant="danger-outline-alt"
             on="On"
-            off="Off"/>
+            off="Off"
+          />
         </b-card>
       </b-col>
 
@@ -546,37 +624,43 @@
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="primary"/>
+            variant="primary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="secondary"/>
+            variant="secondary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="success"/>
+            variant="success"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="warning"/>
+            variant="warning"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="info"/>
+            variant="info"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="danger"/>
+            variant="danger"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -586,42 +670,48 @@
             :pill="true"
             :checked="true"
             type="icon"
-            variant="primary"/>
+            variant="primary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="secondary"/>
+            variant="secondary"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="success"/>
+            variant="success"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="warning"/>
+            variant="warning"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="info"/>
+            variant="info"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="danger"/>
+            variant="danger"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -630,37 +720,43 @@
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="primary-outline"/>
+            variant="primary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="secondary-outline"/>
+            variant="secondary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="success-outline"/>
+            variant="success-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="warning-outline"/>
+            variant="warning-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="info-outline"/>
+            variant="info-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="danger-outline"/>
+            variant="danger-outline"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -670,42 +766,48 @@
             :pill="true"
             :checked="true"
             type="icon"
-            variant="primary-outline"/>
+            variant="primary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="secondary-outline"/>
+            variant="secondary-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="success-outline"/>
+            variant="success-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="warning-outline"/>
+            variant="warning-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="info-outline"/>
+            variant="info-outline"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="danger-outline"/>
+            variant="danger-outline"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -714,37 +816,43 @@
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="primary-outline-alt"/>
+            variant="primary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="secondary-outline-alt"/>
+            variant="secondary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="success-outline-alt"/>
+            variant="success-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="warning-outline-alt"/>
+            variant="warning-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="info-outline-alt"/>
+            variant="info-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :checked="true"
             type="icon"
-            variant="danger-outline-alt"/>
+            variant="danger-outline-alt"
+          />
         </b-card>
       </b-col>
       <b-col md="6">
@@ -754,42 +862,48 @@
             :pill="true"
             :checked="true"
             type="icon"
-            variant="primary-outline-alt"/>
+            variant="primary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="secondary-outline-alt"/>
+            variant="secondary-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="success-outline-alt"/>
+            variant="success-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="warning-outline-alt"/>
+            variant="warning-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="info-outline-alt"/>
+            variant="info-outline-alt"
+          />
           &nbsp;&nbsp;&nbsp;
           <c-switch
             v-bind="{on: '\uf00c', off: '\uf00d'}"
             :pill="true"
             :checked="true"
             type="icon"
-            variant="danger-outline-alt"/>
+            variant="danger-outline-alt"
+          />
         </b-card>
       </b-col>
 
@@ -805,15 +919,18 @@
               hover
               striped
               responsive="sm"
-              class="table-align-middle mb-0">
+              class="table-align-middle mb-0"
+            >
               <template
                 slot="example"
-                slot-scope="data">
+                slot-scope="data"
+              >
                 <c-switch
                   :type="data.value.type"
                   :variant="data.value.variant"
                   :size="data.value.size"
-                  :checked="data.value.checked"/>
+                  :checked="data.value.checked"
+                />
               </template>
             </b-table>
           </b-card-body>

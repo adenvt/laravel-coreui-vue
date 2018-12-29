@@ -19,7 +19,8 @@ const OfflinePlugin = require('offline-plugin')
 mix.js('resources/js/app.js', 'public/js')
 mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
-  resolve: {
+  devServer: { disableHostCheck: true },
+  resolve  : {
     alias: {
       '@'         : path.resolve(__dirname, 'resources/js/coreui/'),
       'static'    : path.resolve(__dirname, 'resources/static/'),

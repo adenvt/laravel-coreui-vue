@@ -3,14 +3,18 @@
     <div class="animated fadeIn">
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Bootstrap Tooltips</strong> <small><code>v-b-tooltip</code> directive</small>
+          <i class="fa fa-align-justify" /> <strong>Bootstrap Tooltips</strong> <small><code>v-b-tooltip</code> directive</small>
           <div class="card-actions">
             <a
               href="https://bootstrap-vue.js.org/docs/components/tooltip"
-              target="_blank">
-              <small class="text-muted">docs</small>
+              target="_blank"
+            >
+              <small class="text-muted">
+                docs
+              </small>
             </a>
           </div>
         </div>
@@ -19,17 +23,24 @@
             <div class="text-center my-3">
               <b-btn
                 v-b-tooltip.hover
-                title="I am a tooltip!">Hover Me</b-btn>
+                title="I am a tooltip!"
+              >
+                Hover Me
+              </b-btn>
             </div>
           </b-col>
           <b-col cols="6">
             <div class="text-center my-3">
               <b-btn
                 id="tooltipButton-2"
-                variant="primary">Button</b-btn>
+                variant="primary"
+              >
+                Button
+              </b-btn>
               <b-tooltip
                 show
-                target="tooltipButton-2">
+                target="tooltipButton-2"
+              >
                 I start open
               </b-tooltip>
             </div>
@@ -38,99 +49,132 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Tooltips</strong> <small><code>b-tooltip</code> component</small>
+          <i class="fa fa-align-justify" /> <strong>Tooltips</strong> <small><code>b-tooltip</code> component</small>
         </div>
         <b-row>
           <b-col
             md="6"
-            class="py-4 text-center">
+            class="py-4 text-center"
+          >
             <b-btn
               id="exButton1"
-              variant="outline-success">Live chat</b-btn>
+              variant="outline-success"
+            >
+              Live chat
+            </b-btn>
           </b-col>
           <b-col
             md="6"
-            class="py-4 text-center">
+            class="py-4 text-center"
+          >
             <b-btn
               id="exButton2"
-              variant="outline-success">Html chat</b-btn>
+              variant="outline-success"
+            >
+              Html chat
+            </b-btn>
           </b-col>
         </b-row>
 
         <!-- Tooltip title specified via prop title -->
         <b-tooltip
           target="exButton1"
-          title="Online!"/>
+          title="Online!"
+        />
 
         <!-- HTML title specified via default slot -->
         <b-tooltip
           target="exButton2"
-          placement="bottom">
+          placement="bottom"
+        >
           Hello <strong>World!</strong>
         </b-tooltip>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Tooltips</strong> <small><code>show</code> prop</small>
+          <i class="fa fa-align-justify" /> <strong>Tooltips</strong> <small><code>show</code> prop</small>
         </div>
         <div class="text-center">
           <b-btn
             id="tooltipButton-1"
-            variant="primary">I have a tooltip</b-btn>
+            variant="primary"
+          >
+            I have a tooltip
+          </b-btn>
           <br><br>
-          <b-btn @click="show = !show">Toggle Tooltip</b-btn>
+          <b-btn @click="show = !show">
+            Toggle Tooltip
+          </b-btn>
 
           <b-tooltip
             :show.sync="show"
             target="tooltipButton-1"
-            placement="top">
+            placement="top"
+          >
             Hello <strong>World!</strong>
           </b-tooltip>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Tooltips</strong> <small><code>open close</code> events</small>
+          <i class="fa fa-align-justify" /> <strong>Tooltips</strong> <small><code>open close</code> events</small>
         </div>
         <div class="d-flex flex-column text-md-center">
           <div class="p-2">
             <b-btn
               id="tooltipButton-showEvent"
-              variant="primary">I have a tooltip</b-btn>
+              variant="primary"
+            >
+              I have a tooltip
+            </b-btn>
           </div>
           <div class="p-2">
             <b-btn
               class="px-1"
-              @click="onOpen">Open</b-btn>
+              @click="onOpen"
+            >
+              Open
+            </b-btn>
             <b-btn
               class="px-1"
-              @click="onClose">Close</b-btn>
+              @click="onClose"
+            >
+              Close
+            </b-btn>
           </div>
 
           <b-tooltip
             ref="tooltip"
-            target="tooltipButton-showEvent">
+            target="tooltipButton-showEvent"
+          >
             Hello <strong>World!</strong>
           </b-tooltip>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Tooltips</strong> <small><code>enable disable</code> events</small>
+          <i class="fa fa-align-justify" /> <strong>Tooltips</strong> <small><code>enable disable</code> events</small>
         </div>
         <div class="d-flex flex-column text-md-center">
           <div class="p-2">
             <b-btn
               id="tooltipButton-disable"
-              variant="primary">I have a tooltip</b-btn>
+              variant="primary"
+            >
+              I have a tooltip
+            </b-btn>
           </div>
           <div class="p-2">
             <b-btn @click="disabled = !disabled">
@@ -144,7 +188,8 @@
             <b-tooltip
               ref="tooltip2"
               :disabled.sync="disabled"
-              target="tooltipButton-disable">
+              target="tooltipButton-disable"
+            >
               Hello <strong>World!</strong>
             </b-tooltip>
           </div>

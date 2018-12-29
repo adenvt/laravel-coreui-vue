@@ -10,21 +10,26 @@
       :fields="fields"
       :current-page="currentPage"
       :per-page="perPage"
-      responsive="sm">
+      responsive="sm"
+    >
       <template
         slot="status"
-        slot-scope="data">
-        <b-badge :variant="getBadge(data.item.status)">{{ data.item.status }}</b-badge>
+        slot-scope="data"
+      >
+        <b-badge :variant="getBadge(data.item.status)">
+          {{ data.item.status }}
+        </b-badge>
       </template>
     </b-table>
     <nav>
       <b-pagination
+        v-model="currentPage"
         :total-rows="getRowCount(items)"
         :per-page="perPage"
-        v-model="currentPage"
         prev-text="Prev"
         next-text="Next"
-        hide-goto-end-buttons/>
+        hide-goto-end-buttons
+      />
     </nav>
   </b-card>
 </template>

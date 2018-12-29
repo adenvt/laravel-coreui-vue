@@ -5,17 +5,19 @@
       :checked="isChecked"
       type="checkbox"
       class="switch-input"
-      @change="handleChange">
+      @change="handleChange"
+    >
     <template v-if="isOn">
       <span
         :data-on="on"
         :data-off="off"
-        class="switch-label"/>
+        class="switch-label"
+      />
     </template>
     <template v-else>
-      <span class="switch-label"/>
+      <span class="switch-label" />
     </template>
-    <span class="switch-handle"/>
+    <span class="switch-handle" />
   </label>
 </template>
 

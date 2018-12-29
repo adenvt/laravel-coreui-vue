@@ -3,14 +3,18 @@
     <div class="animated fadeIn">
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Bootstrap Popovers</strong>
+          <i class="fa fa-align-justify" /> <strong>Bootstrap Popovers</strong>
           <div class="card-actions">
             <a
               href="https://bootstrap-vue.js.org/docs/components/popovers"
-              target="_blank">
-              <small class="text-muted">docs</small>
+              target="_blank"
+            >
+              <small class="text-muted">
+                docs
+              </small>
             </a>
           </div>
         </div>
@@ -19,7 +23,8 @@
             <div class="my-3 text-center">
               <b-btn
                 v-b-popover.hover="'I am popover content!'"
-                title="Popover Title">
+                title="Popover Title"
+              >
                 Hover Me
               </b-btn>
             </div>
@@ -28,12 +33,16 @@
             <div class="my-3 text-center">
               <b-btn
                 id="popoverButton-open"
-                variant="primary">Button</b-btn>
+                variant="primary"
+              >
+                Button
+              </b-btn>
 
               <b-popover
                 show
                 target="popoverButton-open"
-                title="Popover">
+                title="Popover"
+              >
                 I start <strong>open</strong>
               </b-popover>
             </div>
@@ -42,9 +51,10 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popovers</strong>
+          <i class="fa fa-align-justify" /> <strong>Popovers</strong>
           <small>placement</small>
         </div>
         <div class="my-3">
@@ -53,10 +63,12 @@
               v-for="placement in placements"
               :key="placement"
               md="4"
-              class="py-4 text-center">
+              class="py-4 text-center"
+            >
               <b-btn
                 :id="'exPopover1-'+placement"
-                variant="primary">
+                variant="primary"
+              >
                 {{ placement }}
               </b-btn>
               <b-popover
@@ -64,7 +76,8 @@
                 :placement="placement"
                 :content="`Placement ${placement}`"
                 title="Popover!"
-                triggers="hover focus"/>
+                triggers="hover focus"
+              />
             </b-col>
           </b-row>
         </div>
@@ -72,35 +85,50 @@
       <b-card
         class="d-sm-down-none"
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popovers</strong>
+          <i class="fa fa-align-justify" /> <strong>Popovers</strong>
           <small>via properties or slots</small>
         </div>
         <b-row>
           <b-col
             md="6"
-            class="py-4 text-center">
+            class="py-4 text-center"
+          >
             <b-btn
               id="exPopover2"
-              variant="primary">Using properties</b-btn>
+              variant="primary"
+            >
+              Using properties
+            </b-btn>
             <b-popover
               target="exPopover2"
               title="Prop Examples"
               triggers="hover focus"
-              content="Embedding content using properties is easy"/>
+              content="Embedding content using properties is easy"
+            />
           </b-col>
           <b-col
             md="6"
-            class="py-4 text-center">
+            class="py-4 text-center"
+          >
             <b-btn
               id="exPopover3"
-              variant="primary">Using slots</b-btn>
+              variant="primary"
+            >
+              Using slots
+            </b-btn>
             <b-popover
               target="exPopover3"
-              triggers="hover focus">
-              <template slot="title">Content via Slots</template>
-              Embedding content <span class="text-danger">using slots</span>
+              triggers="hover focus"
+            >
+              <template slot="title">
+                Content via Slots
+              </template>
+              Embedding content <span class="text-danger">
+                using slots
+              </span>
               affords you <em>greater <strong>control.</strong></em> and
               basic HTML support.
             </b-popover>
@@ -109,26 +137,34 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popovers</strong>
+          <i class="fa fa-align-justify" /> <strong>Popovers</strong>
           <small>show</small>
         </div>
         <div class="d-flex flex-column text-md-center">
           <div class="p-2">
             <b-btn
               id="popoverButton-sync"
-              variant="primary">I have a popover</b-btn>
+              variant="primary"
+            >
+              I have a popover
+            </b-btn>
           </div>
           <div class="p-2">
             <b-btn
               class="px-1"
-              @click="show = !show">Toggle Popover</b-btn>
+              @click="show = !show"
+            >
+              Toggle Popover
+            </b-btn>
 
             <b-popover
               :show.sync="show"
               target="popoverButton-sync"
-              title="Popover">
+              title="Popover"
+            >
               Hello <strong>World!</strong>
             </b-popover>
           </div>
@@ -136,102 +172,141 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popover</strong>
+          <i class="fa fa-align-justify" /> <strong>Popover</strong>
           <small>open/close events</small>
         </div>
         <div class="d-flex flex-column text-md-center">
           <div class="p-2">
             <b-btn
               id="popoverButton-event"
-              variant="primary">I have a popover</b-btn>
+              variant="primary"
+            >
+              I have a popover
+            </b-btn>
           </div>
           <div class="p-2">
             <b-btn
               class="px-1"
-              @click="onOpen">Open</b-btn>
+              @click="onOpen"
+            >
+              Open
+            </b-btn>
             <b-btn
               class="px-1"
-              @click="onClose">Close</b-btn>
+              @click="onClose"
+            >
+              Close
+            </b-btn>
           </div>
 
           <b-popover
             ref="popover1"
             target="popoverButton-event"
-            title="Popover">
+            title="Popover"
+          >
             Hello <strong>World!</strong>
           </b-popover>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popover</strong>
+          <i class="fa fa-align-justify" /> <strong>Popover</strong>
           <small>enable/disable events</small>
         </div>
         <div class="d-flex flex-column text-md-center">
           <div class="p-2">
             <b-btn
               id="popoverButton-disableevent"
-              variant="primary">I have a popover</b-btn>
+              variant="primary"
+            >
+              I have a popover
+            </b-btn>
           </div>
           <div class="p-2">
             <b-btn
               class="px-1"
-              @click="onEnable">Enable</b-btn>
+              @click="onEnable"
+            >
+              Enable
+            </b-btn>
             <b-btn
               class="px-1"
-              @click="onDisable">Disable</b-btn>
+              @click="onDisable"
+            >
+              Disable
+            </b-btn>
           </div>
 
           <b-popover
             ref="popover2"
             target="popoverButton-disableevent"
-            title="Popover">
+            title="Popover"
+          >
             Hello <strong>World!</strong>
           </b-popover>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Popover</strong> <small><code>v-b-popover</code> directive</small>
+          <i class="fa fa-align-justify" /> <strong>Popover</strong> <small><code>v-b-popover</code> directive</small>
         </div>
         <b-row>
           <b-col
             md="3"
-            class="py-3 text-center">
+            class="py-3 text-center"
+          >
             <b-btn
               v-b-popover.hover.top="'I am Top'"
               title="Popover!"
-              variant="primary">Top</b-btn>
+              variant="primary"
+            >
+              Top
+            </b-btn>
           </b-col>
           <b-col
             md="3"
-            class="py-3 text-center">
+            class="py-3 text-center"
+          >
             <b-btn
               v-b-popover.hover.left="'I am Left'"
               title="Popover!"
-              variant="primary">Left</b-btn>
+              variant="primary"
+            >
+              Left
+            </b-btn>
           </b-col>
           <b-col
             md="3"
-            class="py-3 text-center">
+            class="py-3 text-center"
+          >
             <b-btn
               v-b-popover.hover.right="'I am Right'"
               title="Popover!"
-              variant="primary">Right</b-btn>
+              variant="primary"
+            >
+              Right
+            </b-btn>
           </b-col>
           <b-col
             md="3"
-            class="py-3 text-center">
+            class="py-3 text-center"
+          >
             <b-btn
               v-b-popover.hover.bottom="'I am Bottom'"
               title="Popover!"
-              variant="primary">Bottom</b-btn>
+              variant="primary"
+            >
+              Bottom
+            </b-btn>
           </b-col>
         </b-row>
       </b-card>

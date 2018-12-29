@@ -3,59 +3,82 @@
     <div class="animated fadeIn">
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Bootstrap Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Bootstrap Navbar</strong>
           <div class="card-actions">
             <a
               href="https://bootstrap-vue.js.org/docs/components/navbar"
-              target="_blank">
-              <small class="text-muted">docs</small>
+              target="_blank"
+            >
+              <small class="text-muted">
+                docs
+              </small>
             </a>
           </div>
         </div>
         <b-navbar
           toggleable="md"
           type="dark"
-          variant="info">
+          variant="info"
+        >
+          <b-navbar-toggle target="nav_collapse" />
 
-          <b-navbar-toggle target="nav_collapse"/>
-
-          <b-navbar-brand href="#">NavBar</b-navbar-brand>
+          <b-navbar-brand href="#">
+            NavBar
+          </b-navbar-brand>
 
           <b-collapse
             id="nav_collapse"
-            is-nav>
-
+            is-nav
+          >
             <b-navbar-nav>
-              <b-nav-item href="#">Link</b-nav-item>
+              <b-nav-item href="#">
+                Link
+              </b-nav-item>
               <b-nav-item
                 href="#"
-                disabled>Disabled</b-nav-item>
+                disabled
+              >
+                Disabled
+              </b-nav-item>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-
               <b-nav-form>
                 <b-form-input
                   size="sm"
                   class="mr-sm-2"
                   type="text"
-                  placeholder="Search"/>
+                  placeholder="Search"
+                />
                 <b-button
                   size="sm"
                   class="my-2 my-sm-0"
-                  type="submit">Search</b-button>
+                  type="submit"
+                >
+                  Search
+                </b-button>
               </b-nav-form>
 
               <b-nav-item-dropdown
                 text="Lang"
-                right>
-                <b-dropdown-item href="#">EN</b-dropdown-item>
-                <b-dropdown-item href="#">ES</b-dropdown-item>
-                <b-dropdown-item href="#">RU</b-dropdown-item>
-                <b-dropdown-item href="#">FA</b-dropdown-item>
+                right
+              >
+                <b-dropdown-item href="#">
+                  EN
+                </b-dropdown-item>
+                <b-dropdown-item href="#">
+                  ES
+                </b-dropdown-item>
+                <b-dropdown-item href="#">
+                  RU
+                </b-dropdown-item>
+                <b-dropdown-item href="#">
+                  FA
+                </b-dropdown-item>
               </b-nav-item-dropdown>
 
               <b-nav-item-dropdown right>
@@ -63,33 +86,40 @@
                 <template slot="button-content">
                   <em>User</em>
                 </template>
-                <b-dropdown-item href="#">Profile</b-dropdown-item>
-                <b-dropdown-item href="#">Signout</b-dropdown-item>
+                <b-dropdown-item href="#">
+                  Profile
+                </b-dropdown-item>
+                <b-dropdown-item href="#">
+                  Signout
+                </b-dropdown-item>
               </b-nav-item-dropdown>
             </b-navbar-nav>
-
           </b-collapse>
         </b-navbar>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Navbar</strong>
           <small>brand</small>
         </div>
         <div>
           <!-- Image and text -->
           <b-navbar
             variant="faded"
-            type="light">
+            type="light"
+          >
             <b-navbar-brand
               tag="h1"
-              href="#">
+              href="#"
+            >
               <img
                 src="https://placekitten.com/g/30/30"
                 class="d-inline-block align-top"
-                alt="BV">
+                alt="BV"
+              >
               BootstrapVue
             </b-navbar-brand>
           </b-navbar>
@@ -97,21 +127,24 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Navbar</strong>
           <small>text</small>
         </div>
         <div>
           <b-navbar
             toggleable
             type="light"
-            variant="light">
-            <b-navbar-toggle target="nav_text_collapse"/>
+            variant="light"
+          >
+            <b-navbar-toggle target="nav_text_collapse" />
             <b-navbar-brand>BootstrapVue</b-navbar-brand>
             <b-collapse
               id="nav_text_collapse"
-              is-nav>
+              is-nav
+            >
               <b-navbar-nav>
                 <b-nav-text>Navbar text</b-nav-text>
               </b-navbar-nav>
@@ -121,37 +154,58 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Navbar</strong>
           <small>dropdown</small>
         </div>
         <div>
           <b-navbar
             type="dark"
             variant="primary"
-            toggleable>
-            <b-navbar-toggle target="nav_dropdown_collapse"/>
+            toggleable
+          >
+            <b-navbar-toggle target="nav_dropdown_collapse" />
             <b-collapse
               id="nav_dropdown_collapse"
-              is-nav>
+              is-nav
+            >
               <b-navbar-nav>
-                <b-nav-item href="#">Home</b-nav-item>
-                <b-nav-item href="#">Link</b-nav-item>
+                <b-nav-item href="#">
+                  Home
+                </b-nav-item>
+                <b-nav-item href="#">
+                  Link
+                </b-nav-item>
                 <!-- Navbar dropdowns -->
                 <b-nav-item-dropdown
                   text="Lang"
-                  right>
-                  <b-dropdown-item href="#">EN</b-dropdown-item>
-                  <b-dropdown-item href="#">ES</b-dropdown-item>
-                  <b-dropdown-item href="#">RU</b-dropdown-item>
-                  <b-dropdown-item href="#">FA</b-dropdown-item>
+                  right
+                >
+                  <b-dropdown-item href="#">
+                    EN
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#">
+                    ES
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#">
+                    RU
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#">
+                    FA
+                  </b-dropdown-item>
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown
                   text="User"
-                  right>
-                  <b-dropdown-item href="#">Account</b-dropdown-item>
-                  <b-dropdown-item href="#">Settings</b-dropdown-item>
+                  right
+                >
+                  <b-dropdown-item href="#">
+                    Account
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#">
+                    Settings
+                  </b-dropdown-item>
                 </b-nav-item-dropdown>
               </b-navbar-nav>
             </b-collapse>
@@ -160,45 +214,54 @@
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Navbar</strong>
           <small>form</small>
         </div>
         <div>
           <b-navbar
             type="light"
-            variant="light">
+            variant="light"
+          >
             <b-nav-form>
               <b-form-input
                 class="mr-sm-2"
                 type="text"
-                placeholder="Search"/>
+                placeholder="Search"
+              />
               <b-button
                 variant="outline-success"
                 class="my-2 my-sm-0"
-                type="submit">Search</b-button>
+                type="submit"
+              >
+                Search
+              </b-button>
             </b-nav-form>
           </b-navbar>
         </div>
       </b-card>
       <b-card
         header-tag="header"
-        footer-tag="footer">
+        footer-tag="footer"
+      >
         <div slot="header">
-          <i class="fa fa-align-justify"/> <strong>Navbar</strong>
+          <i class="fa fa-align-justify" /> <strong>Navbar</strong>
           <small>input group</small>
         </div>
         <div>
           <b-navbar
             type="light"
-            variant="light">
+            variant="light"
+          >
             <b-nav-form>
               <b-input-group left="@">
                 <b-form-input
                   class="mr-sm-2"
                   type="text"
-                  placeholder="Username"/>
+                  placeholder="Username"
+                />
               </b-input-group>
             </b-nav-form>
           </b-navbar>

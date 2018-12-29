@@ -4,8 +4,9 @@
       <b-row>
         <template v-for="variant in variants">
           <b-loading
+            :key="variant"
             :variant="variant"
-            :key="variant">
+          >
             {{ variant }}
           </b-loading>
         </template>
@@ -14,7 +15,8 @@
     <b-card header="Cover Size Loading">
       <b-loading
         variant="RotateSquare2"
-        cover >
+        cover
+      >
         Loading
       </b-loading>
     </b-card>

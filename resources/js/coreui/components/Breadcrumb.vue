@@ -3,13 +3,20 @@
     <li
       v-for="(item, index) in list"
       :key="index"
-      class="breadcrumb-item">
+      class="breadcrumb-item"
+    >
       <span
         v-if="isLast(index)"
-        class="active">{{ showName(item) }}</span>
+        class="active"
+      >
+        {{ showName(item) }}
+      </span>
       <router-link
         v-else
-        :to="item">{{ showName(item) }}</router-link>
+        :to="item"
+      >
+        {{ showName(item) }}
+      </router-link>
     </li>
   </ol>
 </template>

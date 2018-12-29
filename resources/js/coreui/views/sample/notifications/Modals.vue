@@ -7,36 +7,60 @@
             <b-button
               type="button"
               variant="secondary"
-              @click="myModal = true">Launch demo modal</b-button>
+              @click="myModal = true"
+            >
+              Launch demo modal
+            </b-button>
             <b-button
               type="button"
               variant="secondary"
-              @click="largeModal = true">Launch large modal</b-button>
+              @click="largeModal = true"
+            >
+              Launch large modal
+            </b-button>
             <b-button
               type="button"
               variant="secondary"
-              @click="smallModal = true">Launch small modal</b-button>
+              @click="smallModal = true"
+            >
+              Launch small modal
+            </b-button>
             <hr>
             <b-button
               type="button"
               variant="primary"
-              @click="primaryModal = true">Launch primary modal</b-button>
+              @click="primaryModal = true"
+            >
+              Launch primary modal
+            </b-button>
             <b-button
               type="button"
               variant="success"
-              @click="successModal = true">Launch success modal</b-button>
+              @click="successModal = true"
+            >
+              Launch success modal
+            </b-button>
             <b-button
               type="button"
               variant="warning"
-              @click="warningModal = true">Launch warning modal</b-button>
+              @click="warningModal = true"
+            >
+              Launch warning modal
+            </b-button>
             <b-button
               type="button"
               variant="danger"
-              @click="dangerModal = true">Launch danger modal</b-button>
+              @click="dangerModal = true"
+            >
+              Launch danger modal
+            </b-button>
             <b-button
               type="button"
               variant="info"
-              @click="infoModal = true">Launch info modal</b-button>
+              @click="infoModal = true"
+            >
+              Launch info modal
+            </b-button>
           </b-card>
         </b-col><!--/.col-->
       </b-row><!--/.row-->
@@ -46,7 +70,8 @@
     <b-modal
       v-model="myModal"
       title="Modal title"
-      @ok="myModal = false">
+      @ok="myModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -58,7 +83,8 @@
       v-model="largeModal"
       title="Modal title"
       size="lg"
-      @ok="largeModal = false">
+      @ok="largeModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -70,7 +96,8 @@
       v-model="smallModal"
       title="Modal title"
       size="sm"
-      @ok="smallModal = false">
+      @ok="smallModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -83,7 +110,8 @@
       v-model="primaryModal"
       title="Modal title"
       class="modal-primary"
-      @ok="primaryModal = false">
+      @ok="primaryModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -96,7 +124,8 @@
       title="Modal title"
       class="modal-success"
       ok-variant="success"
-      @ok="successModal = false">
+      @ok="successModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -109,7 +138,8 @@
       title="Modal title"
       class="modal-warning"
       ok-variant="warning"
-      @ok="warningModal = false">
+      @ok="warningModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -122,7 +152,8 @@
       title="Modal title"
       class="modal-danger"
       ok-variant="danger"
-      @ok="dangerModal = false">
+      @ok="dangerModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -135,7 +166,8 @@
       title="Modal title"
       class="modal-info"
       ok-variant="info"
-      @ok="infoModal = false">
+      @ok="infoModal = false"
+    >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -144,7 +176,6 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </b-modal>
   </div>
-
 </template>
 
 <script>
