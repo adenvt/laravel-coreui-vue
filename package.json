@@ -39,7 +39,8 @@
     "laravel-mix": "^3.0.0",
     "offline-plugin": "^5.0.5",
     "pre-commit": "^1.2.2",
-    "stylelint": "^9.8.0",
+    "prettier": "1.15.3",
+    "stylelint": "^9.7.1",
     "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-scss": "^3.4.0"
   },
