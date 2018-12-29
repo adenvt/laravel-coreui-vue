@@ -2,6 +2,7 @@ const path          = require('path')
 const mix           = require('laravel-mix')
 const webpack       = require('webpack')
 const { version }   = require('./package.json')
+const WebpackBar    = require('webpackbar')
 const OfflinePlugin = require('offline-plugin')
 
 /*
@@ -26,6 +27,7 @@ mix.webpackConfig({
     },
   },
   plugins: [
+    new WebpackBar({ profile: true }),
     new webpack.DefinePlugin({ __VERSION: JSON.stringify(version) }),
     new OfflinePlugin({
       publicPath      : '/',
@@ -87,11 +89,12 @@ mix.extract([
 ])
 
 mix.options({
-  hmrOptions: {
+  clearConsole: false,
+  hmrOptions  : {
     host: process.env.MIX_HMR_HOST,
     port: process.env.MIX_HMR_PORT,
   },
-  uglify: { parallel: true },
+  terser: { terserOptions: { parallel: true } },
 })
 
 if (mix.inProduction())
