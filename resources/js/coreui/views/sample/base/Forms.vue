@@ -357,7 +357,7 @@
             label="Select"
             label-for="basicMultiSelect"
           >
-            <b-select2
+            <b-select-2
               id="basicMultiSelect"
               v-model="select2"
               :options="[

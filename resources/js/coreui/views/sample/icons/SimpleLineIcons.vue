@@ -425,8 +425,11 @@
             <i class="icon-screen-tablet icons font-2xl d-block mt-4" />icon-screen-tablet
           </b-col>
 
-          <b-col>
-            cols="6" sm="4" md="3">
+          <b-col
+            cols="6"
+            sm="4"
+            md="3"
+          >
             <i class="icon-magic-wand icons font-2xl d-block mt-4" />icon-magic-wand
           </b-col>
 

@@ -33,10 +33,10 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-COPY composer.json composer.json
-COPY composer.lock composer.lock
 RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
+COPY composer.json composer.json
+COPY composer.lock composer.lock
 RUN composer install \
   --prefer-dist \
   --no-ansi \
