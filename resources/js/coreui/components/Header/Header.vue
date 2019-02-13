@@ -62,7 +62,19 @@ import HeaderDropdown from './HeaderDropdown.vue'
 export default {
   name      : 'CHeader',
   components: { HeaderDropdown },
-  methods   : {
+  props     : {
+    fixed: {
+      type   : Boolean,
+      default: true,
+    },
+  },
+  mounted () {
+    if (this.fixed) $('body').addClass('header-fixed')
+  },
+  beforeDestroy () {
+    $('body').removeClass('header-fixed')
+  },
+  methods: {
     sidebarToggle (e) {
       e.preventDefault()
       document.body.classList.toggle('sidebar-hidden')

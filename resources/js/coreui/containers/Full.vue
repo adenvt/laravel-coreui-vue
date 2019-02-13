@@ -1,8 +1,11 @@
 <template>
   <div class="app">
-    <app-header />
+    <app-header :fixed="fixedHeader || fixedSidebar" />
     <div class="app-body">
-      <sidebar :nav-items="nav" />
+      <sidebar
+        :nav-items="nav"
+        :fixed="fixedSidebar"
+      />
       <notifications
         :style="{ 'margin-top': offset }"
         class="custom-notifications"
@@ -34,8 +37,10 @@ export default {
   },
   data () {
     return {
-      nav   : nav.items,
-      offset: true,
+      nav         : nav.items,
+      offset      : true,
+      fixedHeader : true,
+      fixedSidebar: true,
     }
   },
   computed: {
@@ -47,9 +52,11 @@ export default {
     },
   },
   mounted () {
+    $('body').addClass('app sidebar-lg-show pace-done')
     $(window).on('scroll', this.setPosNotify)
   },
   beforeDestroy () {
+    $('body').removeClass('app sidebar-lg-show pace-done')
     $(window).off('scroll', this.setPosNotify)
   },
   methods: {
