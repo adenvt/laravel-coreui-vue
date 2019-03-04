@@ -1,5 +1,5 @@
 import { defaultMutations } from 'vuex-easy-access'
-import axios from '@/plugin/axios'
+import axios from '@/plugins/axios'
 
 const state = { config: {} }
 
