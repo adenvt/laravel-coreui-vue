@@ -10,12 +10,6 @@
   },
   "globals": {
     "$": true,
-    "_": true,
-    "jQuery": true,
-    "moment": true,
-    "axios": true,
-    "Vue": true,
-    "CONFIG": true,
-    "__VERSION": true
+    "jQuery": true
   }
 }
