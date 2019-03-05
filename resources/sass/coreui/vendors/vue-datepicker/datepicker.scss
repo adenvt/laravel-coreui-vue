@@ -1,0 +1,7 @@
+.vdp-datepicker {
+  > .input-group {
+    > .form-control:not(:disabled) {
+      background-color: transparent;
+    }
+  }
+}

@@ -22,7 +22,7 @@ class Authenticate
                 'message' => 'Token not provided',
             ];
 
-            return response()->json($data, $data['status'], 401);
+            return response()->json($data, $data['status']);
         }
 
         return $next($request);

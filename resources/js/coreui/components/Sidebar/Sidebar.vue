@@ -134,6 +134,16 @@ export default {
       required: true,
       default : () => [],
     },
+    fixed: {
+      type   : Boolean,
+      default: false,
+    },
+  },
+  mounted () {
+    if (this.fixed) $('body').addClass('sidebar-fixed')
+  },
+  beforeDestroy () {
+    $('body').removeClass('sidebar-fixed')
   },
   methods: {
     handleClick (e) {
