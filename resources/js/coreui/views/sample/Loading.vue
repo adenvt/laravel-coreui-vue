@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import _ from 'lodash'
 import * as Spinner from 'vue-loading-spinner'
 
 export default {

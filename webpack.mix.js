@@ -29,7 +29,12 @@ mix.webpackConfig({
   },
   plugins: [
     new WebpackBar({ profile: true }),
-    new webpack.DefinePlugin({ __VERSION: JSON.stringify(version) }),
+    new webpack.DefinePlugin({ 'process.env.version': JSON.stringify(version) }),
+    new webpack.ProvidePlugin({
+      '$'            : 'jquery',
+      'jquery'       : 'jQuery',
+      'window.jQuery': 'jquery',
+    }),
     new OfflinePlugin({
       publicPath      : '/',
       appShell        : '/',
@@ -67,27 +72,7 @@ mix.vueOptions({
   },
 })
 
-mix.extract([
-  'axios',
-  'bootstrap',
-  'bootstrap-vue',
-  'chart.js',
-  'jquery',
-  'lodash',
-  'moment',
-  'popper.js',
-  'select2',
-  'vue',
-  'vue-chartjs',
-  'vue-loading-spinner',
-  'vue-notification',
-  'vue-router',
-  'vue-sweetalert2',
-  'vuejs-datepicker',
-  'vuelidate',
-  'vuex',
-  'vuex-easy-access',
-])
+mix.extract()
 
 mix.options({
   clearConsole: false,
