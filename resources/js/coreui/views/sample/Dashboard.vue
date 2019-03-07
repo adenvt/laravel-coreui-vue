@@ -176,33 +176,35 @@
             class="float-right"
             aria-label="Toolbar with buttons group"
           >
-            <b-form-radio-group
-              id="radiosBtn"
-              v-model="selected"
-              class="mr-3"
-              buttons
-              button-variant="outline-secondary"
-              name="radiosBtn"
-            >
-              <b-form-radio
-                class="mx-0"
-                value="Day"
+            <no-ssr>
+              <b-form-radio-group
+                id="radiosBtn"
+                v-model="selected"
+                class="mr-3"
+                buttons
+                button-variant="outline-secondary"
+                name="radiosBtn"
               >
-                Day
-              </b-form-radio>
-              <b-form-radio
-                class="mx-0"
-                value="Month"
-              >
-                Month
-              </b-form-radio>
-              <b-form-radio
-                class="mx-0"
-                value="Year"
-              >
-                Year
-              </b-form-radio>
-            </b-form-radio-group>
+                <b-form-radio
+                  class="mx-0"
+                  value="Day"
+                >
+                  Day
+                </b-form-radio>
+                <b-form-radio
+                  class="mx-0"
+                  value="Month"
+                >
+                  Month
+                </b-form-radio>
+                <b-form-radio
+                  class="mx-0"
+                  value="Year"
+                >
+                  Year
+                </b-form-radio>
+              </b-form-radio-group>
+            </no-ssr>
           </b-button-toolbar>
         </b-col>
       </b-row>

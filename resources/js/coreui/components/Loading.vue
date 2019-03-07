@@ -14,6 +14,10 @@
 import _ from 'lodash'
 import * as Spinner from 'vue-loading-spinner'
 
+function pascalCase (str) {
+  return _.upperFirst(_.camelCase(str))
+}
+
 export const COMPONENTS = _.mapKeys(Spinner, (value, key) => `Spinner${key}`)
 
 export default {
@@ -24,7 +28,7 @@ export default {
       type     : String,
       default  : 'rotate-square',
       validator: function (value) {
-        return _.keys(Spinner).indexOf(_.pascalCase(value)) !== -1
+        return _.keys(Spinner).indexOf(pascalCase(value)) !== -1
       },
     },
     size: {
@@ -37,7 +41,7 @@ export default {
   },
   computed: {
     cVariant () {
-      return `Spinner${_.pascalCase(this.variant)}`
+      return `Spinner${pascalCase(this.variant)}`
     },
     cSize () {
       return `${this.size}px`

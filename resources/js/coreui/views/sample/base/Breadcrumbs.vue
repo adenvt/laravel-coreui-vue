@@ -49,5 +49,14 @@ export default {
       ],
     }
   },
+  mounted () {
+    this.$axios.get('/ping')
+      .then((response) => {
+        // console.log(response.data)
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  },
 }
 </script>

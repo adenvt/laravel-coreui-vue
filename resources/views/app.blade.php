@@ -20,11 +20,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset(mix('css/style.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}">
 </head>
 
 <body>
     <div id="app">
+        @if (env('VUE_SSR', false))
+            {!! ssr('js/app-server.js')->render() !!}
+        @endif
         <noscript>
             <div class="app flex-row align-items-center">
                 <div class="container">
@@ -54,9 +58,9 @@
             </div>
         </noscript>
     </div>
-    <script defer src="{{ asset(mix('js/manifest.js')) }}"></script>
-    <script defer src="{{ asset(mix('js/vendor.js')) }}"></script>
-    <script defer src="{{ asset(mix('js/app.js')) }}"></script>
+    {{-- <script defer src="{{ asset(mix('js/manifest.js')) }}"></script> --}}
+    {{-- <script defer src="{{ asset(mix('js/vendor.js')) }}"></script> --}}
+    <script defer src="{{ asset(mix('js/app-client.js')) }}"></script>
 </body>
 
 </html>

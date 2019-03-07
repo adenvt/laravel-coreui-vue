@@ -5,6 +5,7 @@ services:
       context: ./
       args:
         - FORCE_HTTPS=false
+        - VUE_SSR=true
     ports:
      - 88:80
   dev:

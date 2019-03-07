@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import './core/no-ssr'
 import './plugins/animate'
 import './plugins/axios'
 import './plugins/bootstrap'
@@ -17,9 +18,7 @@ import './plugins/swal'
 import './plugins/validation'
 
 export default new Vue({
-  el        : '#app',
-  router    : router,
-  store     : store,
-  components: { App },
-  template  : '<App/>',
+  router: router,
+  store : store,
+  render: (h) => h(App),
 })
