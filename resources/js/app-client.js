@@ -4,6 +4,6 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import app from './coreui/main-client.js'
+import app from './coreui/core/main-client.js'
 
 app.$mount('#app')

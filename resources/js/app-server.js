@@ -1,7 +1,7 @@
 /* global context, dispatch */
 
 import render from 'vue-server-renderer/basic'
-import app from './coreui/main-server.js'
+import app from './coreui/core/main-server.js'
 
 app.$router.push(context.url)
 

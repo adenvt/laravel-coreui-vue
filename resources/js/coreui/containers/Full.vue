@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import nav from '../_nav'
+import nav from '@/menu'
 import { Header as AppHeader, Sidebar, Aside as AppAside, Footer as AppFooter, Breadcrumb } from '../components'
 
 export default {
@@ -37,7 +37,7 @@ export default {
   },
   data () {
     return {
-      nav         : nav.items,
+      nav         : nav,
       offset      : true,
       fixedHeader : true,
       fixedSidebar: true,
