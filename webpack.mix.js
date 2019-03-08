@@ -16,7 +16,8 @@ const OfflinePlugin = require('offline-plugin')
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app-client.js', 'public/js')
+mix.js('resources/js/app-server.js', 'public/js')
 mix.sass('resources/sass/app.scss', 'public/css')
 mix.webpackConfig({
   devServer: { disableHostCheck: true },
@@ -32,7 +33,7 @@ mix.webpackConfig({
     new webpack.DefinePlugin({ 'process.env.version': JSON.stringify(version) }),
     new webpack.ProvidePlugin({
       '$'            : 'jquery',
-      'jquery'       : 'jQuery',
+      'jQuery'       : 'jquery',
       'window.jQuery': 'jquery',
     }),
     new OfflinePlugin({
@@ -72,7 +73,7 @@ mix.vueOptions({
   },
 })
 
-mix.extract()
+// mix.extract()
 
 mix.options({
   clearConsole: false,
@@ -80,7 +81,8 @@ mix.options({
     host: process.env.MIX_HMR_HOST,
     port: process.env.MIX_HMR_PORT,
   },
-  terser: { terserOptions: { parallel: true } },
+  terser          : { terserOptions: { parallel: true } },
+  extractVueStyles: 'public/css/style.css',
 })
 
 if (mix.inProduction())

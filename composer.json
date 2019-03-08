@@ -10,7 +10,8 @@
     "guzzlehttp/guzzle": "^6.3",
     "laravel/framework": "5.7.*",
     "laravel/tinker": "^1.0",
-    "renatomarinho/laravel-page-speed": "^1.8"
+    "renatomarinho/laravel-page-speed": "^1.8",
+    "spatie/laravel-server-side-rendering": "^1.0"
   },
   "require-dev": {
     "filp/whoops": "^2.0",

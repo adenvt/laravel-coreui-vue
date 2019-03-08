@@ -23,6 +23,7 @@ RUN set -x \
     git \
     unzip \
     zlib1g-dev \
+    gnupg \
   && apt-get clean
 RUN docker-php-ext-install zip
 
@@ -56,6 +57,13 @@ COPY deploy/web/php.ini /usr/local/etc/php/php.ini
 ARG FORCE_HTTPS=false
 RUN if [ ${FORCE_HTTPS} = true ]; then \
   sed -i 's/# fastcgi_param HTTPS/fastcgi_param HTTPS/' /etc/nginx/sites-available/default \
+;fi
+
+# VUE SSR
+ARG VUE_SSR=false
+RUN if [ ${VUE_SSR} = true ]; then \
+  curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+  && apt-get install -y nodejs \
 ;fi
 
 COPY --from=compiler /var/www /var/www

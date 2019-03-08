@@ -156,7 +156,6 @@
           </div>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Let us know your full name."
             label="Enter your name"
             label-for="basicName"
@@ -168,7 +167,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Static"
             label-for="basicStatic"
           >
@@ -181,7 +179,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="This is a help text"
             label="Text Input"
             label-for="basicText"
@@ -194,7 +191,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Date"
             label-for="date"
           >
@@ -205,7 +201,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Datepicker"
           >
             <b-datepicker
@@ -214,7 +209,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Please enter your email"
             label="Email Input"
             label-for="basicEmail"
@@ -227,7 +221,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Please enter a complex password"
             label="Password Input"
             label-for="basicPassword"
@@ -240,7 +233,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Disabled Input"
             label-for="basicInputDisabled"
           >
@@ -253,7 +245,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Textarea"
             label-for="basicTextarea"
           >
@@ -266,7 +257,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicSelect"
           >
@@ -279,7 +269,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select large"
             label-for="basicSelectLg"
           >
@@ -293,7 +282,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select small"
             label-for="basicSelectSm"
           >
@@ -307,7 +295,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Disabled select"
             label-for="basicSelectDisabled"
           >
@@ -321,7 +308,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicMultiSelect"
           >
@@ -353,7 +339,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicMultiSelect"
           >
@@ -380,217 +365,222 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Radios"
             label-for="basicRadios"
           >
-            <b-form-radio-group
-              id="basicRadios"
-              :plain="true"
-              :options="[
-                {text: 'Option 1 ',value: '1'},
-                {text: 'Option 2 ',value: '2'},
-                {text: 'Option 3 ',value: '3'}
-              ]"
-              checked="2"
-              stacked
-            />
+            <no-ssr>
+              <b-form-radio-group
+                id="basicRadios"
+                :plain="true"
+                :options="[
+                  {text: 'Option 1 ',value: '1'},
+                  {text: 'Option 2 ',value: '2'},
+                  {text: 'Option 3 ',value: '3'}
+                ]"
+                checked="2"
+                stacked
+              />
+            </no-ssr>
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline radios"
             label-for="basicInlineRadios"
           >
-            <b-form-radio-group
-              id="basicInlineRadios"
-              :plain="true"
-              :options="[
-                {text: 'Option 1 ',value: '1'},
-                {text: 'Option 2 ',value: '2'},
-                {text: 'Option 3 ',value: '3'}
-              ]"
-              :checked="3"
-            />
+            <no-ssr>
+              <b-form-radio-group
+                id="basicInlineRadios"
+                :plain="true"
+                :options="[
+                  {text: 'Option 1 ',value: '1'},
+                  {text: 'Option 2 ',value: '2'},
+                  {text: 'Option 3 ',value: '3'}
+                ]"
+                :checked="3"
+              />
+            </no-ssr>
           </b-form-group>
 
           <b-form-group
             :label-cols="3"
             label="Checkboxes"
             label-for="basicCheckboxes"
-            horizontal
           >
-            <b-form-checkbox-group
-              id="basicCheckboxes"
-              :plain="true"
-              :checked="[2,3]"
-              stacked
-              name="Checkboxes"
-            >
-              <b-form-checkbox value="1">
-                Option 1
-              </b-form-checkbox>
-              <b-form-checkbox value="2">
-                Option 2
-              </b-form-checkbox>
-              <b-form-checkbox value="3">
-                Option 3
-              </b-form-checkbox>
-            </b-form-checkbox-group>
+            <no-ssr>
+              <b-form-checkbox-group
+                id="basicCheckboxes"
+                :plain="true"
+                :checked="[2,3]"
+                stacked
+                name="Checkboxes"
+              >
+                <b-form-checkbox value="1">
+                  Option 1
+                </b-form-checkbox>
+                <b-form-checkbox value="2">
+                  Option 2
+                </b-form-checkbox>
+                <b-form-checkbox value="3">
+                  Option 3
+                </b-form-checkbox>
+              </b-form-checkbox-group>
+            </no-ssr>
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline checkboxes"
             label-for="basicInlineCheckboxes"
           >
-            <b-form-checkbox-group
-              id="basicInlineCheckboxes"
-              :plain="true"
-              :checked="[1,3]"
-              name="InlineCheckboxes"
-            >
-              <b-form-checkbox
+            <no-ssr>
+              <b-form-checkbox-group
+                id="basicInlineCheckboxes"
                 :plain="true"
-                value="1"
+                :checked="[1,3]"
+                name="InlineCheckboxes"
               >
-                Option 1
-              </b-form-checkbox>
-              <b-form-checkbox
-                :plain="true"
-                value="2"
-              >
-                Option 2
-              </b-form-checkbox>
-              <b-form-checkbox
-                :plain="true"
-                value="3"
-              >
-                Option 3
-              </b-form-checkbox>
-            </b-form-checkbox-group>
+                <b-form-checkbox
+                  :plain="true"
+                  value="1"
+                >
+                  Option 1
+                </b-form-checkbox>
+                <b-form-checkbox
+                  :plain="true"
+                  value="2"
+                >
+                  Option 2
+                </b-form-checkbox>
+                <b-form-checkbox
+                  :plain="true"
+                  value="3"
+                >
+                  Option 3
+                </b-form-checkbox>
+              </b-form-checkbox-group>
+            </no-ssr>
           </b-form-group>
           <!--custom controls - radios/checkboxes - temporary fix-->
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Radios - custom"
             label-for="basicRadiosCustom"
           >
-            <b-form-radio-group
-              id="basicRadiosCustom"
-              value="1"
-              stacked
-            >
-              <div class="custom-control custom-radio">
-                <input
-                  id="customRadio1"
-                  type="radio"
-                  name="customRadio"
-                  class="custom-control-input"
-                  value="1"
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadio1"
-                >
-                  Option 1
-                </label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input
-                  id="customRadio2"
-                  type="radio"
-                  name="customRadio"
-                  class="custom-control-input"
-                  value="2"
-                  checked
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadio2"
-                >
-                  Option 2
-                </label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input
-                  id="customRadio3"
-                  type="radio"
-                  name="customRadio"
-                  class="custom-control-input"
-                  value="3"
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadio3"
-                >
-                  Option 3
-                </label>
-              </div>
-            </b-form-radio-group>
+            <no-ssr>
+              <b-form-radio-group
+                id="basicRadiosCustom"
+                value="1"
+                stacked
+              >
+                <div class="custom-control custom-radio">
+                  <input
+                    id="customRadio1"
+                    type="radio"
+                    name="customRadio"
+                    class="custom-control-input"
+                    value="1"
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadio1"
+                  >
+                    Option 1
+                  </label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="customRadio2"
+                    type="radio"
+                    name="customRadio"
+                    class="custom-control-input"
+                    value="2"
+                    checked
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadio2"
+                  >
+                    Option 2
+                  </label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="customRadio3"
+                    type="radio"
+                    name="customRadio"
+                    class="custom-control-input"
+                    value="3"
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadio3"
+                  >
+                    Option 3
+                  </label>
+                </div>
+              </b-form-radio-group>
+            </no-ssr>
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline radios - custom"
             label-for="basicCustomRadios1"
           >
-            <b-form-radio-group
-              id="basicCustomRadios1"
-              name="customRadioInline1"
-            >
-              <div class="custom-control custom-radio custom-control-inline">
-                <input
-                  id="customRadioInline1"
-                  type="radio"
-                  name="customRadioInline1"
-                  class="custom-control-input"
-                  value="1"
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadioInline1"
-                >
-                  Option 1
-                </label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input
-                  id="customRadioInline2"
-                  type="radio"
-                  name="customRadioInline1"
-                  class="custom-control-input"
-                  value="2"
-                  checked
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadioInline2"
-                >
-                  Option 2
-                </label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input
-                  id="customRadioInline3"
-                  type="radio"
-                  name="customRadioInline1"
-                  class="custom-control-input"
-                  value="3"
-                >
-                <label
-                  class="custom-control-label"
-                  for="customRadioInline3"
-                >
-                  Option 3
-                </label>
-              </div>
-            </b-form-radio-group>
+            <no-ssr>
+              <b-form-radio-group
+                id="basicCustomRadios1"
+                name="customRadioInline1"
+              >
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input
+                    id="customRadioInline1"
+                    type="radio"
+                    name="customRadioInline1"
+                    class="custom-control-input"
+                    value="1"
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadioInline1"
+                  >
+                    Option 1
+                  </label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input
+                    id="customRadioInline2"
+                    type="radio"
+                    name="customRadioInline1"
+                    class="custom-control-input"
+                    value="2"
+                    checked
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadioInline2"
+                  >
+                    Option 2
+                  </label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input
+                    id="customRadioInline3"
+                    type="radio"
+                    name="customRadioInline1"
+                    class="custom-control-input"
+                    value="3"
+                  >
+                  <label
+                    class="custom-control-label"
+                    for="customRadioInline3"
+                  >
+                    Option 3
+                  </label>
+                </div>
+              </b-form-radio-group>
+            </no-ssr>
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Checkboxes - custom"
             label-for="basicCustomCheckboxes"
           >
@@ -645,7 +635,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline checkboxes - custom"
             label-for="basicInlineCustomCheckboxes"
           >
@@ -697,26 +686,28 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="File input"
             label-for="fileInput"
           >
-            <b-form-file
-              id="fileInput"
-              :plain="true"
-            />
+            <no-ssr>
+              <b-form-file
+                id="fileInput"
+                :plain="true"
+              />
+            </no-ssr>
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Multiple file input"
             label-for="fileInputMulti"
           >
-            <b-form-file
-              id="fileInputMulti"
-              :plain="true"
-              :multiple="true"
-            />
+            <no-ssr>
+              <b-form-file
+                id="fileInputMulti"
+                :plain="true"
+                :multiple="true"
+              />
+            </no-ssr>
           </b-form-group>
           <div slot="footer">
             <b-button
@@ -789,7 +780,6 @@
           </div>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Email"
             label-for="horizEmail"
             description="Please enter your email."
@@ -802,7 +792,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Password"
             label-for="horizPass"
             description="Please enter your password."
@@ -989,7 +978,6 @@
           </div>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Small input"
             label-for="smInput"
             label-size="sm"
@@ -1003,7 +991,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Default input"
             label-for="defaultInput"
           >
@@ -1015,7 +1002,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Large input"
             label-for="lgInput"
             label-size="lg"
