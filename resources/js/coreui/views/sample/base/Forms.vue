@@ -156,7 +156,6 @@
           </div>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Let us know your full name."
             label="Enter your name"
             label-for="basicName"
@@ -168,7 +167,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Static"
             label-for="basicStatic"
           >
@@ -181,7 +179,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="This is a help text"
             label="Text Input"
             label-for="basicText"
@@ -194,7 +191,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Date"
             label-for="date"
           >
@@ -205,7 +201,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Datepicker"
           >
             <b-datepicker
@@ -214,7 +209,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Please enter your email"
             label="Email Input"
             label-for="basicEmail"
@@ -227,7 +221,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             description="Please enter a complex password"
             label="Password Input"
             label-for="basicPassword"
@@ -240,7 +233,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Disabled Input"
             label-for="basicInputDisabled"
           >
@@ -253,7 +245,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Textarea"
             label-for="basicTextarea"
           >
@@ -266,7 +257,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicSelect"
           >
@@ -279,7 +269,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select large"
             label-for="basicSelectLg"
           >
@@ -293,7 +282,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select small"
             label-for="basicSelectSm"
           >
@@ -307,7 +295,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Disabled select"
             label-for="basicSelectDisabled"
           >
@@ -321,7 +308,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicMultiSelect"
           >
@@ -353,7 +339,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Select"
             label-for="basicMultiSelect"
           >
@@ -380,7 +365,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Radios"
             label-for="basicRadios"
           >
@@ -398,7 +382,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline radios"
             label-for="basicInlineRadios"
           >
@@ -418,7 +401,6 @@
             :label-cols="3"
             label="Checkboxes"
             label-for="basicCheckboxes"
-            horizontal
           >
             <b-form-checkbox-group
               id="basicCheckboxes"
@@ -440,7 +422,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline checkboxes"
             label-for="basicInlineCheckboxes"
           >
@@ -473,7 +454,6 @@
           <!--custom controls - radios/checkboxes - temporary fix-->
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Radios - custom"
             label-for="basicRadiosCustom"
           >
@@ -532,7 +512,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline radios - custom"
             label-for="basicCustomRadios1"
           >
@@ -590,7 +569,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Checkboxes - custom"
             label-for="basicCustomCheckboxes"
           >
@@ -645,7 +623,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Inline checkboxes - custom"
             label-for="basicInlineCustomCheckboxes"
           >
@@ -697,7 +674,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="File input"
             label-for="fileInput"
           >
@@ -708,7 +684,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Multiple file input"
             label-for="fileInputMulti"
           >
@@ -789,7 +764,6 @@
           </div>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Email"
             label-for="horizEmail"
             description="Please enter your email."
@@ -802,7 +776,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="3"
-            :horizontal="true"
             label="Password"
             label-for="horizPass"
             description="Please enter your password."
@@ -989,7 +962,6 @@
           </div>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Small input"
             label-for="smInput"
             label-size="sm"
@@ -1003,7 +975,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Default input"
             label-for="defaultInput"
           >
@@ -1015,7 +986,6 @@
           </b-form-group>
           <b-form-group
             :label-cols="5"
-            :horizontal="true"
             label="Large input"
             label-for="lgInput"
             label-size="lg"
