@@ -1,5 +1,10 @@
 <template>
-  <b-card :header="caption">
+  <b-card>
+    <template slot="header">
+      <slot name="caption">
+        Table
+      </slot>
+    </template>
     <b-table
       :hover="hover"
       :striped="striped"
@@ -52,10 +57,6 @@ const shuffleArray = (array) => {
 export default {
   name : 'CTable',
   props: {
-    caption: {
-      type   : String,
-      default: 'Table',
-    },
     hover: {
       type   : Boolean,
       default: false,

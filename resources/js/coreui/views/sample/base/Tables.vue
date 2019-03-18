@@ -2,31 +2,40 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col lg="6">
-        <c-table caption="<i class='fa fa-align-justify'></i> Simple Table" />
+        <c-table>
+          <template slot="caption">
+            <i class="fa fa-align-justify"></i> Simple Table
+          </template>
+        </c-table>
       </b-col><!--/.col-->
 
       <b-col lg="6">
-        <c-table
-          striped
-          caption="<i class='fa fa-align-justify'></i> Striped Table"
-        />
+        <c-table striped>
+          <template slot="caption">
+            <i class='fa fa-align-justify'></i> Striped Table
+          </template>
+        </c-table>
       </b-col><!--/.col-->
     </b-row><!--/.row-->
 
     <b-row>
       <b-col lg="6">
-        <c-table
-          small
-          caption="<i class='fa fa-align-justify'></i> Condensed Table"
-        />
+        <c-table small >
+          <template slot="caption">
+            <i class='fa fa-align-justify'></i> Condensed Table
+          </template>
+        </c-table>
       </b-col><!--/.col-->
 
       <b-col lg="6">
         <c-table
           fixed
           bordered
-          caption="<i class='fa fa-align-justify'></i> Bordered Table"
-        />
+        >
+          <template slot="caption">
+            <i class='fa fa-align-justify'></i> Bordered Table
+          </template>
+        </c-table>
       </b-col><!--/.col-->
     </b-row><!--/.row-->
 
@@ -38,8 +47,11 @@
           bordered
           small
           fixed
-          caption="<i class='fa fa-align-justify'></i> Combined All Table"
-        />
+        >
+          <template slot="caption">
+            <i class='fa fa-align-justify'></i> Combined All Table
+          </template>
+        </c-table>
       </b-col>
     </b-row>
   </div>
