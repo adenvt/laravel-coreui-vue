@@ -34,9 +34,9 @@ export default {
     },
   },
   methods: {
-    handleClick (e) {
-      e.preventDefault()
-      e.target.parentElement.classList.toggle('open')
+    handleClick (event) {
+      event.preventDefault()
+      event.target.parentElement.classList.toggle('open')
     },
   },
 }

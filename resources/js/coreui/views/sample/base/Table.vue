@@ -1,5 +1,10 @@
 <template>
-  <b-card :header="caption">
+  <b-card>
+    <template slot="header">
+      <slot name="caption">
+        Table
+      </slot>
+    </template>
     <b-table
       :hover="hover"
       :striped="striped"
@@ -41,10 +46,10 @@
    */
 const shuffleArray = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
-    const j    = Math.floor(Math.random() * (i + 1))
-    const temp = array[i]
-    array[i]   = array[j]
-    array[j]   = temp
+    const j         = Math.floor(Math.random() * (i + 1))
+    const temporary = array[i]
+    array[i]        = array[j]
+    array[j]        = temporary
   }
   return array
 }
@@ -52,10 +57,6 @@ const shuffleArray = (array) => {
 export default {
   name : 'CTable',
   props: {
-    caption: {
-      type   : String,
-      default: 'Table',
-    },
     hover: {
       type   : Boolean,
       default: false,

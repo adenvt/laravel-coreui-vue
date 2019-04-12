@@ -47,10 +47,12 @@
           md="6"
         >
           <b-card
-            header="Badge <small>contextual variations</small>"
             header-tag="header"
             footer-tag="footer"
           >
+            <template slot="header">
+              Badge <small>contextual variations</small>
+            </template>
             <div>
               <b-badge variant="primary">
                 Primary
@@ -79,10 +81,12 @@
             </div>
           </b-card>
           <b-card
-            header="Badge <small>pills</small>"
             header-tag="header"
             footer-tag="footer"
           >
+            <template slot="header">
+              Badge <small>pills</small>
+            </template>
             <div>
               <b-badge
                 pill
@@ -135,10 +139,12 @@
             </div>
           </b-card>
           <b-card
-            header="Badge <small>actionable</small>"
             header-tag="header"
             footer-tag="footer"
           >
+            <template slot="header">
+              Badge <small>actionable</small>
+            </template>
             <div>
               <b-badge
                 href="#"

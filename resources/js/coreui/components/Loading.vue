@@ -23,7 +23,7 @@ export default {
       type     : String,
       default  : 'rotate-square',
       validator: function (value) {
-        return _.keys(Spinner).indexOf(_.pascalCase(value)) !== -1
+        return _.keys(Spinner).includes(_.pascalCase(value))
       },
     },
     size: {
