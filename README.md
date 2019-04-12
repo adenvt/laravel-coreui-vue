@@ -29,21 +29,21 @@
 * **NPM** >= 5.6.0
 
 ## How to Install
-* Install using composer (doesn't need to clone)
+### via Composer
+1. Create project using composer
 ```bash
 composer create-project --prefer-dist adenvt/laravel-coreui-vue project_name
-```
-* Install Dependencies
-```bash
 cd project_name
-
+```
+2. Install Dependencies
+```bash
 npm install
 ```
-* Add write permission (Unix)
+3. Add write permission (Unix)
 ```bash
 chmod -R go+w storage bootstrap/cache
 ```
-* Compile Static Asset
+4.  Compile Static Asset
 ```bash
 ## for Development
 npm run dev
@@ -54,6 +54,20 @@ npm run prod
 ## for Development with HMR (Hot Module Replacement)
 npm run hot
 ```
+
+### via Git
+1. Clone this repo
+```bash
+git clone --depth=1 https://github.com/adenvt/laravel-coreui-vue.git project_name
+cd project_name
+rm -r .git
+```
+2. Install Dependencies
+```
+composer install
+npm install
+```
+* Step 3 - 4 same as above
 
 ## Using Docker Compose
 
