@@ -4,7 +4,7 @@
       <b-col lg="6">
         <c-table>
           <template slot="caption">
-            <i class="fa fa-align-justify"></i> Simple Table
+            <i class="fa fa-align-justify" /> Simple Table
           </template>
         </c-table>
       </b-col><!--/.col-->
@@ -12,7 +12,7 @@
       <b-col lg="6">
         <c-table striped>
           <template slot="caption">
-            <i class='fa fa-align-justify'></i> Striped Table
+            <i class="fa fa-align-justify" /> Striped Table
           </template>
         </c-table>
       </b-col><!--/.col-->
@@ -20,9 +20,9 @@
 
     <b-row>
       <b-col lg="6">
-        <c-table small >
+        <c-table small>
           <template slot="caption">
-            <i class='fa fa-align-justify'></i> Condensed Table
+            <i class="fa fa-align-justify" /> Condensed Table
           </template>
         </c-table>
       </b-col><!--/.col-->
@@ -33,7 +33,7 @@
           bordered
         >
           <template slot="caption">
-            <i class='fa fa-align-justify'></i> Bordered Table
+            <i class="fa fa-align-justify" /> Bordered Table
           </template>
         </c-table>
       </b-col><!--/.col-->
@@ -49,7 +49,7 @@
           fixed
         >
           <template slot="caption">
-            <i class='fa fa-align-justify'></i> Combined All Table
+            <i class="fa fa-align-justify" /> Combined All Table
           </template>
         </c-table>
       </b-col>

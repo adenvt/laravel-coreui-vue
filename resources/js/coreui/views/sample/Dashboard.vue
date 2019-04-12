@@ -962,7 +962,7 @@
             head-variant="light"
           >
             <div slot="HEAD_avatar">
-              <i class="icon-people"></i>
+              <i class="icon-people" />
             </div>
 
             <div
