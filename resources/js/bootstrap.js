@@ -17,7 +17,7 @@ try {
   // Animate CSS
   window.$.fn.extend({
     animateCss: function (animationName, callback) {
-      const animationEnd = (function (el) {
+      const animationEnd = (function (element) {
         const animations = {
           animation      : 'animationend',
           OAnimation     : 'oAnimationEnd',
@@ -26,7 +26,7 @@ try {
         }
 
         for (const t in animations) {
-          if (el.style[t] !== undefined)
+          if (element.style[t] !== undefined)
             return animations[t]
         }
       })(document.createElement('div'))
@@ -47,8 +47,8 @@ try {
 
   $.fn.select2.defaults.set('theme', 'bootstrap4')
   $.fn.select2.defaults.set('width', '100%')
-} catch (err) {
-  console.error(err)
+} catch (error) {
+  console.error(error)
 }
 
 /**

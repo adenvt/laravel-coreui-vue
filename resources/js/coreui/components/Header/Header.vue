@@ -75,20 +75,20 @@ export default {
     $('body').removeClass('header-fixed')
   },
   methods: {
-    sidebarToggle (e) {
-      e.preventDefault()
+    sidebarToggle (event) {
+      event.preventDefault()
       document.body.classList.toggle('sidebar-hidden')
     },
-    sidebarMinimize (e) {
-      e.preventDefault()
+    sidebarMinimize (event) {
+      event.preventDefault()
       document.body.classList.toggle('sidebar-minimized')
     },
-    mobileSidebarToggle (e) {
-      e.preventDefault()
+    mobileSidebarToggle (event) {
+      event.preventDefault()
       document.body.classList.toggle('sidebar-mobile-show')
     },
-    asideToggle (e) {
-      e.preventDefault()
+    asideToggle (event) {
+      event.preventDefault()
       document.body.classList.toggle('aside-menu-hidden')
     },
   },

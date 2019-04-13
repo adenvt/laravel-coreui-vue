@@ -146,9 +146,9 @@ export default {
     $('body').removeClass('sidebar-fixed')
   },
   methods: {
-    handleClick (e) {
-      e.preventDefault()
-      e.target.parentElement.classList.toggle('open')
+    handleClick (event) {
+      event.preventDefault()
+      event.target.parentElement.classList.toggle('open')
     },
   },
 }
