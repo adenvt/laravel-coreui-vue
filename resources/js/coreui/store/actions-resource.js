@@ -31,56 +31,56 @@ Vue.http.interceptors.push(function (request, next) {
   })
 })
 
-const index = function ({ commit, dispatch }, resource, params = null) {
+const index = function (request) {
   return Vue.http({
-    url   : resource,
-    params: params,
+    url   : request.resource,
+    params: request.params,
     method: 'GET',
   })
 }
 
-const create = function (resource) {
+const create = function (request) {
   return Vue.http({
-    url   : `${resource}/create`,
+    url   : `${request.resource}/create`,
     method: 'GET',
   })
 }
 
-const store = function (resource, data) {
+const store = function (request) {
   return Vue.http({
-    url   : resource,
+    url   : request.resource,
     method: 'POST',
-    body  : data,
+    body  : request.data,
   })
 }
 
-const show = function (resource, id, params) {
+const show = function (request) {
   return Vue.http({
-    url   : `${resource}/${id}`,
-    params: params,
+    url   : `${request.resource}/${request.id}`,
+    params: request.params,
     method: 'GET',
   })
 }
 
-const edit = function (resource, id, params) {
+const edit = function (request) {
   return Vue.http({
-    url   : `${resource}/${id}/edit`,
-    params: params,
+    url   : `${request.resource}/${request.id}/edit`,
+    params: request.params,
     method: 'GET',
   })
 }
 
-const update = function (resource, id, data) {
+const update = function (resource, request) {
   return Vue.http({
-    url   : `${resource}/${id}`,
-    body  : data,
+    url   : `${request.resource}/${request.id}`,
+    body  : request.data,
     method: 'PUT',
   })
 }
 
-const destroy = function (resource, id) {
+const destroy = function (request) {
   return Vue.http({
-    url   : `${resource}/${id}`,
+    url   : `${request.resource}/${request.id}`,
     method: 'DELETE',
   })
 }
