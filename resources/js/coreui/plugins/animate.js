@@ -1,6 +1,6 @@
 $.fn.extend({
   animateCss: function (animationName, callback) {
-    const animationEnd = (function (el) {
+    const animationEnd = (function (element) {
       const animations = {
         animation      : 'animationend',
         OAnimation     : 'oAnimationEnd',
@@ -9,7 +9,7 @@ $.fn.extend({
       }
 
       for (const t in animations) {
-        if (el.style[t] !== undefined)
+        if (element.style[t] !== undefined)
           return animations[t]
       }
     })(document.createElement('div'))

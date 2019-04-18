@@ -8,8 +8,8 @@
 import { isArray } from 'bootstrap-vue/es/utils/array'
 import { keys } from 'bootstrap-vue/es//utils/object'
 
-function isObject (obj) {
-  return obj && ({}).toString.call(obj) === '[object Object]'
+function isObject (object) {
+  return object && ({}).toString.call(object) === '[object Object]'
 }
 
 export default {
@@ -121,7 +121,7 @@ export default {
         })
         .val(this.value)
         .trigger('change.select2')
-        .on('change', function (evt) {
+        .on('change', function (event_) {
           vm.localValue = this.value
           vm.$emit('input', vm.localValue)
         })

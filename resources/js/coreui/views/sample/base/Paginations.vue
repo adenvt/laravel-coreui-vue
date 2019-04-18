@@ -141,8 +141,8 @@ export default {
     return { currentPage: 3 }
   },
   methods: {
-    linkGen (pageNum) {
-      return `#page/${pageNum}/foobar`
+    linkGen (pageNumber) {
+      return `#page/${pageNumber}/foobar`
     },
   },
 }

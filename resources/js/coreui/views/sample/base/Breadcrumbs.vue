@@ -54,8 +54,8 @@ export default {
       .then((response) => {
         // console.log(response.data)
       })
-      .catch((err) => {
-        console.error(err)
+      .catch((error) => {
+        console.error(error)
       })
   },
 }

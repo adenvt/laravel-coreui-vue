@@ -963,6 +963,10 @@
             hover
             head-variant="light"
           >
+            <div slot="HEAD_avatar">
+              <i class="icon-people" />
+            </div>
+
             <div
               slot="avatar"
               slot-scope="item"
