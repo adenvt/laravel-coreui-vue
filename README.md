@@ -2,8 +2,14 @@
 
 > Laravel + CoreUI + Vue Boilerplate
 
-[![PHP version](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue.svg)](https://badge.fury.io/ph/adenvt%2Flaravel-coreui-vue)
-[![Build Status](https://travis-ci.com/adenvt/laravel-coreui-vue.svg?branch=master)](https://travis-ci.com/adenvt/laravel-coreui-vue) [![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
+![Packagist Version](https://img.shields.io/packagist/v/adenvt/laravel-coreui-vue.svg?color=brightgreen&label=version)
+![Travis (.com)](https://img.shields.io/travis/com/adenvt/laravel-coreui-vue.svg)
+![Travis (.com) branch](https://img.shields.io/travis/com/adenvt/laravel-coreui-vue/develop.svg?label=dev%20build)
+[![Greenkeeper badge](https://badges.greenkeeper.io/adenvt/laravel-coreui-vue.svg)](https://greenkeeper.io/)
+![Packagist](https://img.shields.io/packagist/dt/adenvt/laravel-coreui-vue.svg)
+![David](https://img.shields.io/david/adenvt/laravel-coreui-vue.svg?logo=npm)
+![David](https://img.shields.io/david/dev/adenvt/laravel-coreui-vue.svg?logo=npm)
+![Packagist](https://img.shields.io/packagist/l/adenvt/laravel-coreui-vue.svg?color=blue)
 
 ## What's inside
 * [Laravel][laravel] 5.8, A PHP framework for web artisans
