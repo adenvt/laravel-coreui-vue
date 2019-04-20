@@ -47,7 +47,7 @@
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "stylelint": "^10.0.0",
-    "stylelint-config-sass-guidelines": "^5.4.0",
+    "stylelint-config-sass-guidelines": "^6.0.0",
     "stylelint-scss": "^3.5.4",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "vue-loader": "15.7.0",
