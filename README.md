@@ -10,6 +10,7 @@
 ![David](https://img.shields.io/david/adenvt/laravel-coreui-vue.svg?logo=npm)
 ![David](https://img.shields.io/david/dev/adenvt/laravel-coreui-vue.svg?logo=npm)
 ![Packagist](https://img.shields.io/packagist/l/adenvt/laravel-coreui-vue.svg?color=blue)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fadenvt%2Flaravel-coreui-vue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fadenvt%2Flaravel-coreui-vue?ref=badge_shield)
 
 ## What's inside
 * [Laravel][laravel] 5.8, A PHP framework for web artisans
@@ -133,3 +134,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [offline-plugin]: https://github.com/NekR/offline-plugin
 [workbox]: https://developers.google.com/web/tools/workbox/
 [laravel-page-speed]: https://github.com/renatomarinho/laravel-page-speed
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fadenvt%2Flaravel-coreui-vue.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fadenvt%2Flaravel-coreui-vue?ref=badge_large)
