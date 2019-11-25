@@ -27,7 +27,7 @@
     "babel-plugin-wildcard": "^5.0.0",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^6.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.7.1",
     "eslint-config-adenvt": "^4.0.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-formatter-pretty": "^2.1.1",
