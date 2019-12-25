@@ -46,7 +46,7 @@
     "resolve-url-loader": "^3.1.0",
     "sass": "^1.22.3",
     "sass-loader": "^7.1.0",
-    "stylelint": "^10.1.0",
+    "stylelint": "^12.0.1",
     "stylelint-config-sass-guidelines": "^6.0.0",
     "stylelint-scss": "^3.9.0",
     "uglifyjs-webpack-plugin": "^2.1.3",
