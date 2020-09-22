@@ -39,7 +39,7 @@
     "eslint-plugin-varspacing": "^1.2.1",
     "eslint-plugin-vue": "^5.2.3",
     "laravel-mix": "^4.0.16",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "offline-plugin": "^5.0.7",
     "pre-commit": "^1.2.2",
     "prettier": "1.18.2",
